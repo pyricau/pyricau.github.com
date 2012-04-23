@@ -1,0 +1,69 @@
+/*
+OMG I so totally suck at CSS...
+*/
+
+.headline h1 {
+  margin: 36px 0 27px;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.headline-byline {
+  margin: -18px 0 27px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #999;
+  text-align: center;
+}
+
+.headline p {
+  margin-right: 10px;
+}
+
+.voxe {
+  min-height: 100px;
+  padding-left:130px;
+  background: url('voxe.png') no-repeat;
+}
+
+.cvandroid {
+  min-height: 100px;
+  padding-left:130px;
+  background: url('cvandroid.png') no-repeat;
+}
+
+.androidannotations {
+  min-height: 100px;
+  padding-left:130px;
+  background: url('androidannotations.png') no-repeat;
+}
+
+.vuzzz {
+  min-height: 100px;
+  padding-left:130px;
+  background: url('vuzzz.png') no-repeat;
+}
+
+.linkedin {
+  min-height: 100px;
+  padding-left:130px;
+  background: url('linkedin.png') no-repeat;
+}
+
+.cvgwt {
+  min-height: 100px;
+  padding-left:130px;
+  background: url('cvgwt.png') no-repeat;
+}
+
+.old {
+  min-height: 100px;
+  padding-left:130px;
+  background: url('old.png') no-repeat;
+}
+
+.recent .span6 {
+  margin-bottom: 40px;
+}
