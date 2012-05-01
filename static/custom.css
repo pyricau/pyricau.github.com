@@ -67,3 +67,11 @@ OMG I so totally suck at CSS...
 .recent .span6 {
   margin-bottom: 40px;
 }
+
+footer {
+  text-align: center;
+}
+
+.hero-unit h1.more-space {
+  margin-bottom: 9px;
+}

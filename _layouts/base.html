@@ -55,7 +55,10 @@
       <hr>
 
       <footer>
-        <p>&copy; Pierre-Yves Ricau 2012, crafted with love using <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>, <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://pages.github.com/">GitHub Pages</a>.</p>
+        <p>&copy; 2012 Pierre-Yves Ricau<p>
+        <p>Source available <a href="https://github.com/pyricau/pyricau.github.com">on GitHub</a>.</p>
+        <p>Crafted with love (and a bit of laziness) using <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>, <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://pages.github.com/">GitHub Pages</a>.
+
       </footer>
 
     </div> <!-- /container -->
@@ -63,5 +66,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="static/jquery/jquery.js"></script>
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    {% if page.include_show_mail_js %}
+      <script src="static/show_mail.js"></script>
+    {% endif %}
+    {% if page.include_update_404_js %}
+      <script src="static/update_404.js"></script>
+    {% endif %}
   </body>
 </html>
