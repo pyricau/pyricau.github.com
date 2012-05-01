@@ -2,6 +2,10 @@
 OMG I so totally suck at CSS...
 */
 
+.content {
+  margin-top: 60px;
+}
+
 .headline h1 {
   margin: 36px 0 27px;
   font-size: 40px;

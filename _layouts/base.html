@@ -11,7 +11,6 @@
     <link href="static/custom.css" rel="stylesheet">    
     <style type="text/css">
       body {
-        padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
@@ -26,7 +25,7 @@
 
   <body>
   
-    <div class="navbar navbar-fixed-top">
+    <div id="menu" class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -50,7 +49,10 @@
 
     <div class="container">
 
+      <div class="content">
       {{ content }}
+      
+      </div>
 
       <hr>
 
@@ -58,7 +60,8 @@
         <p>&copy; 2012 Pierre-Yves Ricau<p>
         <p>Source available <a href="https://github.com/pyricau/pyricau.github.com">on GitHub</a>.</p>
         <p>Crafted with love (and a bit of laziness) using <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>, <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://pages.github.com/">GitHub Pages</a>.
-
+		<p>In case you didn't notice, you can navigate through this site using the top <a href="#menu">navigation bar</a>.</p>
+		<p>This is the bottom, there's nothing further down.</p>
       </footer>
 
     </div> <!-- /container -->
