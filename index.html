@@ -15,7 +15,9 @@ layout: base
     <article>
       <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
       {% include post_date.html %}
-        {{ page.content | postmorefilter: page.url, "Read the rest of this entry" }}
+        {{ page.content | split: "<!--more-->" | first }}
+        
+        <p><a class='btn btn-primary btn-large' href='{{ page.url }}'>Read the rest of this entry &rarr;</a></p>
     </article>
 
 {% endfor %}

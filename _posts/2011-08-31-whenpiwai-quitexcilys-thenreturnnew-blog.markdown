@@ -8,6 +8,8 @@ filename: 2011-08-31-whenpiwai-quitexcilys-thenreturnnew-blog.markdown
 ---
 Après deux ans et demi de prestation de service et de fun au sein d'[Excilys](http://www.excilys.com/), je m’envole pour de nouvelles aventures !
 
+<!--more-->
+
 Tout ce que je peux officiellement vous dire pour le moment, c'est que je vais bosser pour une startup qui fait de l'**Android**. J'ai hâte d'y être !
 
 Au sein d'Excilys, j'ai découvert le plaisir d'écrire sur le [Blog](http://blog.excilys.com/author/pyricau/) et le [Labs](http://labs.excilys.com/author/pyricauexcilys-com/) Excilys, et j'y ai laissé quelques **24 articles** et **93 commentaires**.
