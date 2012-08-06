@@ -17,6 +17,8 @@ layout: base
       {% include post_date.html %}
         {{ page.content | split: "<!--more-->" | first }}
         
+         {{ page.content | split: "<!--more-->" | last }}
+        
         <p><a class='btn btn-primary btn-large' href='{{ page.url }}'>Read the rest of this entry &rarr;</a></p>
     </article>
 
