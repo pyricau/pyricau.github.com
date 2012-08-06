@@ -1,0 +1,25 @@
+#
+# Jekyll configuration
+#
+auto: false
+server: false
+permalink: /:title
+pygments: true
+lsi: false
+markdown: rdiscount
+
+paginate_files: blog.html
+
+paginate: 10
+exclude: ["lib", "blog.rb", "Capfile", "config", "log", "Rakefile", "tmp"]
+
+#
+# Site configuration
+#
+base_url: "http://www.piwai.info"
+url: "http://www.piwai.info"
+title: "Piwaï.info"
+description: "Piwaï website and blog"
+author: "Pierre-Yves Ricau"
+email: "py.ricau@gmail.com"
+rss_feed: "http://feeds.feedburner.com/Piwai"

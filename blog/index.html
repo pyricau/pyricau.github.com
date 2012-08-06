@@ -1,0 +1,22 @@
+---
+title: Blog
+active: blog
+layout: base
+---
+
+{% for page in paginator.posts %}
+    <article class="homelist">
+      <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+      <time class="time" pubdate datetime="{{ post.date | date: "%d %b %Y" }}">{{ page.date | date: "%B %e, %Y" }}</time>
+        {{ page.content | postmorefilter: page.url, "Read the rest of this entry" }}
+    </article
+{% endfor %}
+
+  {% if paginator.previous_page == 1 %}
+    <span class="nav-previous"><a href="/">&laquo;&laquo; Newer Entries</a></span>
+  {% elsif paginator.previous_page %}
+    <span class="nav-previous"><a href="/page{{ paginator.previous_page }}">&laquo;&laquo; Newer Entries</a></span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="nav-next"><a href="/page{{ paginator.next_page }}">Older Entries &raquo;&raquo;</a></span>
+  {% endif %}
