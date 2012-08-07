@@ -226,7 +226,3 @@ Voilà qui conclu la première moitié de ce compte rendu sur l'Android Dev Lab,
 Tout à fait d’accord quand tu soulignes la pénibilité de sous classer chacun des types de Fragment/Activity! J’espérais qu’une solution plus élégante allait apparaître avec Android 4.0.
 
 Pour activer l’Action bar un targetSdkVersion=”11″ devrait suffire; mais si on peut tester avec ICS pourquoi pas aller directement en targetSdkVersion=”14″!
-
-## Piwaï
-
-Test
