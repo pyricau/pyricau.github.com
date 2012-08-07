@@ -4,6 +4,7 @@ layout: post
 title: Roooh, j'ai encore oublié ma branche Git !
 permalink: /2011/10/09/roooh-jai-encore-oublie-ma-branche-git/
 filename: 2011-10-09-roooh-jai-encore-oublie-ma-branche-git.markdown
+more: 560
 
 ---
 ## Introduction
@@ -12,8 +13,6 @@ filename: 2011-10-09-roooh-jai-encore-oublie-ma-branche-git.markdown
 La **startup** pour laquelle je bosse [depuis peu](/2011/08/31/whenpiwai-quitexcilys-thenreturnnew-blog/) héberge son **code source** sur [GitHub](http://github.com), et ça, c'est carrément cool.
 
 En plus, nous sommes récemment passé d'un **workflow** old school (tout le monde commit comme des sauvages sur la même branche) à un workflow de type [feature branching](http://nvie.com/posts/a-successful-git-branching-model). Encore plus cool !
-
-<!--more-->
 
 Le merge d'une **feature branch** sur la branche d'**intégration** ne se fait qu'après **validation** (revue de code et tests fonctionnels) par quelqu'un qui n'a pas développé la feature. Dans cette optique, les [pull requests](http://help.github.com/send-pull-requests/) de GitHub se révèlent particulièrement pratiques.
 

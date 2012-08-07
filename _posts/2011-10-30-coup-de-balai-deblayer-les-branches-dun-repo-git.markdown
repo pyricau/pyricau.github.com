@@ -4,6 +4,7 @@ layout: post
 title: 'Coup de balai : déblayer les branches d''un repo Git'
 permalink: /2011/10/30/coup-de-balai-deblayer-les-branches-dun-repo-git/
 filename: 2011-10-30-coup-de-balai-deblayer-les-branches-dun-repo-git.markdown
+more: 1117
 
 ---
 
@@ -17,9 +18,6 @@ Lorsqu'une **branche** qui a fait l'objet d'une **pull request** est validée, e
 [![](/static/blog_img/Branches_konary.jpeg)](http://commons.wikimedia.org/wiki/File:Branches_konary.jpg)
 
 _Branches konary by Krzysztof_
-
-<!--more-->
-
 
 Notez que GitHub conserve **l'historique** des pull request même quand les branches sont supprimées. Je ne vois vraiment aucune raison de conserver des branches mergées. Et vous ?
 

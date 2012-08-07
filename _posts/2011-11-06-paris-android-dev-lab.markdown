@@ -4,6 +4,7 @@ layout: post
 title: Paris Android Dev Lab
 permalink: /2011/11/06/paris-android-dev-lab/
 filename: 2011-11-06-paris-android-dev-lab.markdown
+more: 534
 
 ---
 
@@ -14,7 +15,6 @@ Un [Android Developer Labs](http://android-developers.blogspot.com/2011/08/andro
 
 J'ai eu la chance d'être invité à cet évènement ; j'en ai donc profité pour prendre des notes afin de pouvoir retranscrire le déroulement de cette journée (l'ADL du vendredi).
 
-<!--more-->
 
 ## Apéro Android
 

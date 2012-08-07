@@ -4,6 +4,7 @@ layout: post
 title: Coloration Syntaxique en GWT
 permalink: /2011/09/05/coloration-syntaxique-en-gwt/
 filename: 2011-09-05-coloration-syntaxique-en-gwt.markdown
+more: 528
 
 ---
 
@@ -14,8 +15,6 @@ Qui dit **slides techniques** dit exemples de **code**, et donc **coloration syn
 J'ai creusé un peu le sujet pour finalement retenir **une solution**.
 
 **Comment faire de la coloration syntaxique côté client, en GWT ?**
-
-<!--more-->
 
 
 ## Solutions disponibles

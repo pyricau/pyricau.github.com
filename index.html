@@ -15,18 +15,15 @@ layout: base
     <article>
       <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
       {% include post_date.html %}
-
-      {{ page.content }}
       
-        {{ page.content | split: "more" | first }}
-        
-        {{ page.content | split: more | first }}
-        
-          {{ page.content | split: "<!--more-->" | first }}
-        
-         {{ page.content | split: "<!--more-->" | last }}
-        
-        <p><a class='btn btn-primary btn-large' href='{{ page.url }}'>Read the rest of this entry &rarr;</a></p>
+      
+    {% if page.more %}
+  	{{ page.content | truncate: page.more, "" }}
+	{% else %}
+	<!--start_output-->{{ page.content | truncatewords: 100, "" }}
+	{% endif %}
+
+      <p><a class='btn btn-primary btn-large' href='{{ page.url }}'>Read the rest of this entry &rarr;</a></p>
     </article>
 
 {% endfor %}

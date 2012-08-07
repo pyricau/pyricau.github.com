@@ -4,6 +4,7 @@ layout: post
 title: 'Les IDE, et la règle des 80 / 120 '
 permalink: /2011/08/31/les-ide-et-la-regle-des-80-120/
 filename: 2011-08-31-les-ide-et-la-regle-des-80-120.markdown
+more: 786
 
 ---
 
@@ -20,8 +21,6 @@ Dès lors que l'on met en place un formatage du code automatique et partagé par
 
 >Ça fait 5 ans qu'on a tous des 19 pouces, on pourrait peut-être passer à 160 non ?
 <small>Gérard</small>
-
-<!--more-->
 
 ## Que nenni !
 

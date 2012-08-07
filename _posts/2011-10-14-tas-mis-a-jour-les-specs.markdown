@@ -4,6 +4,7 @@ layout: post
 title: T'as mis à jour les specs ?
 permalink: /2011/10/14/tas-mis-a-jour-les-specs/
 filename: 2011-10-14-tas-mis-a-jour-les-specs.markdown
+more: 954
 
 ---
 
@@ -26,7 +27,6 @@ Mais qu'en est-il des documents de **spécifications** fonctionnelles et techniq
 _Archaeological post-it label by Evelyn Simak_
 
 
-<!--more-->
 
 
 

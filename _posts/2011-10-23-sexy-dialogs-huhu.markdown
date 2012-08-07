@@ -4,6 +4,7 @@ layout: post
 title: Sexy dialogs, huhu
 permalink: /2011/10/23/sexy-dialogs-huhu/
 filename: 2011-10-23-sexy-dialogs-huhu.markdown
+more: 880
 
 ---
 
@@ -22,9 +23,6 @@ Prenons le cas des **boîtes de dialogue**. A priori, il n'y a rien de plus **en
 
 
 Je vous propose d'aborder quelques techniques simples pour donner **un peu de vie** à vos **boîtes de dialogues**, sans trop vous fatiguer.
-
-
-<!--more-->
 
 
 ## Dialogue fadasse

@@ -4,6 +4,7 @@ layout: post
 title: Les mains dans le cambUiBinder
 permalink: /2011/09/13/les-mains-dans-le-cambuibinder/
 filename: 2011-09-13-les-mains-dans-le-cambuibinder.markdown
+more: 733
 
 ---
 L'article précédent montrait comment faire de la [coloration syntaxique en GWT](http://blog.piwai.info/2011/09/05/coloration-syntaxique-en-gwt/).
@@ -12,7 +13,6 @@ Toujours pour [Rockslide](http://pyricau.github.com/rockslide), je souhaitais po
 
 Est-ce possible ? Comment y parvenir ? En creusant ces questions, j'ai réalisé que UiBinder possède de nombreuses facettes **non documentées** et qui méritent que l'on s'y attarde. Tour du propriétaire.
 
-<!--more-->
 
 ## Widgets customs
 
