@@ -4,6 +4,7 @@ layout: post
 title: Quand mamie craque du Wifi
 permalink: /2011/09/23/quand-mamie-craque-du-wifi/
 filename: 2011-09-23-quand-mamie-craque-du-wifi.markdown
+more: 1050
 
 ---
 Imaginons que vous ayez besoin de **craquer** le mot de passe de votre propre réseau Wifi, protégé par une **clé WEP**. Je parle bien de _votre propre réseau Wifi_, car je suis sûr qu'il ne vous viendrait jamais à l'idée de craquer l'accès de votre voisin, sachant que c'est totalement **illégal**. 
@@ -13,8 +14,6 @@ Craquer une clé WEP peut être l'affaire de quelques minutes, et pourtant, aujo
 Les techniques pour y parvenir se sont considérablement améliorées ces dernières années. Parallèlement à ces techniques, c'est aussi leur facilité de mise en œuvre qui a formidablement évolué.
 
 Aujourd'hui, quelques clics suffisent : même **mamie peut craquer du Wifi**, et c'est l'objet de cet article.
-
-<!--more-->
 
 ## Mise en place
 

@@ -4,6 +4,7 @@ layout: post
 title: Un peu de style dans la TextView
 permalink: /2011/10/01/un-peu-de-style-dans-la-textview/
 filename: 2011-10-01-un-peu-de-style-dans-la-textview.markdown
+more: 601
 
 ---
 Les designers qui définissent les écrans de votre **application Android** se sont fait plaisir, et vous ont demandé une **mise en forme** bien chiadée pour les **textes** de votre application.
@@ -11,8 +12,6 @@ Les designers qui définissent les écrans de votre **application Android** se s
 Avant de vous jeter sur Photoshop pour créer des images correspondant au pixel près à ce qu'ils attendent, pourquoi ne pas garder votre bonne vieille [TextView](http://developer.android.com/reference/android/widget/TextView.html) ?
 
 Pour changer un peu des récents articles sur GWT, voici quelques petites astuces pour Android.
-
-<!--more-->
 
 ## Tweak la police
 
