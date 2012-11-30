@@ -11,7 +11,7 @@ markdown: rdiscount
 paginate_files: blog.html
 
 paginate: 10
-exclude: ["lib", "blog.rb", "Capfile", "config", "log", "Rakefile", "tmp"]
+exclude: ["blog.rb", "Capfile", "config", "log", "Rakefile", "tmp", "reveal.js/index.html", "reveal.js/README.js"]
 
 #
 # Site configuration
