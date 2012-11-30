@@ -2,8 +2,14 @@
 OMG I so totally suck at CSS...
 */
 
+.container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #comments ~ p {
-font-weight: 300;
+  font-weight: 300;
 }
 
 #comments ~ h2 {
