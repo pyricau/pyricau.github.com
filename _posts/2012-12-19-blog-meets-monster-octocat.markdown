@@ -29,3 +29,8 @@ Let's see if that's something you are able to do ;-) .
 > By the way, I also started writing in English, trying to reach a broader audience and practice my writing. Let me know if you find weird french looking sentences.
 
 {% include comments.html %}
+
+### [Aurélien](http://blogpro.toutantic.net)
+It's turtles all the way down !
+And the comment button is displayed twice at the end of your post.
+
