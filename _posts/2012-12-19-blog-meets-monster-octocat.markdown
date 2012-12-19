@@ -30,8 +30,13 @@ Let's see if that's something you are able to do ;-) .
 
 {% include comments.html %}
 
+
 ## [gnupat](http://bisouland.piwai.info)
 
 Great idea, I can't wait to see how the PR driven comments are going :D .
 
 By the way, am I doing this right?
+
+### [Aurélien](http://blogpro.toutantic.net)
+It's turtles all the way down !
+And the comment button is displayed twice at the end of your post.
