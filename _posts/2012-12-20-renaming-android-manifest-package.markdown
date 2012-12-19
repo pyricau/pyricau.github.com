@@ -88,3 +88,12 @@ This tip helps creating different versions of the same app.
 ![](/static/blog_img/manifest_package.png)
 
 As you can see on this screenshot, the package name can then be set as a build parameter, to create parameterized builds in Jenkins.
+
+<!--
+
+To comment, copy and paste the following block
+
+## [Nickname](http://website)
+Comment
+
+-->
