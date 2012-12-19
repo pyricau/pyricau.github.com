@@ -29,3 +29,9 @@ Let's see if that's something you are able to do ;-) .
 > By the way, I also started writing in English, trying to reach a broader audience and practice my writing. Let me know if you find weird french looking sentences.
 
 {% include comments.html %}
+
+## [gnupat](http://bisouland.piwai.info)
+
+Great idea, I can't wait to see how the PR driven comments are going :D .
+
+By the way, am I doing this right?
