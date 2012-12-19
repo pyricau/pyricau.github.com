@@ -40,3 +40,5 @@ By the way, am I doing this right?
 It's turtles all the way down !
 And the comment button is displayed twice at the end of your post.
 
+## [Piwaï](http://piwai.info)
+Turns out, all comments pull request are located at the same position so this leads to merge conflicts (easy to fix though). Comments is displayed twice on purpose, as you can see now that there are actual comments. Maybe I should remove the first one.
