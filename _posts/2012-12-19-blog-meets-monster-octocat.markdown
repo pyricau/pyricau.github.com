@@ -30,6 +30,7 @@ Let's see if that's something you are able to do ;-) .
 
 {% include comments.html %}
 
+<<<<<<< HEAD
 
 ## [gnupat](http://bisouland.piwai.info)
 
@@ -40,3 +41,4 @@ By the way, am I doing this right?
 ### [Aurélien](http://blogpro.toutantic.net)
 It's turtles all the way down !
 And the comment button is displayed twice at the end of your post.
+
