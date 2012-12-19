@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Renaming the manifest package
-filename: 2012-12-20-renaming-manifest-package.markdown
+title: Renaming the Android Manifest package
+filename: 2012-12-20-renaming-android-manifest-package.markdown
 more: 292
 
 ---
@@ -64,12 +64,12 @@ However, the problem here is that the resources were processed before the packag
 
 It's easy to fix though, by retrieving the package name of another resource with `Resources.getResourcePackageName()`.
 
-Let's create a dedicated resource id for that purpose, for example in `res/values/ids.xml`:
+Let's create a resource id dedicated to that purpose, for example in `res/values/ids.xml`:
 
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <item name="package_from_id" type="id"/>
+    <item name="used_for_package_name_retrieval" type="id"/>
 </resources>
 {% endhighlight %}
 
@@ -77,6 +77,14 @@ And now we get the right package:
 
 {% highlight java %}
 Resources res = context.getResources();
-String packageName = res.getResourcePackageName(R.id.package_from_id);
+String packageName = res.getResourcePackageName(R.id.used_for_package_name_retrieval);
 int id = res.getIdentifier("some_drawable", "drawable", packageName);
 {% endhighlight %}
+
+## Conclusion
+
+This tip helps creating different versions of the same app. 
+
+![](/static/blog_img/manifest_package.png)
+
+As you can see on this screenshot, the package name can then be set as a build parameter, to create parameterized builds in Jenkins.
