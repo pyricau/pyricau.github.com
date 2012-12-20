@@ -30,6 +30,15 @@ Let's see if that's something you are able to do ;-) .
 
 {% include comments.html %}
 
+<!--
+
+To comment, copy and paste the following block
+
+## [Nickname](http://website)
+Comment
+
+-->
+
 ## [gnupat](http://bisouland.piwai.info)
 
 Great idea, I can't wait to see how the PR driven comments are going :D .
@@ -42,3 +51,4 @@ And the comment button is displayed twice at the end of your post.
 
 ## [Piwaï](http://piwai.info)
 Turns out, all comments pull request are located at the same position so this leads to merge conflicts (easy to fix though). Comments is displayed twice on purpose, as you can see now that there are actual comments. Maybe I should remove the first one.
+

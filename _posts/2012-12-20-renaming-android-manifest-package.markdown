@@ -89,6 +89,8 @@ This tip helps creating different versions of the same app.
 
 As you can see on this screenshot, the package name can then be set as a build parameter, to create parameterized builds in Jenkins.
 
+{% include comments.html %}
+
 <!--
 
 To comment, copy and paste the following block
