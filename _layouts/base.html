@@ -26,15 +26,17 @@
     <div id="menu" class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <span class="brand">Piwaï.info</span>
-            <ul class="nav">
-              <li {% if page.active == 'home' %} class="active" {% endif %}><a href="/index.html">Home</a></li>
-              <li {% if page.active == 'cv' %} class="active" {% endif %}><a href="/cv.html">CV</a></li>
-              <li class="divider-vertical"></li>              
-              <li {% if page.active == 'contact' %} class="active" {% endif %}><a href="/contact.html">Contact</a></li>
-              <li class="divider-vertical"></li>              
-            </ul>
-            <p class="navbar-text honni">Honni soit qui mal y code</p>
+          <a href="/" class="brand">Piwaï.info</a>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            <li {% if page.active == 'home' %} class="active" {% endif %}><a href="/index.html">Home</a></li>
+            <li class="divider-vertical"></li>
+            <li {% if page.active == 'cv' %} class="active" {% endif %}><a href="/cv.html">CV</a></li>
+            <li class="divider-vertical"></li>              
+            <li {% if page.active == 'contact' %} class="active" {% endif %}><a href="/contact.html">Contact</a></li>
+            <li class="divider-vertical"></li>              
+          </ul>
+          <p class="navbar-text honni">Honni soit qui mal y code</p>
         </div>
       </div>
     </div>  
