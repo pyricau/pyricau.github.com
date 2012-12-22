@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Happy Birthday AndroidAnnotations!
-filename: 2012-12-22-happy-birthday-androidannotations
+filename: 2012-12-22-happy-birthday-androidannotations.markdown
 more: 429
 
 ---
