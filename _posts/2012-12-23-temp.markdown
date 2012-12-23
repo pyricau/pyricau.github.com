@@ -11,41 +11,42 @@ draft: true
 
 In Android, the standard way to display a list of items is to use `ListView` together with a `ListAdapter`. The `ListView` draws the currently shown items, and the `ListAdapter` provides the `ListView` with the `View` corresponding to each item.
 
-This article will concentrate on this `ListAdapter`, and talk about various patterns and good practices.
+This article will explain various `ListAdapter` patterns and good practices.
 
 ## ArrayAdapter sucks
 
 Let's say you want to display a list of `BananaPhone`, that can be updated. 
 
-Some Android tutorials advise to start with an `ArrayAdapter`, because it is supposedly easier to use. **This couldn't any less true**.
+Some Android tutorials advise extending an `ArrayAdapter`, because it is supposedly easier to use. **This couldn't any less true**.
+
+`ArrayAdapter` has many limitations, which limit it's use in real world apps (i.e. not 'Hello World').
 
 An `ArrayAdapter`:
-
 * Can only display text
 * Forces you to provide a list of `CharSequence` items or to rely on the `toString()` method of the given items
-* Requires that you provide a layout resource that containts only a `TextView`, or to provide a `textViewResourceId` that corresponds to the `TextView` id in the layout hierarchy
-* Use a lock to enable updates from background threads. This lock cannot be acquired to implement external atomic operations
+* Requires that you provide a layout resource that contains only a `TextView`, or that you provide a `textViewResourceId` that corresponds to the `TextView` id in the layout hierarchy
+* Uses a lock to enable updates from background threads. This lock cannot be acquired to implement external atomic operations
 
-According to the javadoc:
+According to the Javadoc:
 
 > To use something other than TextViews for the array display, for instance, ImageViews, or to have some of data besides toString() results fill the views, override getView(int,android.view.View,android.view.ViewGroup) to return the type of view you want.
 
 <div class="alert alert-error"><h4>Don't do this!</h4></div>
 
-If you [read the source](http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.1.1_r1/android/widget/ArrayAdapter.java), you'll realize that the `ArrayAdapter` is designed to deal with a lot of use cases which you do not care about.
+If you [read the source](http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.1.1_r1/android/widget/ArrayAdapter.java), you'll realize that `ArrayAdapter` is designed to deal with a lot of use cases which you probably do not care about.
 
 ## BaseAdapter rocks
 
-It's actually a lot simpler to implement your own `BaseAdapter`:
+For apps that are not just toys, It's actually a lot simpler to implement your own `BaseAdapter`:
 
 {% highlight java %}
-public class BanadaPhoneAdapter extends BaseAdapter {
+public class BananaPhoneAdapter extends BaseAdapter {
 
 	private List<BananaPhone> bananaPhones = Collections.emptyList();
 
 	private final Context context;
 
-	public BanadaPhoneAdapter(Context context) {
+	public BananaPhoneAdapter(Context context) {
 		this.context = context;
 	}
 
