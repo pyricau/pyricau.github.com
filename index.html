@@ -13,6 +13,7 @@ layout: base
 <h1>Blog entries</h1>
 
 {% for page in paginator.posts %}
+{% unless page.draft %}
 	<hr>
     <article>
       <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
@@ -27,7 +28,7 @@ layout: base
 
       <p><a class='btn btn-primary btn-large' href='{{ page.url }}'>Read the rest of this entry &rarr;</a></p>
     </article>
-
+{% endunless %}
 {% endfor %}
 
 <ul class="pager">
