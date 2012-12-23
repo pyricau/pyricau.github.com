@@ -5,8 +5,10 @@
   </li>
 {% endif %}
 {% if page.next.url %}
+{% unless page.next.draft %}
   <li class="next">
     <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} &rarr;</a>
   </li>
+{% endunless %}
 {% endif %}
 </ul>
