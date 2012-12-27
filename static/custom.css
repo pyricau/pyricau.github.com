@@ -58,6 +58,10 @@ article {
   line-height: 1.7em;
 }
 
+article li {
+  line-height: 1.7em;
+}
+
 .headline h1 {
   margin: 36px 0 27px;
   font-size: 40px;
