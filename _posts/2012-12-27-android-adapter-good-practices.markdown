@@ -255,7 +255,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 As mentioned before, although the API is available since Android 1.6, you shouldn't use it prior to Android 4.0, because the implementation wasn't a per-view `SparseArray`.
 
-`View.setTag(int, Object)` clearly wasn't designed with the **ViewHolder Pattern** in mind. The `key => tag` association was stored in a static `WeakHashMap` using the `View` object as the key. A `WeakHashMap` stores weak references to its keys. The idea was that as soon as a view wasn't referenced anywhere else then in the `WeakHashMap`, the entry could be garbage collected. However, if the value of a `WeakHashMap` entry contains a hard reference to its key (the view), it will never be garbage collected, and you'll get a **memory leak**. More on this [here](https://plus.google.com/u/0/104906570725395999813/posts/2cH1tw3bCy9).
+`View.setTag(int, Object)` clearly wasn't designed with the **ViewHolder Pattern** in mind. The `key => tag` association was stored in a static `WeakHashMap` using the `View` object as the key. A `WeakHashMap` stores weak references to its keys. The idea was that as soon as a view wasn't referenced anywhere else then in the `WeakHashMap`, the entry could be garbage collected. However, if the value of a `WeakHashMap` entry contains a hard reference to its key (the view), it will never be garbage collected, and you'll get a **memory leak**. More on this [here](https://plus.google.com/u/0/104906570725395999813/posts/2cH1tw3bCy9), also see the [issue](http://code.google.com/p/android/issues/detail?id=18273).
 
 # Custom item ViewGroup
 
@@ -292,6 +292,55 @@ If you haven't already, take at look at [Android Performance Case Study](http://
 Adapters in Android are frightening at first, but when you get to know them, they are actually quite friendly beasts. The best way to get there is to read the Android source, as well as other apps source, such as [GitHub Android](https://github.com/github/android), [White House for Android](https://github.com/WhiteHouse/wh-app-android), or [ioshed](http://code.google.com/p/iosched/).
 
 > Many thanks to [Frank Harper](http://twitter.com/franklinharper), [Eric Bottard](http://twitter.com/ebottard) and [Joan Zapata](http://twitter.com/JoanZap) for reviewing this article.
+
+## Update
+
+Benoît Lubek suggested another solution on [Google+](http://plus.google.com/107264729678111825621/posts/aykMojDjYxU).
+
+The idea is to reproduce the `View.setTag(int, Object)` ICS+ behavior as an external API, relying on `View.setTag(Object)`:
+
+{% highlight java %}
+public class ViewHolder {
+    // I added a generic return type to reduce the casting noise in client code
+	@SuppressWarnings("unchecked")
+	public static <T extends View> T get(View view, int id) {
+		SparseArray<View> viewHolder = (SparseArray<View>) view.getTag();
+		if (viewHolder == null) {
+			viewHolder = new SparseArray<View>();
+			view.setTag(viewHolder);
+		}
+		View childView = viewHolder.get(id);
+		if (childView == null) {
+			childView = view.findViewById(id);
+			viewHolder.put(id, childView);
+		}
+		return (T) childView;
+	}
+}
+{% endhighlight %}
+
+This solution is elegant, and the code looks even simpler:
+
+{% highlight java %}
+@Override
+public View getView(int position, View convertView, ViewGroup parent) {
+
+	if (convertView == null) {
+		convertView = View.inflate(context, R.layout.banana_phone, null);
+	}
+
+	ImageView bananaView = ViewHolder.get(convertView, R.id.banana);
+	TextView phoneView = ViewHolder.get(convertView, R.id.phone);
+
+	BananaPhone bananaPhone = getItem(position);
+	phoneView.setText(bananaPhone.getPhone());
+	bananaView.setImageResource(bananaPhone.getBanana());
+
+	return convertView;
+}
+{% endhighlight %}
+
+I really like this approach!
 
 {% include comments.html %}
 
