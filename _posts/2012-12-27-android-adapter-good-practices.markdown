@@ -257,7 +257,7 @@ As mentioned before, although the API is available since Android 1.6, you should
 
 `View.setTag(int, Object)` clearly wasn't designed with the **ViewHolder Pattern** in mind. The `key => tag` association was stored in a static `WeakHashMap` using the `View` object as the key. A `WeakHashMap` stores weak references to its keys. The idea was that as soon as a view wasn't referenced anywhere else then in the `WeakHashMap`, the entry could be garbage collected. However, if the value of a `WeakHashMap` entry contains a hard reference to its key (the view), it will never be garbage collected, and you'll get a **memory leak**. More on this [here](https://plus.google.com/u/0/104906570725395999813/posts/2cH1tw3bCy9), also see the [issue](http://code.google.com/p/android/issues/detail?id=18273).
 
-# Custom item ViewGroup
+## Custom item ViewGroup
 
 There is a third way that provides better decoupling. The idea is to create a custom ViewGroup, e.g. `BananaPhoneView`, for each item. `BananaPhoneView` will keep the references to it child views. `BananaPhoneView` is now responsible for updating `bananaView` and `phoneView`.
 
