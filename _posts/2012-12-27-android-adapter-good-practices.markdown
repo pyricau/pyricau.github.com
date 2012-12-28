@@ -13,7 +13,7 @@ The aim is to create only the necessary number of views to fill the screen, and 
 
 This article will explain various `ListAdapter` patterns and good practices.
 
-## ArrayAdapter sucks
+## <a id="ArrayAdapter-sucks" href="#ArrayAdapter-sucks">ArrayAdapter sucks</a>
 
 Let's say you want to display a list of `BananaPhone` that can be updated. 
 
@@ -30,13 +30,12 @@ An `ArrayAdapter`:
 
 According to the Javadoc:
 
+<span class="label label-important">Don't do this!</span>
 > To use something other than TextViews for the array display, for instance, ImageViews, or to have some of data besides toString() results fill the views, override getView(int,android.view.View,android.view.ViewGroup) to return the type of view you want.
-
-<div class="alert alert-error"><h4>Don't do this!</h4></div>
 
 If you [read the source](http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.1.1_r1/android/widget/ArrayAdapter.java), you'll realize that `ArrayAdapter` is designed to deal with a lot of use cases which you probably do not care about.
 
-## BaseAdapter rocks
+## <a id="BaseAdapter-rocks" href="#BaseAdapter-rocks">BaseAdapter rocks</a>
 
 In most apps, it's actually a lot simpler to implement your own `BaseAdapter`:
 
@@ -84,7 +83,7 @@ public class BananaPhoneAdapter extends BaseAdapter {
 }
 {% endhighlight %}
 
-## Thread safety
+## <a id="Thread-safety" href="#Thread-safety">Thread safety</a>
 
 I mentioned that the `ArrayAdapter` uses a lock to ensure thread safety. That's fine, but there is an even better way: **get rid of threading**. Make sure your adapter is used only from one thread, the Main thread.
 
@@ -112,7 +111,7 @@ public class ThreadPreconditions {
 }
 {% endhighlight %}
 
-## getView() recycling
+## <a id="getView-recycling" href="#getView-recycling">getView() recycling</a>
 
 A naive implementation of `getView()` could be:
 
@@ -154,7 +153,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 }
 {% endhighlight %}
 
-## findViewById() mi amor
+## <a id="findViewById-mi-amor" href="#findViewById-mi-amor">findViewById() mi amor</a>
 
 There is still one subtle problem with `getView()`: each time it is called, it retrieves `bananaView` and `phoneView` through `findViewById()`.
 
@@ -179,7 +178,7 @@ As you can see, `findViewById()` navigates through the whole view hierarchy unti
 
 Whether or not this is a problem is up to you. If your `ListView` scrolls fine even on crap devices, don't bother optimizing. Otherwise, start [traceview](http://developer.android.com/tools/help/traceview.html) and measure how much time is spent in `findViewById()`.
 
-## ViewHolder Pattern
+## <a id="ViewHolder-Pattern" href="#ViewHolder-Pattern">ViewHolder Pattern</a>
 
 The **ViewHolder Pattern** is a well known pattern to limit the number of calls to `findViewById()`. The idea is that you call it once, then store the child view references in a `ViewHolder` instance that will be associated with the `convertView` thanks to `View.setTag()`.
 
@@ -219,7 +218,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 }
 {% endhighlight %}
 
-## Tag with id
+## <a id="Tag-with-id" href="#Tag-with-id">Tag with id</a>
 
 Here is an alternative to the **ViewHolder Pattern** that you can start using with Android 4.0 (API level 15). **Do not use it prior to ICS** (more on this below).
 
@@ -257,7 +256,7 @@ As mentioned before, although the API is available since Android 1.6, you should
 
 `View.setTag(int, Object)` clearly wasn't designed with the **ViewHolder Pattern** in mind. The `key => tag` association was stored in a static `WeakHashMap` using the `View` object as the key. A `WeakHashMap` stores weak references to its keys. The idea was that as soon as a view wasn't referenced anywhere else then in the `WeakHashMap`, the entry could be garbage collected. However, if the value of a `WeakHashMap` entry contains a hard reference to its key (the view), it will never be garbage collected, and you'll get a **memory leak**. More on this [here](https://plus.google.com/u/0/104906570725395999813/posts/2cH1tw3bCy9), also see the [issue](http://code.google.com/p/android/issues/detail?id=18273).
 
-## Custom item ViewGroup
+## <a id="Custom-item-ViewGroup" href="#Custom-item-ViewGroup">Custom item ViewGroup</a>
 
 There is a third way that provides better decoupling. The idea is to create a custom ViewGroup, e.g. `BananaPhoneView`, for each item. `BananaPhoneView` will keep the references to it child views. `BananaPhoneView` is now responsible for updating `bananaView` and `phoneView`.
 
@@ -279,7 +278,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 }
 {% endhighlight %}
 
-## Custom item view
+## <a id="Custom-item-view" href="#Custom-item-view">Custom item view</a>
 
 Your performance measurements may tell you that you spend too much time going through the view hierarchy when measuring and drawing. You can flatten your view hierarchy by combining components, or by creating a custom view that draws the whole item manually. That's how the mail list in Gmail works.
 
@@ -287,13 +286,13 @@ Your performance measurements may tell you that you spend too much time going th
 
 If you haven't already, take at look at [Android Performance Case Study](http://www.curious-creature.org/2012/12/01/android-performance-case-study/).
 
-## Conclusion
+## <a id="Conclusion" href="#Conclusion">Conclusion</a>
 
 Adapters in Android are frightening at first, but when you get to know them, they are actually quite friendly beasts. The best way to get there is to read the Android source, as well as other apps source, such as [GitHub Android](https://github.com/github/android), [White House for Android](https://github.com/WhiteHouse/wh-app-android), or [ioshed](http://code.google.com/p/iosched/).
 
 > Many thanks to [Frank Harper](http://twitter.com/franklinharper), [Eric Bottard](http://twitter.com/ebottard) and [Joan Zapata](http://twitter.com/JoanZap) for reviewing this article.
 
-## Update
+## <a id="Update" href="#Update">Update</a>
 
 Benoît Lubek suggested another solution on [Google+](http://plus.google.com/107264729678111825621/posts/aykMojDjYxU).
 

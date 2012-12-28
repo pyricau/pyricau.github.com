@@ -2,6 +2,18 @@
 OMG I so totally suck at CSS...
 */
 
+h2 a {
+  color: #333333;
+  /* See http://stackoverflow.com/questions/9047703/fixed-position-navbar-obscures-anchors */
+  padding-top: 40px;
+  margin-top: -40px;
+  display: inline-block; /* required for webkit browsers */
+}
+
+code {
+  color: #333333
+}
+
 .container img {
   display: block;
   margin-left: auto;
