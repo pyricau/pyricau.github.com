@@ -41,7 +41,11 @@ footer {
 /* ********* MAIN ********* */
 
 .hero-unit {
-  background-color: #fff;
+  background-color: #fff; 
+}
+
+.hero-unit p {
+  font-size: 1.2em;
 }
 
 .hero-unit h1.more-space {
