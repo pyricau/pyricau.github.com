@@ -37,6 +37,14 @@ footer {
   }
 }
 
+.label, .badge {
+  line-height: 18px;
+}
+
+i {
+  position: relative;
+  top: 2px;
+}
 
 /* ********* MAIN ********* */
 
