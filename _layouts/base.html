@@ -8,6 +8,7 @@
 
 
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/static/custom.css" rel="stylesheet">
     <link href="/static/syntax.css" rel="stylesheet">
     
@@ -26,7 +27,13 @@
     <div id="menu" class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
           <a href="/" class="brand">Piwaï.info</a>
+          <div class="nav-collapse">
           <ul class="nav">
             <li class="divider-vertical"></li>
             <li {% if page.active == 'home' %} class="active" {% endif %}><a href="/index.html">Home</a></li>
@@ -36,6 +43,7 @@
             <li {% if page.active == 'contact' %} class="active" {% endif %}><a href="/contact.html">Contact</a></li>
             <li class="divider-vertical"></li>              
           </ul>
+          </div>
           <p class="navbar-text honni">Honni soit qui mal y code</p>
         </div>
       </div>
@@ -50,11 +58,9 @@
       <hr>
 
       <footer>
-        <p>&copy; 2012 Pierre-Yves Ricau<p>
+        <p>&copy; 2013 Pierre-Yves Ricau<p>
         <p>Source available <a href="https://github.com/pyricau/pyricau.github.com">on GitHub</a>.</p>
-        <p>Crafted with love (and a bit of laziness) using <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>, <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://pages.github.com/">GitHub Pages</a>.
-		<p>In case you didn't notice, you can navigate through this site using the top <a href="#menu">navigation bar</a>.</p>
-		<p>This is the bottom, there's nothing further down.</p>
+        <p>Crafted with love using <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>, <a href="http://bootswatch.com/readable/">Bootswatch Readable</a>, <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://pages.github.com/">GitHub Pages</a>.
       </footer>
 
     </div> <!-- /container -->

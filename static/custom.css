@@ -2,12 +2,64 @@
 OMG I so totally suck at CSS...
 */
 
-h2 a {
-  color: #333333;
+/* ********* GLOBAL ******** */
+
+.content {
+  margin-top: 80px;
+}
+
+body {
+  padding-bottom: 40px;
+}
+
+hr {
+  border:0;
+  background-color:#d1d1d1;
+  height:2px;
+  margin-bottom:15px;
+}
+
+.honni {
+  color: #468847;
+  font-style:italic;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 979px) {
+  .content {
+    margin-top: 0;
+  }
+  .navbar-text {
+    line-height: 26px;
+  }
+}
+
+
+/* ********* MAIN ********* */
+
+.hero-unit {
+  background-color: #fff;
+}
+
+.hero-unit h1.more-space {
+  margin-bottom: 9px;
+}
+
+/* ********* BLOG ********* */
+
+/* Titles with anchors in articles */
+article h2 a {
   /* See http://stackoverflow.com/questions/9047703/fixed-position-navbar-obscures-anchors */
-  padding-top: 40px;
-  margin-top: -40px;
+  padding-top: 60px;
+  margin-top: -60px;
   display: inline-block; /* required for webkit browsers */
+}
+
+article h1 a, article h2 a, article h1 a:hover, article h2 a:hover {
+  color: #333333;
 }
 
 code {
@@ -36,33 +88,8 @@ code {
   margin-bottom: 20px;
 }
 
-body {
-  background-image:url('/static/img/background.jpg'); 
-  padding-bottom: 40px;
-}
-
-.honni {
-  color: #C2DC15;
-  font-style:italic;
-}
-
 blockquote {
   border-left-color: white;
-}
-
-hr {
-  border:0;
-  background-color:#d1d1d1;
-  height:2px;
-  margin-bottom:15px;
-}
-
-.hero-unit {
-  background-color: #fff;
-}
-
-.content {
-  margin-top: 60px;
 }
 
 article {
@@ -74,76 +101,8 @@ article li {
   line-height: 1.7em;
 }
 
-.headline h1 {
-  margin: 36px 0 27px;
-  font-size: 40px;
-  font-weight: 300;
-  text-align: center;
-}
 
-.headline-byline {
-  margin: -18px 0 27px;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 24px;
-  color: #999;
-  text-align: center;
-}
-
-.headline p {
-  margin-right: 10px;
-}
-
-.voxe {
-  min-height: 100px;
-  padding-left:130px;
-  background: url('voxe.png') no-repeat;
-}
-
-.cvandroid {
-  min-height: 100px;
-  padding-left:130px;
-  background: url('cvandroid.png') no-repeat;
-}
-
-.androidannotations {
-  min-height: 100px;
-  padding-left:130px;
-  background: url('androidannotations.png') no-repeat;
-}
-
-.vuzzz {
-  min-height: 100px;
-  padding-left:130px;
-  background: url('vuzzz.png') no-repeat;
-}
-
-.linkedin {
-  min-height: 100px;
-  padding-left:130px;
-  background: url('linkedin.png') no-repeat;
-}
-
-.cvgwt {
-  min-height: 100px;
-  padding-left:130px;
-  background: url('cvgwt.png') no-repeat;
-}
-
-.old {
-  min-height: 100px;
-  padding-left:130px;
-  background: url('old.png') no-repeat;
-}
-
-.recent .span6 {
-  margin-bottom: 40px;
-}
-
-footer {
-  text-align: center;
-}
-
-.hero-unit h1.more-space {
-  margin-bottom: 9px;
+article blockquote p {
+  font-size: 0.9em;
+  line-height: 1.7em;
 }
