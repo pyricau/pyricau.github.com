@@ -78,6 +78,10 @@ code {
   color: #333333
 }
 
+article .highlight pre {
+  background-color: white;
+}
+
 .container img {
   display: block;
   margin-left: auto;
