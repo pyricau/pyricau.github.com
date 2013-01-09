@@ -13,7 +13,7 @@ This article reviews different ways to create dynamic translatable strings in An
 
 In Android, message strings are extracted to XML files, and the system loads the resources corresponding to the current configuration.
 
-*res/values/strings.xml*
+<span class="label label-info">res/values/strings.xml</span>
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -21,7 +21,7 @@ In Android, message strings are extracted to XML files, and the system loads the
 </resources>
 {% endhighlight %}
 
-*res/values**-fr**/strings.xml*
+<span class="label label-info">res/values-fr/strings.xml</span>
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -79,7 +79,7 @@ Resources resources = context.getResources();
 String scoreString = String.format(resources.getString(R.string.name), firstname, lastname);
 {% endhighlight %}
 
-*res/values/strings.xml*
+<span class="label label-info">res/values/strings.xml</span>
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -87,7 +87,7 @@ String scoreString = String.format(resources.getString(R.string.name), firstname
 </resources>
 {% endhighlight %}
 
-*res/values**-fr**/strings.xml*
+<span class="label label-info">res/values-fr/strings.xml</span>
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
