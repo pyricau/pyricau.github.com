@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Android String Placeholders
-filename: 2013-01-09-android-string-placeholders.markdown
+filename: 2013-01-10-android-string-placeholders.markdown
 more: 1993
-draft: true
+draft: false
 
 ---
 
