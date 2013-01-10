@@ -2,7 +2,7 @@
 layout: post
 title: Android String Placeholders
 filename: 2013-01-10-android-string-placeholders.markdown
-more: 1993
+more: 2032
 draft: false
 
 ---
