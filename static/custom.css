@@ -60,6 +60,10 @@ i {
   margin-bottom: 9px;
 }
 
+h1.entries {
+  font-size: 3.5em;
+}
+
 /* ********* BLOG ********* */
 
 /* Titles with anchors in articles */
