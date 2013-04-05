@@ -119,7 +119,8 @@ A naive implementation of `getView()` could be:
 @Override
 public View getView(int position, View convertView, ViewGroup parent) {
 
-	View rootView = LayoutInflater.from(context).inflate(R.layout.banana_phone, parent, false);
+	View rootView = LayoutInflater.from(context)
+	  .inflate(R.layout.banana_phone, parent, false);
 
 	ImageView bananaView = (ImageView) rootView.findViewById(R.id.banana);
 	TextView phoneView = (TextView) rootView.findViewById(R.id.phone);
@@ -139,7 +140,8 @@ However, `ListView` recycles the views that are not shown any more, and gives th
 public View getView(int position, View convertView, ViewGroup parent) {
 
 	if (convertView == null) {
-		convertView = LayoutInflater.from(context).inflate(R.layout.banana_phone, parent, false);
+		convertView = LayoutInflater.from(context)
+		  .inflate(R.layout.banana_phone, parent, false);
 	}
 
 	ImageView bananaView = (ImageView) convertView.findViewById(R.id.banana);
@@ -200,7 +202,8 @@ public View getView(int position, View convertView, ViewGroup parent) {
 	ImageView bananaView;
 	TextView phoneView;
 	if (convertView == null) {
-		convertView = LayoutInflater.from(context).inflate(R.layout.banana_phone, parent, false);
+		convertView = LayoutInflater.from(context)
+		  .inflate(R.layout.banana_phone, parent, false);
 		bananaView = (ImageView) convertView.findViewById(R.id.banana);
 		phoneView = (TextView) convertView.findViewById(R.id.phone);
 		convertView.setTag(new ViewHolder(bananaView, phoneView));
@@ -234,7 +237,8 @@ public View getView(int position, View convertView, ViewGroup parent) {
 	ImageView bananaView;
 	TextView phoneView;
 	if (convertView == null) {
-		convertView = LayoutInflater.from(context).inflate(R.layout.banana_phone, parent, false);
+		convertView = LayoutInflater.from(context)
+		  .inflate(R.layout.banana_phone, parent, false);
 		bananaView = (ImageView) convertView.findViewById(R.id.banana);
 		phoneView = (TextView) convertView.findViewById(R.id.phone);
 		convertView.setTag(R.id.banana, bananaView);
@@ -265,7 +269,8 @@ There is a third way that provides better decoupling. The idea is to create a cu
 public View getView(int position, View convertView, ViewGroup parent) {
 	BananaPhoneView bananaPhoneView;
 	if (convertView == null) {
-		bananaPhoneView = (BananaPhoneView) LayoutInflater.from(context).inflate(R.layout.banana_phone, parent, false);
+		bananaPhoneView = (BananaPhoneView) LayoutInflater.from(context)
+		  .inflate(R.layout.banana_phone, parent, false);
 	} else {
 		bananaPhoneView = (BananaPhoneView) convertView;
 	}
@@ -325,7 +330,8 @@ This solution is elegant, and the code looks even simpler:
 public View getView(int position, View convertView, ViewGroup parent) {
 
 	if (convertView == null) {
-		convertView =LayoutInflater.from(context).inflate(R.layout.banana_phone, parent, false);
+		convertView = LayoutInflater.from(context)
+		  .inflate(R.layout.banana_phone, parent, false);
 	}
 
 	ImageView bananaView = ViewHolder.get(convertView, R.id.banana);
