@@ -4,6 +4,7 @@ title: Android String Placeholders
 filename: 2013-01-10-android-string-placeholders.markdown
 more: 2032
 draft: false
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 

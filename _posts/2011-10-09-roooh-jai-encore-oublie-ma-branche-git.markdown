@@ -5,6 +5,7 @@ title: Roooh, j'ai encore oublié ma branche Git !
 permalink: /2011/10/09/roooh-jai-encore-oublie-ma-branche-git/
 filename: 2011-10-09-roooh-jai-encore-oublie-ma-branche-git.markdown
 more: 560
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 ## Introduction

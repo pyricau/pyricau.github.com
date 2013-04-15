@@ -5,6 +5,7 @@ title: Coloration Syntaxique en GWT
 permalink: /2011/09/05/coloration-syntaxique-en-gwt/
 filename: 2011-09-05-coloration-syntaxique-en-gwt.markdown
 more: 528
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 

@@ -4,6 +4,7 @@ title: Android Adapter Good Practices
 filename: 2012-12-27-android-adapter-good-practices.markdown
 more: 547
 draft: false
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 

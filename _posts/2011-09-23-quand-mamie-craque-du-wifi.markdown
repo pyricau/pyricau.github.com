@@ -5,6 +5,7 @@ title: Quand mamie craque du Wifi
 permalink: /2011/09/23/quand-mamie-craque-du-wifi/
 filename: 2011-09-23-quand-mamie-craque-du-wifi.markdown
 more: 1050
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 Imaginons que vous ayez besoin de **craquer** le mot de passe de votre propre réseau Wifi, protégé par une **clé WEP**. Je parle bien de _votre propre réseau Wifi_, car je suis sûr qu'il ne vous viendrait jamais à l'idée de craquer l'accès de votre voisin, sachant que c'est totalement **illégal**. 

@@ -5,6 +5,7 @@ title: when(piwaï.quit(excilys)).thenReturn(new Blog());
 permalink: /2011/08/31/whenpiwai-quitexcilys-thenreturnnew-blog/
 filename: 2011-08-31-whenpiwai-quitexcilys-thenreturnnew-blog.markdown
 more: 166
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 Après deux ans et demi de prestation de service et de fun au sein d'[Excilys](http://www.excilys.com/), je m’envole pour de nouvelles aventures !

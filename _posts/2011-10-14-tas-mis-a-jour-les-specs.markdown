@@ -5,6 +5,7 @@ title: T'as mis à jour les specs ?
 permalink: /2011/10/14/tas-mis-a-jour-les-specs/
 filename: 2011-10-14-tas-mis-a-jour-les-specs.markdown
 more: 954
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 

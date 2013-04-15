@@ -3,6 +3,7 @@ layout: post
 title: Blog meets Monster Octocat
 filename: 2012-12-19-blog-meets-monster-octocat.markdown
 more: 121
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 I initially created this blog on Wordpress.com, mostly because I didn't want to invest any time in maintaining it.

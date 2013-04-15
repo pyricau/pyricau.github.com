@@ -3,6 +3,7 @@ layout: post
 title: Happy Birthday AndroidAnnotations!
 filename: 2012-12-22-happy-birthday-androidannotations.markdown
 more: 429
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 

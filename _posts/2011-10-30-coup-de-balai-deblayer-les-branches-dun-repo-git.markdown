@@ -5,6 +5,7 @@ title: 'Coup de balai : déblayer les branches d''un repo Git'
 permalink: /2011/10/30/coup-de-balai-deblayer-les-branches-dun-repo-git/
 filename: 2011-10-30-coup-de-balai-deblayer-les-branches-dun-repo-git.markdown
 more: 1117
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: Renaming the Android Manifest package
 filename: 2012-12-20-renaming-android-manifest-package.markdown
 more: 292
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 

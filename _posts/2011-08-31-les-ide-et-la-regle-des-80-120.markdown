@@ -5,6 +5,7 @@ title: 'Les IDE, et la règle des 80 / 120 '
 permalink: /2011/08/31/les-ide-et-la-regle-des-80-120/
 filename: 2011-08-31-les-ide-et-la-regle-des-80-120.markdown
 more: 786
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 

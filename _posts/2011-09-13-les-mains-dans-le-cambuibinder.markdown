@@ -5,6 +5,7 @@ title: Les mains dans le cambUiBinder
 permalink: /2011/09/13/les-mains-dans-le-cambuibinder/
 filename: 2011-09-13-les-mains-dans-le-cambuibinder.markdown
 more: 733
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 L'article précédent montrait comment faire de la [coloration syntaxique en GWT](http://blog.piwai.info/2011/09/05/coloration-syntaxique-en-gwt/).

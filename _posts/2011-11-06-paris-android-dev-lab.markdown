@@ -5,6 +5,7 @@ title: Paris Android Dev Lab
 permalink: /2011/11/06/paris-android-dev-lab/
 filename: 2011-11-06-paris-android-dev-lab.markdown
 more: 534
+# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
 
