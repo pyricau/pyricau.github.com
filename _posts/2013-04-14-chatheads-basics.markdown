@@ -6,6 +6,9 @@ more: 360
 draft: false
 
 ---
+<!--
+TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
+-->
 
 Facebook recently released a new feature in Facebook Messenger: [Chatheads](http://www.engadget.com/2013/04/12/facebook-messenger-updated/).
 
