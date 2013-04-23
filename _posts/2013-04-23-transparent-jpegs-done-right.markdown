@@ -60,12 +60,20 @@ First, we load the bitmap:
 {% highlight java %}
 BitmapFactory.Options options = new BitmapFactory.Options();
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-  // Starting with honeycomb, loaded bitmaps are immutable by default.
-  // The inMutable option was added to change the default.
+  // Starting with Honeycomb, we can load the bitmap as mutable.
   options.inMutable = true;
 }
+// We could also use ARGB_4444, but not RGB_565 (we need an alpha layer).
+options.inPreferredConfig = Bitmap.Config.ARGB_8888;
 Resources res = getResources();
-Bitmap bitmap = BitmapFactory.decodeResource(res, R.drawable.golden_gate, options);
+Bitmap source = BitmapFactory.decodeResource(res, R.drawable.golden_gate, options);
+Bitmap bitmap;
+if (source.isMutable()) {
+  bitmap = source;
+} else {
+  bitmap = source.copy(Bitmap.Config.ARGB_8888, true);
+  source.recycle();
+}
 // The bitmap is opaque, we need to enable alpha compositing.
 bitmap.setHasAlpha(true);
 {% endhighlight %}
@@ -94,22 +102,28 @@ There you go, Troll Face Golden Gate!
 
 Here is a helper method to do this all at once:
 {% highlight java %}
-public static Bitmap getMaskedBitmap(Resources res, int bitmapResId, int maskResId) {
-	BitmapFactory.Options options = new BitmapFactory.Options();
-	if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-	  // Starting with honeycomb, loaded bitmaps are immutable by default.
-	  // The inMutable option was added to change the default.
-	  options.inMutable = true;
-	}
-	Bitmap bitmap = BitmapFactory.decodeResource(res, bitmapResId, options);
-	bitmap.setHasAlpha(true);
-	Canvas canvas = new Canvas(bitmap);
-	Bitmap mask = BitmapFactory.decodeResource(res, maskResId);
-	Paint paint = new Paint();
-	paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
-	canvas.drawBitmap(mask, 0, 0, paint);
-	mask.recycle();
-	return bitmap;
+public static Bitmap getMaskedBitmap(Resources res, int sourceResId, int maskResId) {
+  BitmapFactory.Options options = new BitmapFactory.Options();
+  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+    options.inMutable = true;
+  }
+  options.inPreferredConfig = Bitmap.Config.ARGB_8888;
+  Bitmap source = BitmapFactory.decodeResource(res, sourceResId, options);
+  Bitmap bitmap;
+  if (source.isMutable()) {
+    bitmap = source;
+  } else {
+    bitmap = source.copy(Bitmap.Config.ARGB_8888, true);
+    source.recycle();
+  }
+  bitmap.setHasAlpha(true);
+  Canvas canvas = new Canvas(bitmap);
+  Bitmap mask = BitmapFactory.decodeResource(res, maskResId);
+  Paint paint = new Paint();
+  paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
+  canvas.drawBitmap(mask, 0, 0, paint);
+  mask.recycle();
+  return bitmap;
 }
 {% endhighlight %}
 
