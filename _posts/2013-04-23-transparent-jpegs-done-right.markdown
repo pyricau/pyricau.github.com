@@ -137,3 +137,6 @@ To comment, copy and paste the following block
 Comment
 
 -->
+
+## [DreamingInDroids](http://www.google.com)
+Brilliant! Thanks for the pictures demonstrating the different Porter-Duff modes! I had been wondering about them for a long time!
