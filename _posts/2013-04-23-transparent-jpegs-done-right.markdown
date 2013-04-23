@@ -2,12 +2,12 @@
 layout: post
 title: Transparency with JPEGs done right
 filename: 2013-04-23-transparent-jpegs-done-right.markdown
-more: 694
+more: 695
 draft: false
 # TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
 
 ---
-A few month ago, Square published a great article on [Transparency with JPEGs](http://corner.squareup.com/2013/01/transparent-jpegs.html) on Android. It's definitely worth reading! Just don't use the provided code yet :) .
+A few months ago, Square published a great article on [Transparency with JPEGs](http://corner.squareup.com/2013/01/transparent-jpegs.html) on Android. It's definitely worth reading! Just don't use the provided code yet :) .
 
 Romain Guy suggested in the comments that you can do this in a much more efficient and simpler way, either by [using a BitmapShader](http://www.curious-creature.org/2012/12/13/android-recipe-2-fun-with-shaders/) or by playing with Porter-Duff blending modes.
 
