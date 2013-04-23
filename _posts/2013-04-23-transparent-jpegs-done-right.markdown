@@ -92,6 +92,27 @@ trollFace.setImageBitmap(bitmap);
 There you go, Troll Face Golden Gate!
 ![Troll Face](/static/blog_img/troll_face_screenshot.png)
 
+Here is a helper method to do this all at once:
+{% highlight java %}
+public static Bitmap getMaskedBitmap(Resources res, int bitmapResId, int maskResId) {
+	BitmapFactory.Options options = new BitmapFactory.Options();
+	if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+	  // Starting with honeycomb, loaded bitmaps are immutable by default.
+	  // The inMutable option was added to change the default.
+	  options.inMutable = true;
+	}
+	Bitmap bitmap = BitmapFactory.decodeResource(res, bitmapResId, options);
+	bitmap.setHasAlpha(true);
+	Canvas canvas = new Canvas(bitmap);
+	Bitmap mask = BitmapFactory.decodeResource(res, maskResId);
+	Paint paint = new Paint();
+	paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
+	canvas.drawBitmap(mask, 0, 0, paint);
+	mask.recycle();
+	return bitmap;
+}
+{% endhighlight %}
+
 {% include comments.html %}
 
 <!--
