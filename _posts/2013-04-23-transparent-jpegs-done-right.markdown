@@ -129,7 +129,7 @@ public static Bitmap getMaskedBitmap(Resources res, int sourceResId, int maskRes
 
 ## <a id="Update" href="#Update">Update</a>
 
-If you want to understand Porter-Duff blending modes in details, you should read great article: [Porter/Duff Compositing and Blend Modes](http://ssp.impulsetrain.com/2013/03/17/porterduff-compositing-and-blend-modes/) (special thanks to [Cyril Mottier](http://cyrilmottier.com/) for the link).
+If you want to understand Porter-Duff blending modes in details, you should this read great article: [Porter/Duff Compositing and Blend Modes](http://ssp.impulsetrain.com/2013/03/17/porterduff-compositing-and-blend-modes/) (special thanks to [Cyril Mottier](http://cyrilmottier.com/) for the link).
 
 {% include comments.html %}
 
