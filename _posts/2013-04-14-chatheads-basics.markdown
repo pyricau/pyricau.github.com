@@ -162,6 +162,9 @@ Please take care of your user pixels.
 
 {% include comments.html %}
 
+## hidden-markov
+Does this imply that Facebook Chatheads (or any application with SYSTEM_ALERT_WINDOW permission) is able to conduct keylogging and take screenshots at arbitrary time?
+
 <!--
 
 To comment, copy and paste the following block
