@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Square Cash - you own me money!
+title: Square Cash - you owe me money!
 filename: 2013-10-17-square-cash-mailto.markdown
 more: 607
 draft: false
@@ -16,7 +16,7 @@ That's it, you don't need to install any new app, go through a painful signup pr
 
 It's **free**, **simple**, [secure](https://squareup.com/help/en-us/article/5144-square-cash-security).
 
-Here is a trick I'd like to share with you: you can make it even simpler for friends who own you money by sending them a **mailto** link. Then, they just need to click on the link to open their favorite email app and send that worthy email.
+Here is a trick I'd like to share with you: you can make it even simpler for friends who owe you money by sending them a **mailto** link. Then, they just need to click on the link to open their favorite email app and send that worthy email.
 
 {% highlight html %}
 <a href="mailto:your@email.com?subject=$1&amp;cc=cash@square.com">Send me money!</a>
