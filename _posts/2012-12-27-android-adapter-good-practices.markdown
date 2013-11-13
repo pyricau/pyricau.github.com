@@ -280,7 +280,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 	bananaPhoneView.update(bananaPhone);
 
-	return bananaPhoneView; //make sure to return your typed view to facilitate view recycling
+	return bananaPhoneView;
 }
 {% endhighlight %}
 
