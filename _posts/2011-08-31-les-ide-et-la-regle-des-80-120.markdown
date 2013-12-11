@@ -200,3 +200,6 @@ J'ai déjà galéré sur des méthodes dont le bug se voyait quand on scrollait 
 
 C'est pq dans Eclipse je laisse une line width de 120 à peu près.  
 L'écran est une feuille.
+
+## [Francois Marot](https://twitter.com/FrancoisMarot)
+Entierement d'accord avec ce post. Pour moi le formatteur est un mal nécessaire (pour uniformiser tout ce qui est tabulation, espacement, supprimer d'éventuels saut de lignes multiple, et surtout faciliter les diff/merges) mais il doit en faire le strict minimum. Le développeur doit rester au manette, et si ponctuellement on veut pouvoir faire un ligne longue (pour mettre un commentaire sur un truc touchy par exemple), on doit pouvoir le faire. Tant que ca reste de facon exceptionnelle et justifiée. Donc des formatteurs de code, oui, mais de facon minimum.
