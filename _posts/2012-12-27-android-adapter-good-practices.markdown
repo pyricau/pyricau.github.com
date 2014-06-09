@@ -361,3 +361,6 @@ Comment
 ## [hub]()
 You explain a difficult thing in a simple way.
 Thank you very much.
+
+## [James]()
+Clear illustration of the choice of different adapters, very practical and very useful! Thanks!
