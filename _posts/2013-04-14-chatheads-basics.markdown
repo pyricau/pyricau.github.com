@@ -165,6 +165,14 @@ Please take care of your user pixels.
 ## hidden-markov
 Does this imply that Facebook Chatheads (or any application with SYSTEM_ALERT_WINDOW permission) is able to conduct keylogging and take screenshots at arbitrary time?
 
+
+## kvgr
+Great tutorial!
+Is there a way to display image only in launcher? When some activity is started, the icon should disapear.
+I thing there may be two ways:
+1. parameter for WindowManager
+2. detecting running app
+But I wasnt lucky to find the solution...
 <!--
 
 To comment, copy and paste the following block
