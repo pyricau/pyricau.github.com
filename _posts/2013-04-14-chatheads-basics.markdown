@@ -173,6 +173,10 @@ I thing there may be two ways:
 1. parameter for WindowManager
 2. detecting running app
 But I wasnt lucky to find the solution...
+
+## pickledolives
+Your tutorial is missing the point, that you need to register your service in the Android manifest file under the application tab.
+
 <!--
 
 To comment, copy and paste the following block
