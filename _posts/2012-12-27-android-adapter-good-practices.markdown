@@ -364,3 +364,6 @@ Thank you very much.
 
 ## [James]()
 Clear illustration of the choice of different adapters, very practical and very useful! Thanks!
+
+## [Xiao]()
+I was looking for a way to replace the the entire list of items inside an ArrayAdapter without calling clear()/addAll() which generates garbage. This looks like a good solution (referring to the updateBananas() function).
