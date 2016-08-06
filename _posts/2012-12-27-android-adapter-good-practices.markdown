@@ -373,3 +373,7 @@ I have done a lot of research, written different adapters, duct taped and glued 
 
 ## [robertoallende](robertoallende.com)
 Great article, you've saved my day. Thank you very much!
+
+## [Mário Valney](mariovalney.com)
+I really loved your article. Great explanation!
+I confess I started with another approach, but when I read your article I just changed everything because it's much more elegant!
