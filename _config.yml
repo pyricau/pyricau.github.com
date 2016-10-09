@@ -6,7 +6,7 @@ server: false
 permalink: /:title
 pygments: true
 lsi: false
-markdown: rdiscount
+markdown: kramdown
 
 paginate_files: blog.html
 
