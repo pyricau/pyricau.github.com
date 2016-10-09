@@ -8,7 +8,7 @@ highlighter: rouge
 lsi: false
 markdown: kramdown
 
-paginate_files: blog_entries.html
+paginate_files: blog.html
 
 paginate: 10
 exclude: ["blog.rb", "Capfile", "config", "log", "Rakefile", "tmp", "wip", "reveal.js/index.html", "reveal.js/README.js"]
