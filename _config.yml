@@ -23,3 +23,5 @@ description: "Piwaï website and blog"
 author: "Pierre-Yves Ricau"
 email: "py.ricau@gmail.com"
 rss_feed: "http://feeds.feedburner.com/Piwai"
+gems:
+  - jemoji

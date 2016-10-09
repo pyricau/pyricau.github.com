@@ -32,14 +32,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a href="/" class="brand">Piwaï.info</a>
+          <a href="/" class="brand">Py :crossed_swords:</a>
           <div class="nav-collapse">
           <ul class="nav">
             <li class="divider-vertical"></li>
             <li {% if page.active == 'home' %} class="active" {% endif %}><a href="/index.html">Home</a></li>
             <li class="divider-vertical"></li>
             <li {% if page.active == 'cv' %} class="active" {% endif %}><a href="/cv.html">CV</a></li>
-            <li class="divider-vertical"></li>              
+            <li class="divider-vertical"></li>
+            <li {% if page.active == 'blog_list' %} class="active" {% endif %}><a href="/blog.html">Blog</a></li>
+            <li class="divider-vertical"></li>            
             <li {% if page.active == 'contact' %} class="active" {% endif %}><a href="/contact.html">Contact</a></li>
             <li class="divider-vertical"></li>              
           </ul>
@@ -58,7 +60,7 @@
       <hr>
 
       <footer>
-        <p>&copy; 2013 Pierre-Yves Ricau<p>
+        <p>&copy; 2016 Pierre-Yves Ricau<p>
         <p>Source available <a href="https://github.com/pyricau/pyricau.github.com">on GitHub</a>.</p>
         <p>Crafted with love using <a href="http://twitter.github.com/bootstrap">Bootstrap</a>, <a href="http://bootswatch.com/readable/">Bootswatch</a>, <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://pages.github.com/">GitHub Pages</a>.
       </footer>
