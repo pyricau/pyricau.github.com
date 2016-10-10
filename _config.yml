@@ -1,14 +1,12 @@
 #
 # Jekyll configuration
 #
-auto: false
-server: false
 permalink: /:title
 highlighter: rouge
 lsi: false
 markdown: kramdown
 
-paginate_files: blog.html
+paginate_path: blog/page:num
 
 paginate: 10
 exclude: ["blog.rb", "Capfile", "config", "log", "Rakefile", "tmp", "wip", "reveal.js/index.html", "reveal.js/README.js"]

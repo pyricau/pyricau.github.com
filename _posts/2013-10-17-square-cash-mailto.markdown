@@ -29,8 +29,6 @@ I think that's a pretty cool way to collect money from your friends :) .
 
 Side note: as of now, Square Cash only works in the US.
 
-:crossed_swords:
-
 {% include comments.html %}
 
 <!--
