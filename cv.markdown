@@ -86,7 +86,7 @@ layout: base
 
 ### Podcasts
 
-* {% include home.html text="Android Leaks" %} [Not released yet](https://androidleakspodcast.com/)
+* {% include home.html text="Android Leaks" %} [On a un poireau, appelez le plombier !](http://androidleakspodcast.com/2016/10/16/episode-7-on-a-un-poireau-appelez-le-plombier/)
 * {% include home.html text="Fragmented" %} [Google IO 2016](http://fragmentedpodcast.com/episodes/43/)
 * {% include home.html text="Android Developers Backstage" %} [Episode 32: Leak Canary](http://androidbackstage.blogspot.com/2015/07/episode-32-leak-canary.html)
 
