@@ -32,7 +32,7 @@ layout: base
 * {% include home.html text="@Scale, San Diego" %} [All apps shall crash. Deal with it.](https://atscaleconference.com/videos/all-apps-shall-crash-deal-with-it/)
 * {% include home.html text="Devoxx France" %} [Bouchez vos fuites mémoires avec LeakCanary!](https://www.youtube.com/watch?v=rzpPtRcuMZg) & [Sharper Better Faster Dagger ‡](https://www.youtube.com/watch?v=dfyEzLFS-uA)
 * {% include home.html text="Mix-IT, Lyon" %} [Crash Fast & Furious](https://www.infoq.com/fr/presentations/mix-it-pierre-yves-ricau-crash-fast-and-furious)
-* {% include home.html text="Realm Meetup, SF" %} DIY: Build Your Own Dependency Injection Library
+* {% include home.html text="Realm Meetup, SF" %} [DIY: Build Your Own Dependency Injection Library](https://realm.io/news/android-pierre-yves-ricau-build-own-dependency-injection/)
 * {% include home.html text="Droidcon SF" %} [Sharper Better Faster Dagger ‡](https://www.youtube.com/watch?v=7mVRZqsozPw)
 * {% include home.html text="Square Presents" %} [Moderator, panel discussion on the Journey of Android Engineers](https://www.youtube.com/watch?v=Ab8H-HfhSmM)
 
