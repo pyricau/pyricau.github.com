@@ -25,6 +25,8 @@ layout: base
 
 #### 2016
 
+
+* {% include home.html text="DevFest Nantes" %} [LeakCanary, et ensuite ? Détricotage de fuites mémoire Android](https://www.youtube.com/watch?v=nSSidt0GKeE) & [Tech talks: Uploadez vos idées vers d'autres êtres humains](https://www.youtube.com/watch?v=fEs-Z0YiqZs)
 * {% include home.html text="GOTO Copenhagen" %} Nuking Nasty Memory Leaks
 * {% include home.html text="General Assembly, SF" %} [Panel on sourcing Android devs](https://generalassemb.ly/education/where-are-all-the-android-developers-insider-tips-on-sourcing-talent)
 * {% include home.html text="@Scale, San Diego" %} [All apps shall crash. Deal with it.](https://atscaleconference.com/videos/all-apps-shall-crash-deal-with-it/)
