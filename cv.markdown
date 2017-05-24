@@ -23,8 +23,12 @@ layout: base
 
 ### Tech talks & Panels
 
-#### 2016
+#### 2017
 
+* {% include home.html text="Devoxx US, San Diego" %} Nuking Nasty Memory Leaks
+* {% include home.html text="Snap Inc., Los Angeles" %} AARAWR! Fantastic bits and where to dex them
+
+#### 2016
 
 * {% include home.html text="DevFest Nantes" %} [LeakCanary, et ensuite ? Détricotage de fuites mémoire Android](https://www.youtube.com/watch?v=nSSidt0GKeE) & [Tech talks: Uploadez vos idées vers d'autres êtres humains](https://www.youtube.com/watch?v=fEs-Z0YiqZs)
 * {% include home.html text="GOTO Copenhagen" %} [Nuking Nasty Memory Leaks](https://www.youtube.com/watch?v=7A7Uv9ZBE2U)
@@ -76,6 +80,8 @@ layout: base
 
 ### Blog articles
 
+* {% include time.html text="March 2017" %} [Ok Google, Charge $2 for Coffee](https://medium.com/square-corner-blog/ok-google-charge-2-dollars-for-coffee-4d7fdbacd6ef)
+* {% include time.html text="November 2016" %} [No Cause for Concern — RxJava and Retrofit Throwing a Tantrum](https://medium.com/square-corner-blog/no-cause-for-concern-rxjava-and-retrofit-throwing-a-tantrum-96c9e4ba8a6c)
 * {% include time.html text="September 2016" %} [Android leak pattern: subscriptions in views](https://medium.com/square-corner-blog/android-leak-pattern-subscriptions-in-views-18f0860aa74c)
 * {% include time.html text="May 2016" %} [Introducing Square’s Register API for Android](https://medium.com/square-corner-blog/introducing-squares-register-api-for-android-85e4cee5aa3d)
 * {% include time.html text="December 2015" %} [Welcome to the (Color) Matrix](https://medium.com/square-corner-blog/welcome-to-the-color-matrix-64d112e3f43d)
