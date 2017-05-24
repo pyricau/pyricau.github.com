@@ -25,7 +25,7 @@ layout: base
 
 #### 2017
 
-* {% include home.html text="Devoxx US, San Diego" %} Nuking Nasty Memory Leaks
+* {% include home.html text="Devoxx US, San Diego" %} [Nuking Nasty Memory Leaks](https://www.youtube.com/watch?v=fhE--eTEW84)
 * {% include home.html text="Snap Inc., Los Angeles" %} AARAWR! Fantastic bits and where to dex them
 
 #### 2016
