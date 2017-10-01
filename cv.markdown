@@ -25,6 +25,9 @@ layout: base
 
 #### 2017
 
+* {% include home.html text="Droidcon NYC" %} [Tech Talks for Humans](https://droidcon-server.herokuapp.com/showSession/103044)
+* {% include home.html text="Gradle Summit 2017" %} [AARAWR! Fantastic bits and where to dex them](https://www.youtube.com/watch?v=semnhz5EYGU)
+* {% include home.html text="SF Android Meetup" %} AARAWR! Fantastic bits and where to dex them
 * {% include home.html text="Devoxx US, San Diego" %} [Nuking Nasty Memory Leaks](https://www.youtube.com/watch?v=fhE--eTEW84)
 * {% include home.html text="Snap Inc., Los Angeles" %} AARAWR! Fantastic bits and where to dex them
 
@@ -94,6 +97,7 @@ layout: base
 
 ### Podcasts
 
+* {% include home.html text="Fragmented" %} [088: Offensive programming with Piwai from Square](http://fragmentedpodcast.com/episodes/88/)
 * {% include home.html text="Android Leaks" %} [On a un poireau, appelez le plombier !](http://androidleakspodcast.com/2016/10/16/episode-7-on-a-un-poireau-appelez-le-plombier/)
 * {% include home.html text="Fragmented" %} [Google IO 2016](http://fragmentedpodcast.com/episodes/43/)
 * {% include home.html text="Android Developers Backstage" %} [Episode 32: Leak Canary](http://androidbackstage.blogspot.com/2015/07/episode-32-leak-canary.html)
