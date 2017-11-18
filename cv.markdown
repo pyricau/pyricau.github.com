@@ -21,7 +21,7 @@ layout: base
 
 ## Teaching & Sharing
 
-### Tech talks & Panels
+### Public speaking
 
 #### 2017
 * {% include home.html text="Droidcon SF" %} [Despaghettifying the hairball](https://droidcon-server.herokuapp.com/showSession/111605)
