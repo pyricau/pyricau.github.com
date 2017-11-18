@@ -154,7 +154,7 @@ At Siine, we created a fun and easy to use Android Keyboard. Our goal was to imp
 
 I rebuilt the whole app on top of the AOSP keyboard so that we could focus our efforts on building new UX, cleaned up our build process, added feature toggles, CI, and automatic releases.
 
-During my time at Siine, I released the https://play.google.com/store/apps/details?id=com.siine.ime(Siine Keyboard), [RefereePro](http://thenextweb.com/insider/2012/11/15/football-comes-into-the-digital-age-as-the-first-professional-referee-swaps-penpaper-for-a-smartphone/) to empower soccer referees, and [PhOCD](https://play.google.com/store/apps/details?id=com.siine.phocd), a one day hackaton experiment.
+During my time at Siine, I released the [Siine Keyboard](https://play.google.com/store/apps/details?id=com.siine.ime), [RefereePro](http://thenextweb.com/insider/2012/11/15/football-comes-into-the-digital-age-as-the-first-professional-referee-swaps-penpaper-for-a-smartphone/) to empower soccer referees, and [PhOCD](https://play.google.com/store/apps/details?id=com.siine.phocd), a one day hackaton experiment.
 
 ### Software Engineer - bfinance
 
