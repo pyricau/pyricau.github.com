@@ -259,7 +259,7 @@ VuzZz was created during the Android DevCamp Paris 2012, a 3 day hackaton with 1
 {% include time.html text="September 2011 - September 2012" %}
 {% include location.html text="Paris" %}
 
-Voxe.org is a neutral open platform to compare political programs. I joined this non-profit organization on my free time to create the Android app.
+Voxe.org is a neutral open platform to compare political programs. I joined this non-profit organization on my free time to create the [Android app](https://github.com/voxe/voxe-android).
 
 ### 2H4U
 
