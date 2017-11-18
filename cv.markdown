@@ -96,6 +96,17 @@ layout: base
 * {% include time.html text="October 2014" %} [Advocating Against Android Fragments](https://medium.com/square-corner-blog/advocating-against-android-fragments-81fd0b462c97)
 * {% include time.html text="December 2013" %} [A journey on the Android Main Thread — Lifecycle bits](https://medium.com/square-corner-blog/a-journey-on-the-android-main-thread-lifecycle-bits-d916bc1ee6b2)
 * {% include time.html text="October 2013" %} [A journey on the Android Main Thread — PSVM](https://medium.com/square-corner-blog/a-journey-on-the-android-main-thread-psvm-55b2238ace2b)
+* {% include time.html text="October 2013" %} [Square Cash - you owe me money!](http://www.piwai.info/square-cash-mailto)
+* {% include time.html text="April 2013" %} [Transparency with JPEGs done right](http://www.piwai.info/transparent-jpegs-done-right)
+* {% include time.html text="April 2013" %} [Chathead Basics](http://www.piwai.info/chatheads-basics)
+* {% include time.html text="January 2013" %} [Android String Placeholders](http://www.piwai.info/android-string-placeholders)
+* {% include time.html text="December 2012" %} [Android Adapter Good Practices](http://www.piwai.info/android-adapter-good-practices)
+* {% include time.html text="December 2012" %} [Happy Birthday AndroidAnnotations!](http://www.piwai.info/happy-birthday-androidannotations)
+* {% include time.html text="December 2012" %} [Renaming the Android Manifest package](http://www.piwai.info/renaming-android-manifest-package)
+* {% include time.html text="November 2011" %} [Paris Android Dev Lab](http://www.piwai.info/2011/11/06/paris-android-dev-lab/)
+* {% include time.html text="Octobre 2011" %} [Coup de balai : déblayer les branches d'un repo Git](http://www.piwai.info/2011/10/30/coup-de-balai-deblayer-les-branches-dun-repo-git/)
+* {% include time.html text="March 2011" %} [GWT : Big Fat deRPC](http://blog.excilys.com/2011/03/13/gwt-big-fat-derpc/)
+* {% include time.html text="Mai 2010" %} [CAS et Grails, sans sarCASmes !](http://blog.excilys.com/2010/05/06/cas-et-grails-sans-sarcasmes/)
 
 ### Podcasts
 
