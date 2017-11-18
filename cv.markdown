@@ -24,8 +24,9 @@ layout: base
 ### Tech talks & Panels
 
 #### 2017
-
-* {% include home.html text="Droidcon NYC" %} [Tech Talks for Humans](https://droidcon-server.herokuapp.com/showSession/103044)
+* {% include home.html text="Droidcon SF" %} [Despaghettifying the hairball](https://droidcon-server.herokuapp.com/showSession/111605)
+* {% include home.html text="Droidcon SF" %} [Codelab: Make a Cash Flow-Positive Photo Booth!](https://droidcon-server.herokuapp.com/showSession/112056)
+* {% include home.html text="Droidcon NYC" %} [Tech Talks for Humans](https://www.youtube.com/watch?v=d5HYGu_UBNo)
 * {% include home.html text="Gradle Summit 2017" %} [AARAWR! Fantastic bits and where to dex them](https://www.youtube.com/watch?v=semnhz5EYGU)
 * {% include home.html text="SF Android Meetup" %} AARAWR! Fantastic bits and where to dex them
 * {% include home.html text="Devoxx US, San Diego" %} [Nuking Nasty Memory Leaks](https://www.youtube.com/watch?v=fhE--eTEW84)
@@ -83,6 +84,7 @@ layout: base
 
 ### Blog articles
 
+* {% include time.html text="October 2017" %} [Keeping the Daggers Sharp ⚔️](https://medium.com/square-corner-blog/keeping-the-daggers-sharp-%EF%B8%8F-230b3191c3f)
 * {% include time.html text="March 2017" %} [Ok Google, Charge $2 for Coffee](https://medium.com/square-corner-blog/ok-google-charge-2-dollars-for-coffee-4d7fdbacd6ef)
 * {% include time.html text="November 2016" %} [No Cause for Concern — RxJava and Retrofit Throwing a Tantrum](https://medium.com/square-corner-blog/no-cause-for-concern-rxjava-and-retrofit-throwing-a-tantrum-96c9e4ba8a6c)
 * {% include time.html text="September 2016" %} [Android leak pattern: subscriptions in views](https://medium.com/square-corner-blog/android-leak-pattern-subscriptions-in-views-18f0860aa74c)
