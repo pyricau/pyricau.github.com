@@ -34,11 +34,13 @@ layout: base
 
 #### 2016
 
-* {% include home.html text="DevFest Nantes" %} [LeakCanary, et ensuite ? Détricotage de fuites mémoire Android](https://www.youtube.com/watch?v=nSSidt0GKeE) & [Tech talks: Uploadez vos idées vers d'autres êtres humains](https://www.youtube.com/watch?v=fEs-Z0YiqZs)
+* {% include home.html text="DevFest Nantes" %} [LeakCanary, et ensuite ? Détricotage de fuites mémoire Android](https://www.youtube.com/watch?v=nSSidt0GKeE)
+* {% include home.html text="DevFest Nantes" %} [Tech talks: Uploadez vos idées vers d'autres êtres humains](https://www.youtube.com/watch?v=fEs-Z0YiqZs)
 * {% include home.html text="GOTO Copenhagen" %} [Nuking Nasty Memory Leaks](https://www.youtube.com/watch?v=7A7Uv9ZBE2U)
 * {% include home.html text="General Assembly, SF" %} [Panel on sourcing Android devs](https://generalassemb.ly/education/where-are-all-the-android-developers-insider-tips-on-sourcing-talent)
 * {% include home.html text="@Scale, San Diego" %} [All apps shall crash. Deal with it.](https://atscaleconference.com/videos/all-apps-shall-crash-deal-with-it/)
-* {% include home.html text="Devoxx France" %} [Bouchez vos fuites mémoires avec LeakCanary!](https://www.youtube.com/watch?v=rzpPtRcuMZg) & [Sharper Better Faster Dagger ‡](https://www.youtube.com/watch?v=dfyEzLFS-uA)
+* {% include home.html text="Devoxx France" %} [Sharper Better Faster Dagger ‡](https://www.youtube.com/watch?v=dfyEzLFS-uA)
+* {% include home.html text="Devoxx France" %} [Bouchez vos fuites mémoires avec LeakCanary!](https://www.youtube.com/watch?v=rzpPtRcuMZg)
 * {% include home.html text="Mix-IT, Lyon" %} [Crash Fast & Furious](https://www.infoq.com/fr/presentations/mix-it-pierre-yves-ricau-crash-fast-and-furious)
 * {% include home.html text="Realm Meetup, SF" %} [DIY: Build Your Own Dependency Injection Library](https://realm.io/news/android-pierre-yves-ricau-build-own-dependency-injection/)
 * {% include home.html text="Droidcon SF" %} [Sharper Better Faster Dagger ‡](https://www.youtube.com/watch?v=7mVRZqsozPw)
