@@ -112,6 +112,7 @@ layout: base
 
 ### Podcasts
 
+* {% include home.html text="Android Leaks" %} [Épisode 32 – Le poireau acéré](http://androidleakspodcast.com/2017/12/21/episode-32-le-poireau-acere/)
 * {% include home.html text="Fragmented" %} [088: Offensive programming with Piwai from Square](http://fragmentedpodcast.com/episodes/88/)
 * {% include home.html text="Android Leaks" %} [On a un poireau, appelez le plombier !](http://androidleakspodcast.com/2016/10/16/episode-7-on-a-un-poireau-appelez-le-plombier/)
 * {% include home.html text="Fragmented" %} [Google IO 2016](http://fragmentedpodcast.com/episodes/43/)
