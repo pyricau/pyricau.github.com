@@ -24,7 +24,7 @@ layout: base
 ### Public speaking
 
 #### 2017
-* {% include home.html text="Droidcon SF" %} [Despaghettifying the hairball](https://droidcon-server.herokuapp.com/showSession/111605)
+* {% include home.html text="Droidcon SF" %} [Despaghettifying the hairball](https://www.youtube.com/watch?v=GesiS2bkTKA)
 * {% include home.html text="Droidcon SF" %} [Codelab: Make a Cash Flow-Positive Photo Booth!](https://droidcon-server.herokuapp.com/showSession/112056)
 * {% include home.html text="Droidcon NYC" %} [Tech Talks for Humans](https://www.youtube.com/watch?v=d5HYGu_UBNo)
 * {% include home.html text="Gradle Summit 2017" %} [AARAWR! Fantastic bits and where to dex them](https://www.youtube.com/watch?v=semnhz5EYGU)
