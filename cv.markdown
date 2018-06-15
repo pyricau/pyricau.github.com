@@ -23,6 +23,11 @@ layout: base
 
 ### Public speaking
 
+#### 2018
+* {% include home.html text="Square (internal), SF" %} Usability & API Design
+* {% include home.html text="MCE, Warsaw" %} There is no good tech lead
+* {% include home.html text="Uber Meetup, SF" %} Memory Leak Hunt
+
 #### 2017
 * {% include home.html text="Droidcon SF" %} [Despaghettifying the hairball](https://www.youtube.com/watch?v=GesiS2bkTKA)
 * {% include home.html text="Droidcon SF" %} [Codelab: Make a Cash Flow-Positive Photo Booth!](https://droidcon-server.herokuapp.com/showSession/112056)
