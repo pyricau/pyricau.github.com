@@ -136,19 +136,23 @@ layout: base
 
 I got in touch with Square after contributing to their open source libraries. I moved to the San Francisco office to work with the best Android engineers.
 
-I contributed to every release of [Square Register](https://play.google.com/store/apps/details?id=com.squareup) for Android since March 2013.
+I contributed to every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since March 2013.
 
 In June 2013 I led the Android software side of the [new Square Reader](http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/).
 
 In August 2013 I led a HackWeek project: SQUA(RED), a special red edition of the Square reader to fight AIDS. Our great hardware team made that a [real product](http://techcrunch.com/2014/02/19/square-and-red-fight-aids-with-special-edition-reader-and-donate-links-in-receipts/).
 
-In March 2014, I started leading the engineering effort to bring Square Register to Android Tablets. I made sure to implement new features on mobile as well, as I believe the screen size frontier is much less clear today, and features should be ubiquitous.
+In March 2014, I started leading the engineering effort to bring Square POS to Android Tablets. I made sure to implement new features on mobile as well, as I believe the screen size frontier is much less clear today, and features should be ubiquitous.
 
-In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done [catching up](https://squareup.com/au/townsquare/new-features-android-devices) with the iPad and started focusing on building new features.
+In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done [catching up](https://squareup.com/au/townsquare/new-features-android-devices) with the iPad and started focusing on building new features. Our work was the app foundation for the [Square Register](https://squareup.com/hardware/register).
 
 From September 2015 to January 2016 I worked on a super cool secret project that I cannot mention here. Small team, high throughput, we built a great app really fast.
 
-In February 2016, I joined the new Developer Platform team as its Android lead. We released [Register API](https://github.com/square/register-android-sdk) 1.0 soon after, and we're currently working on more cool stuff.
+In February 2016, I joined the new Developer Platform team as its Android lead. We released [Register API](https://github.com/square/register-android-sdk) 1.0 a few months later.
+
+In March 2016 I started organizing a monthly internal lightning talk series. One hour, 5 lightning talks accross all of engineering. This has been running since, with an attendance of about 100-150 engineers.
+
+In August 2018 we released the [Square Reader SDK](https://squareup.com/us/en/developers/reader-sdk). This was a high complexity and high risk project. We prototyped it during a hackweek in August 2016, built a pilot in just a quarter, and then iterated through private betas for another 1.5 year.
 
 ### Lead Software Developer - Siine
 
