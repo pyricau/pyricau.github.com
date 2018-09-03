@@ -24,9 +24,11 @@ layout: base
 ### Public speaking
 
 #### 2018
+* {% include home.html text="Droidcon NYC" %} Human Centered API Design
 * {% include home.html text="Square (internal), SF" %} Usability & API Design
 * {% include home.html text="MCE, Warsaw" %} There is no good tech lead
 * {% include home.html text="Uber Meetup, SF" %} Memory Leak Hunt
+* {% include home.html text="Square (internal), SF" %} [How to Create and Deliver a Successful Tech Talk](https://www.youtube.com/watch?v=nNM5Bv9OTck)
 
 #### 2017
 * {% include home.html text="Droidcon SF" %} [Despaghettifying the hairball](https://www.youtube.com/watch?v=GesiS2bkTKA)
@@ -91,6 +93,7 @@ layout: base
 
 ### Blog articles
 
+* {% include time.html text="July 2018" %} [LeakCanary 1.6 🐤](https://medium.com/square-corner-blog/leakcanary-1-6-91fad513b5cf)
 * {% include time.html text="October 2017" %} [Keeping the Daggers Sharp ⚔️](https://medium.com/square-corner-blog/keeping-the-daggers-sharp-%EF%B8%8F-230b3191c3f)
 * {% include time.html text="March 2017" %} [Ok Google, Charge $2 for Coffee](https://medium.com/square-corner-blog/ok-google-charge-2-dollars-for-coffee-4d7fdbacd6ef)
 * {% include time.html text="November 2016" %} [No Cause for Concern — RxJava and Retrofit Throwing a Tantrum](https://medium.com/square-corner-blog/no-cause-for-concern-rxjava-and-retrofit-throwing-a-tantrum-96c9e4ba8a6c)
