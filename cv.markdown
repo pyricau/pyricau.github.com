@@ -27,7 +27,7 @@ layout: base
 * {% include home.html text="Droidcon NYC" %} Human Centered API Design
 * {% include home.html text="Square (internal), SF" %} Usability & API Design
 * {% include home.html text="MCE, Warsaw" %} There is no good tech lead
-* {% include home.html text="Uber Meetup, SF" %} Memory Leak Hunt
+* {% include home.html text="Uber Meetup, SF" %} [Memory Leak Hunt](https://www.youtube.com/watch?v=KwArTJHLq5g)
 * {% include home.html text="Square (internal), SF" %} [How to Create and Deliver a Successful Tech Talk](https://www.youtube.com/watch?v=nNM5Bv9OTck)
 
 #### 2017
