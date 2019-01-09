@@ -155,6 +155,10 @@ In March 2016 I started organizing a monthly internal lightning talk series. One
 
 In August 2018 we released the [Square Reader SDK](https://squareup.com/us/en/developers/reader-sdk). This was a high complexity and high risk project. We prototyped it during a hackweek in August 2016, built a pilot in just a quarter, and then iterated through private betas for another 1.5 year.
 
+In January 2019 we released the [In-App Payments SDK](https://squareup.com/us/en/developers/in-app-payments). Our team built it really fast and really well, as a high functioning team with almost a hive mind, knocking out bugs and features left and right. This isn't just an SDK, it's a delightful experience. We carefully crafted every detail, from the shape of (Kotlin first) APIs, to the SDK UI (only XML vector drawables, advanced canvas drawing, responsive animations with ConstraintLayout), to the code of the sample app (examplary example code!), to the structure of the quick start guide.
+
+After 3 years on the Developer Platform team, I realized that my team was in a really good place and decided to take on a new challenge, focusing on the reliability on Square mobile apps and SDKs.
+
 ### Lead Software Developer - Siine
 
 {% include time.html text="September 2011 - January 2013" %}
