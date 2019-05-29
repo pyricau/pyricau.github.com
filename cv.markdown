@@ -23,8 +23,11 @@ layout: base
 
 ### Public speaking
 
+#### 2019
+* {% include home.html text="Android Makers, Paris" %} [LeakCanary 2: Leaner, Better, Faster, Kotliner!](https://www.youtube.com/watch?v=LEX8dn4BLUw)
+
 #### 2018
-* {% include home.html text="Droidcon SF" %} Human Centered API Design
+* {% include home.html text="Droidcon SF" %} [Human Centered API Design](https://www.youtube.com/watch?v=WGO72xxLorw)
 * {% include home.html text="Droidcon NYC" %} [Human Centered API Design](https://www.youtube.com/watch?v=lQime4wONe4)
 * {% include home.html text="Square (internal), SF" %} Usability & API Design
 * {% include home.html text="MCE, Warsaw" %} [There is no good tech lead](https://www.youtube.com/watch?v=AkaxgA3JHyQ)
