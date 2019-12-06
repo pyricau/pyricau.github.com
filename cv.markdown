@@ -24,6 +24,10 @@ layout: base
 ### Public speaking
 
 #### 2019
+
+* {% include home.html text="Droidcon SF" %} PokeLeaks: Gotta Catch 'Em All 🐤🔍 (workshop)
+* {% include home.html text="Droidcon NYC" %} [Shark: Diving into the guts of LeakCanary's Hprof parser
+](https://www.droidcon.com/media-detail?video=362742252)
 * {% include home.html text="Android Makers, Paris" %} [LeakCanary 2: Leaner, Better, Faster, Kotliner!](https://www.youtube.com/watch?v=LEX8dn4BLUw)
 
 #### 2018
@@ -124,6 +128,8 @@ layout: base
 
 ### Podcasts
 
+
+* {% include home.html text="Les Cast Codeurs Podcast" %} [LCC 217 - Interview sur Android partie 1 avec Pierre-Yves Ricau et Romain Guy](https://lescastcodeurs.com/2019/10/01/lcc-217-interview-sur-android-partie-1-avec-pierre-yves-ricau-et-romain-guy/)
 * {% include home.html text="Android Leaks" %} [Épisode 32 – Le poireau acéré](http://androidleakspodcast.com/2017/12/21/episode-32-le-poireau-acere/)
 * {% include home.html text="Fragmented" %} [088: Offensive programming with Piwai from Square](http://fragmentedpodcast.com/episodes/88/)
 * {% include home.html text="Android Leaks" %} [On a un poireau, appelez le plombier !](http://androidleakspodcast.com/2016/10/16/episode-7-on-a-un-poireau-appelez-le-plombier/)
