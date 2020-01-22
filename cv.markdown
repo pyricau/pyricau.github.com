@@ -105,7 +105,7 @@ layout: base
 * {% include time.html text="January 2020" %} [Instrumenting Firebase Test Lab](https://developer.squareup.com/blog/instrumenting-firebase-test-lab)
 * {% include time.html text="July 2019" %} [Story of an Android Q Leak: attachment crazy town!
 ](https://developer.squareup.com/blog/story-of-an-android-q-leak-attachment-crazy-town/)
-* {% include time.html text="September 2018 2020" %} [Building a photo booth for Droidcon NYC
+* {% include time.html text="September 2018" %} [Building a photo booth for Droidcon NYC
 ](https://developer.squareup.com/blog/building-a-photo-booth-for-droidcon-nyc/)
 * {% include time.html text="July 2018" %} [LeakCanary 1.6 🐤](https://medium.com/square-corner-blog/leakcanary-1-6-91fad513b5cf)
 * {% include time.html text="October 2017" %} [Keeping the Daggers Sharp ⚔️](https://medium.com/square-corner-blog/keeping-the-daggers-sharp-%EF%B8%8F-230b3191c3f)
@@ -134,6 +134,7 @@ layout: base
 
 ### Podcasts
 
+* {% include home.html text="Android Leaks" %} LeakCanary 2
 * {% include home.html text="Les Cast Codeurs Podcast" %} [LCC 217 - Interview sur Android partie 1 avec Pierre-Yves Ricau et Romain Guy](https://lescastcodeurs.com/2019/10/01/lcc-217-interview-sur-android-partie-1-avec-pierre-yves-ricau-et-romain-guy/)
 * {% include home.html text="Android Leaks" %} [Épisode 32 – Le poireau acéré](http://androidleakspodcast.com/2017/12/21/episode-32-le-poireau-acere/)
 * {% include home.html text="Fragmented" %} [088: Offensive programming with Piwai from Square](http://fragmentedpodcast.com/episodes/88/)
