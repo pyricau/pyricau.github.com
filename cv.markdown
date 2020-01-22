@@ -135,7 +135,7 @@ layout: base
 ### Podcasts
 
 * {% include home.html text="Android Leaks" %} LeakCanary 2
-* {% include home.html text="Les Cast Codeurs Podcast" %} [LCC 217 - Interview sur Android partie 1 avec Pierre-Yves Ricau et Romain Guy](https://lescastcodeurs.com/2019/10/01/lcc-217-interview-sur-android-partie-1-avec-pierre-yves-ricau-et-romain-guy/)
+* {% include home.html text="Les Cast Codeurs Podcast" %} [LCC 222 - Interview sur Android avec Pierre-Yves Ricau et Romain Guy](https://lescastcodeurs.com/2019/12/24/lcc-222-interview-sur-android-avec-pierre-yves-ricau-et-romain-guy-l-integrale/)
 * {% include home.html text="Android Leaks" %} [Épisode 32 – Le poireau acéré](http://androidleakspodcast.com/2017/12/21/episode-32-le-poireau-acere/)
 * {% include home.html text="Fragmented" %} [088: Offensive programming with Piwai from Square](http://fragmentedpodcast.com/episodes/88/)
 * {% include home.html text="Android Leaks" %} [On a un poireau, appelez le plombier !](http://androidleakspodcast.com/2016/10/16/episode-7-on-a-un-poireau-appelez-le-plombier/)
