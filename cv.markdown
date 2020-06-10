@@ -23,6 +23,10 @@ layout: base
 
 ### Public speaking
 
+#### 2020
+
+* {% include home.html text="Android Makers, remote" %} [Pull requests 👨‍💻, yoga 🧘‍♂️& avocado toasts 🥑: 7 ans d’engineering à Square](https://www.youtube.com/watch?v=LQbcxihdfDw)
+
 #### 2019
 
 * {% include home.html text="Bugsnag Engineering Leadership Forum 2019" %} [Hacking Bugsnag for Fun and Profit](https://youtu.be/GVzuGYg107c)
