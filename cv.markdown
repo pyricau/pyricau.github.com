@@ -25,6 +25,7 @@ layout: base
 
 #### 2020
 
+* {% include home.html text="Ask the Expert, remote" %} [Live leak investigations](https://youtu.be/Sx0k4ipqwBs)
 * {% include home.html text="Android Makers, remote" %} [Pull requests 👨‍💻, yoga 🧘‍♂️& avocado toasts 🥑: 7 ans d’engineering à Square](https://www.youtube.com/watch?v=LQbcxihdfDw)
 
 #### 2019
