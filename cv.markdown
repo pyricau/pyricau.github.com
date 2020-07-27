@@ -171,7 +171,7 @@ From September 2015 to January 2016 I worked on a super cool secret project that
 
 In February 2016, I joined the new Developer Platform team as its Android lead. We released [Register API](https://github.com/square/register-android-sdk) 1.0 a few months later.
 
-In March 2016 I started organizing a monthly internal lightning talk series. One hour, 5 lightning talks accross all of engineering. This has been running since, with an attendance of about 100-150 engineers.
+In March 2016 I started organizing a monthly internal lightning talk series. One hour, 5 lightning talks across all of engineering. This has been running since, with an attendance of about 100-150 engineers.
 
 In August 2018 we released the [Square Reader SDK](https://squareup.com/us/en/developers/reader-sdk). This was a high complexity and high risk project. We prototyped it during a hackweek in August 2016, built a pilot in just a quarter, and then iterated through private betas for another 1.5 year.
 
@@ -290,7 +290,7 @@ I created and maintained this project on my free time. Excilys contracted with m
 {% include time.html text="February 2012" %}
 {% include location.html text="Paris" %}
 
-VuzZz was created during the Android DevCamp Paris 2012, a 3 day hackaton with 10 competing teams. After 48 hours of intense non stop hacking, our team finished first. VuzZz downloads geolocated data from several Open Data sources and then gives a note to a given address based on 50 criterias grouped in 6 categories (culture, transport, etc). The perfect tool for finding your next apartment!
+VuzZz was created during the Android DevCamp Paris 2012, a 3 day hackaton with 10 competing teams. After 48 hours of intense non stop hacking, our team finished first. VuzZz downloads geolocated data from several Open Data sources and then gives a note to a given address based on 50 criteria grouped in 6 categories (culture, transport, etc). The perfect tool for finding your next apartment!
 
 ### Voxe.org
 
