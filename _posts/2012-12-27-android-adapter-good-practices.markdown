@@ -366,14 +366,14 @@ Thank you very much.
 Clear illustration of the choice of different adapters, very practical and very useful! Thanks!
 
 ## [Xiao]()
-I was looking for a way to replace the the entire list of items inside an ArrayAdapter without calling clear()/addAll() which generates garbage. This looks like a good solution (referring to the updateBananas() function).
+I was looking for a way to replace the entire list of items inside an ArrayAdapter without calling clear()/addAll() which generates garbage. This looks like a good solution (referring to the updateBananas() function).
 
-## [imherolddev](www.imherolddev.com)
+## [imherolddev](http://www.imherolddev.com)
 I have done a lot of research, written different adapters, duct taped and glued some together, and now that I come back to revisit ListView, I find your post! I hope to see a comparison between RecylerView and the ViewHolders you have described here. However, the BaseAdapter example has me excited to write my next Adapter, which should be far more complex than what I have done to date... Thank you for your write up here! I will be sure to share with my circles.
 
-## [robertoallende](robertoallende.com)
+## [robertoallende](http://robertoallende.com)
 Great article, you've saved my day. Thank you very much!
 
-## [Mário Valney](mariovalney.com)
+## [Mário Valney](http://mariovalney.com)
 I really loved your article. Great explanation!
 I confess I started with another approach, but when I read your article I just changed everything because it's much more elegant!
