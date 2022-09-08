@@ -117,6 +117,30 @@ layout: base
 
 ### Blog articles
 
+* {% include time.html text="September 2022" %} [Using an Activity from a Hilt ViewModel](https://py.hashnode.dev/using-an-activity-from-a-hilt-viewmodel)
+* {% include time.html text="August 2022" %} [WhileSubscribed(5000)](https://py.hashnode.dev/whilesubscribed5000)
+* {% include time.html text="April 2022" %} [Of sharks and heaps of sticky marshmallows](https://py.hashnode.dev/of-sharks-and-heaps-of-sticky-marshmallows)
+* {% include time.html text="January 2022" %} [Tracing main thread messages](https://py.hashnode.dev/tracing-main-thread-messages)
+* {% include time.html text="January 2022" %} [Fixing simpleperf broken records](https://py.hashnode.dev/fixing-simpleperf-broken-records)
+* {% include time.html text="December 2021" %} [WorkManager multi-process for libraries](https://py.hashnode.dev/workmanager-multi-process-for-libraries)
+* {% include time.html text="September 2021" %} [Launch Response Time](https://py.hashnode.dev/launch-response-time)
+* {% include time.html text="May 2021" %} [Leak investigation: Rx disposal race in SQLDelight](https://dev.to/pyricau/leak-investigation-rx-disposal-race-in-sqldelight-3n06)
+* {% include time.html text="April 2021" %} [Android Vitals - Tap Response Time 👉](https://dev.to/pyricau/android-vitals-tap-response-time-19mj)
+* {% include time.html text="April 2021" %} [Tap Response Time: Jetpack Navigation 🗺](https://dev.to/pyricau/tap-response-time-jetpack-navigation-4738)
+* {% include time.html text="March 2021" %} [Introducing Curtains](https://developer.squareup.com/blog/introducing-curtains/)
+* {% include time.html text="January 2021" %} [Waldo, where's my UI?](https://dev.to/pyricau/waldo-where-s-my-ui-4p53)
+* {% include time.html text="December 2020" %} [Android Vitals - How adb measures App Startup 🔎](https://dev.to/pyricau/android-vitals-how-adb-measures-app-startup-5n7)
+* {% include time.html text="November 2020" %} [Android Vitals - Profiling App Startup 🔬](https://dev.to/pyricau/android-vitals-profiling-app-startup-32ek)
+* {% include time.html text="October 2020" %} [Leak detection: Android Studio vs LeakCanary ⚔️](https://dev.to/pyricau/leak-detection-android-studio-vs-leakcanary-35j5)
+* {% include time.html text="September 2020" %} [The real size of Android objects 📏](https://dev.to/pyricau/the-real-size-of-android-objects-1i2e)
+* {% include time.html text="August 2020" %} [Android Vitals - Rising to the first drawn surface 🤽‍♂️](https://dev.to/pyricau/android-vitals-rising-to-the-first-drawn-surface-1j9e)
+* {% include time.html text="August 2020" %} [Android Vitals - Is this a cold start? 🦋](https://dev.to/pyricau/android-vitals-is-this-a-cold-start-3m44)
+* {% include time.html text="August 2020" %} [Android Vitals - Why did my process start? 🌄](https://dev.to/pyricau/android-vitals-why-did-my-process-start-4d0e)
+* {% include time.html text="August 2020" %} [Android Vitals - When did my app start? ⏱](https://dev.to/pyricau/android-vitals-when-did-my-app-start-24p4)
+* {% include time.html text="August 2020" %} [Android Vitals - First draw time 👩‍🎨](https://dev.to/pyricau/android-vitals-first-draw-time-m1d)
+* {% include time.html text="July 2020" %} [Android Vitals - What time is it?](https://dev.to/pyricau/android-vitals-what-time-is-it-2oih)
+* {% include time.html text="July 2020" %} [Android Vitals - Diving into cold start waters 🥶](https://dev.to/pyricau/android-vitals-diving-into-cold-start-waters-5hi6)
+* {% include time.html text="June 2020" %} [Beware PackageManager leaks!](https://dev.to/pyricau/beware-packagemanager-leaks-223g)
 * {% include time.html text="January 2020" %} [Instrumenting Firebase Test Lab](https://developer.squareup.com/blog/instrumenting-firebase-test-lab)
 * {% include time.html text="July 2019" %} [Story of an Android Q Leak: attachment crazy town!
 ](https://developer.squareup.com/blog/story-of-an-android-q-leak-attachment-crazy-town/)
@@ -187,7 +211,7 @@ In August 2018 we released the [Square Reader SDK](https://squareup.com/us/en/de
 
 In January 2019 we released the [In-App Payments SDK](https://squareup.com/us/en/developers/in-app-payments). Our team built it really fast and really well, as a high functioning team with almost a hive mind, knocking out bugs and features left and right. This isn't just an SDK, it's a delightful experience. We carefully crafted every detail, from the shape of (Kotlin first) APIs, to the SDK UI (only XML vector drawables, advanced canvas drawing, responsive animations with ConstraintLayout), to the code of the sample app (examplary example code!), to the structure of the quick start guide.
 
-After 3 years on the Developer Platform team, I realized that my team was in a really good place and decided to take on a new challenge, focusing on the reliability on Square mobile apps and SDKs.
+In March 2019 I joined the Developer Empowerment organization to take on a new challenge, focusing on the reliability on Square mobile apps and SDKs.
 
 ### Lead Software Developer - Siine
 
