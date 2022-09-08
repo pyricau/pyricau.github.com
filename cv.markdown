@@ -21,6 +21,15 @@ layout: base
 
 ## Teaching & Sharing
 
+### Open source libraries
+
+* {% include time.html text="2021" %} [PAPA](https://github.com/square/papa)
+* {% include time.html text="2021" %} [logcat](https://github.com/square/logcat)
+* {% include time.html text="2021" %} [Curtains](https://github.com/square/curtains)
+* {% include time.html text="2020" %} [Radiography](https://github.com/square/radiography)
+* {% include time.html text="2015" %} [LeakCanary](https://github.com/square/leakcanary)
+* {% include time.html text="2010" %} [AndroidAnnotations](https://github.com/androidannotations/androidannotations)
+
 ### Public speaking
 
 #### 2022
