@@ -23,10 +23,20 @@ layout: base
 
 ### Public speaking
 
+#### 2022
+
+* {% include home.html text="Chicago Roboto" %} [PAPA: Performance of Android Production Applications](https://youtu.be/aPCGYNk3Wzw)
+* {% include home.html text="Droidcon SF" %} [MILK: a user-centric mobile performance model](https://www.droidcon.com/2022/06/28/milk-a-user-centric-mobile-performance-model/)
+
+#### 2021
+
+* {% include home.html text="DevProdEng Showdown" %}  [S1E2: Android at Scale](https://www.youtube.com/watch?v=z4DpYIF1GF0)
+
 #### 2020
 
-* {% include home.html text="Ask the Expert, remote" %} [Live leak investigations](https://youtu.be/Sx0k4ipqwBs)
-* {% include home.html text="Android Makers, remote" %} [Pull requests 👨‍💻, yoga 🧘‍♂️& avocado toasts 🥑: 7 ans d’engineering à Square](https://www.youtube.com/watch?v=LQbcxihdfDw)
+* {% include home.html text="Ask the Expert" %} [Live leak investigations](https://youtu.be/Sx0k4ipqwBs)
+* {% include home.html text="Android Makers" %} [Pull requests 👨‍💻, yoga 🧘‍♂️& avocado toasts 🥑: 7 ans d’engineering à Square](https://www.youtube.com/watch?v=LQbcxihdfDw)
+* {% include home.html text="The Sandbox" %} [Investigating Leaks in the Firefox App with Emily Kager](https://youtu.be/kHHOhPPRytc)
 
 #### 2019
 
@@ -139,11 +149,11 @@ layout: base
 
 ### Podcasts
 
-* {% include home.html text="Android Leaks" %} LeakCanary 2
+* {% include home.html text="Android Leaks" %} [Épisode 59 – Rappelez le plombier, on a un poireau 2.0](https://androidleakspodcast.com/2020/02/09/episode-59-rappelez-le-plombier-on-a-un-poireau-2-0/)
 * {% include home.html text="Les Cast Codeurs Podcast" %} [LCC 222 - Interview sur Android avec Pierre-Yves Ricau et Romain Guy](https://lescastcodeurs.com/2019/12/24/lcc-222-interview-sur-android-avec-pierre-yves-ricau-et-romain-guy-l-integrale/)
 * {% include home.html text="Android Leaks" %} [Épisode 32 – Le poireau acéré](http://androidleakspodcast.com/2017/12/21/episode-32-le-poireau-acere/)
 * {% include home.html text="Fragmented" %} [088: Offensive programming with Piwai from Square](http://fragmentedpodcast.com/episodes/88/)
-* {% include home.html text="Android Leaks" %} [On a un poireau, appelez le plombier !](http://androidleakspodcast.com/2016/10/16/episode-7-on-a-un-poireau-appelez-le-plombier/)
+* {% include home.html text="Android Leaks" %} [Épisode 7 – On a un poireau, appelez le plombier !](http://androidleakspodcast.com/2016/10/16/episode-7-on-a-un-poireau-appelez-le-plombier/)
 * {% include home.html text="Fragmented" %} [Google IO 2016](http://fragmentedpodcast.com/episodes/43/)
 * {% include home.html text="Android Developers Backstage" %} [Episode 32: Leak Canary](http://androidbackstage.blogspot.com/2015/07/episode-32-leak-canary.html)
 
