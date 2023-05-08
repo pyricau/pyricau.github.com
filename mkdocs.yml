@@ -21,6 +21,7 @@ copyright: 'Copyright &copy; 2018 Pierre-Yves Ricau'
 # TODO: RSS feed (old: http://feeds.feedburner.com/Piwai)
 # TODO Backport blog
 # TODO google_analytics
+# TODO redirect http://www.piwai.info to p-y.wtf
 
 nav:
   - 'Welcome': index.md
@@ -46,6 +47,7 @@ extra:
 
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
