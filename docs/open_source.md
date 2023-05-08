@@ -1,0 +1,6 @@
+* _:material-calendar-start: 2021_ [PAPA](https://github.com/square/papa)
+* _:material-calendar-start: 2021_ [logcat](https://github.com/square/logcat)
+* _:material-calendar-start: 2021_ [Curtains](https://github.com/square/curtains)
+* _:material-calendar-start: 2020_ [Radiography](https://github.com/square/radiography)
+* _:material-calendar-start: 2015_ [LeakCanary](https://github.com/square/leakcanary)
+* _:material-calendar-start: 2010_ [AndroidAnnotations](https://github.com/androidannotations/androidannotations)

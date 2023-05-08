@@ -1,0 +1,80 @@
+site_name: P-Y Who's That Frenchie?
+# https://acronyms.thefreedictionary.com/WTF
+site_url: https://p-y.wtf/
+repo_url: https://github.com/pyricau/pyricau.github.com
+theme:
+  name: material
+  palette:
+    primary: light blue
+  favicon: 'images/medium.jpg'
+  logo: 'images/medium.jpg'
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - content.code.copy
+
+site_description: "Pierre-Yves Ricau's personal website."
+site_author: Pierre-Yves Ricau
+
+copyright: 'Copyright &copy; 2018 Pierre-Yves Ricau'
+
+# TODO: RSS feed (old: http://feeds.feedburner.com/Piwai)
+# TODO Backport blog
+# TODO google_analytics
+
+nav:
+  - 'Welcome': index.md
+  - 'CV': cv.md
+  - 'Open Source': open_source.md
+  - 'Public Speaking': public_speaking.md
+  - 'Articles': articles.md
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/pyricau/
+    - icon: fontawesome/regular/square
+      link: https://staging.bsky.app/profile/p-y.wtf
+    - icon: fontawesome/brands/mastodon
+      link: https://androiddev.social/@py
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Piwai
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/703646/pierre-yves-ricau
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - smarty
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - tables
+  - admonition
+
+
+plugins:
+  - search
+  - markdownextradata: {}
+  - badges
