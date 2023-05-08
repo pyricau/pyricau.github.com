@@ -1,0 +1,47 @@
+---
+title: Blog
+active: blog
+layout: base
+---
+
+
+<div class="hero-unit">
+  <p>My most recent blog articles are on Medium.</p>
+  <p><a class="btn btn-info" href="https://medium.com/@pyricau/">Py <g-emoji alias="crossed_swords" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2694.png" ios-version="9.1">⚔</g-emoji> on Medium &raquo;</a></p>
+</div>
+
+{% for page in paginator.posts %}
+{% unless page.draft %}
+	<hr>
+    <article>
+      <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+      {% include post_date.html %}
+
+
+    {% if page.more %}
+  	{{ page.content | truncate: page.more, "" }}
+	{% else %}
+	<!--start_output-->{{ page.content | truncatewords: 100, "" }}
+	{% endif %}
+
+      <p><a class='btn' href='{{ page.url }}'><i class="icon-book"></i> Read this entry &raquo;</a></p>
+    </article>
+{% endunless %}
+{% endfor %}
+
+<ul class="pager">
+  {% if paginator.previous_page == 1 %}
+  <li class="next">
+    <a href="/blog" >Next Entries &rarr;</a>
+  </li>
+  {% elsif paginator.previous_page %}
+  <li class="next">
+    <a href="/blog/page{{ paginator.previous_page }}">Next Entries &rarr;</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="previous">
+    <a href="/blog/page{{ paginator.next_page }}">&larr; Previous Entries</a>
+  </li>
+  {% endif %}
+</ul>
