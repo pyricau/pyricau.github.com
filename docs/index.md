@@ -9,7 +9,7 @@ I live in San Francisco, I enjoy being with my family, [rollerblading, baking](h
 
 ## Work
 
-Since 2009 I've mostly been doing **Android** adjacent things, at Square for the last decade. I have published a few noticeable open source [libraries](open_source.md), technical [articles](articles.md) and [presentations](public_speaking.md).
+Since 2009 I've mostly been doing **Android** adjacent things, at Square for the last decade. I have published a few noticeable open source [libraries](open_source.md) (including LeakCanary), technical [articles](articles.md) and [presentations](public_speaking.md).
 
 <figure markdown>
   ![Pierre-Yves Ricau](images/wedding.jpg)
