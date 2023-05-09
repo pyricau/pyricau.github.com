@@ -16,7 +16,7 @@ Comme je vous l'indiquais dans un [précédent article](http://blog.piwai.info/2
 Lorsqu'une **branche** qui a fait l'objet d'une **pull request** est validée, elle est **mergée** sur la branche d'intégration. Nous n'avons cependant pas pris l'habitude de **supprimer** ces branches une fois mergées. Je pense que nous aurions probablement du les supprimer au fur et à mesure, car nous nous retrouvons aujourd'hui avec de **nombreuses branches mergées**, qui ne servent à rien et qui **polluent** nos repository.
 
 
-[![](/static/blog_img/Branches_konary.jpeg)](http://commons.wikimedia.org/wiki/File:Branches_konary.jpg)
+[![](images/Branches_konary.jpeg)](http://commons.wikimedia.org/wiki/File:Branches_konary.jpg)
 
 _Branches konary by Krzysztof_
 
@@ -30,29 +30,29 @@ Quoi qu'il en soit, il est tout à fait possible de corriger cela, en quelques *
 
 On récupère toutes les données du **repository remote**
 
-{% highlight bash %}
+```bash
 git fetch --all
-{% endhighlight %}
+```
 
 
 
 On supprime de notre **repository local** toutes les branches remote qui n'existent plus
 
-{% highlight bash %}
+```bash
 git remote prune origin
-{% endhighlight %}
+```
 
 
 
-[![](/static/blog_img/Valor_prune.jpeg)](http://commons.wikimedia.org/wiki/File:Valor_prune.jpg)
+[![](images/Valor_prune.jpeg)](http://commons.wikimedia.org/wiki/File:Valor_prune.jpg)
 
 _Valor prune by Glysiak_
 
 On compte toutes les **branches remote mergées **:
 
-{% highlight bash %}
+```bash
 git branch -r --merged origin/integration | wc -l
-{% endhighlight %}
+```
 
 Le paramètre `-r` signifie **remote**, et `--merged origin/integration` permet de lister les branches mergées dans **origin/integration**.
 
@@ -60,21 +60,21 @@ Le paramètre `-r` signifie **remote**, et `--merged origin/integration` permet 
 
 Vous l'aurez noté, `wc -l` est une commande Unix permettant de compter le **nombre de lignes** du flux d'entrée. Ainsi, on pourrait l'utiliser pour compter le **nombre de branches** du repository remote :
 
-{% highlight bash %}
+```bash
 git branch -r | wc -l
-{% endhighlight %}
+```
 
 
 Il n'y a plus qu'à **supprimer les branches mergées** :
 
 
 
-{% highlight bash %}
+```bash
 # Supprimer la branche sur le remote
 git push origin :my_branch
 # Et supprimer la branche qui la track en local
 git branch -d my_branch
-{% endhighlight %}
+```
 
 
 
@@ -82,17 +82,17 @@ Notez aussi que GitHub met à disposition ce listing sans avoir à entrer une se
 
 
 
-![](/static/blog_img/capture-d_c3a9cran-2011-10-30-c3a0-23-16-37.png)
+![](images/capture-d_c3a9cran-2011-10-30-c3a0-23-16-37.png)
 
 
 
 Pour finir : si lister les branches mergées permet de faire le ménage, à l'inverse il peut être intéressant de prendre connaissance des **branches non mergées**, car il se peut que certaines d'entre elles aient été oubliées et soient à **l'abandon**. Pour cela, rien de plus simple :
 
-{% highlight bash %}
+```bash
 git branch -r --no-merged origin/integration
-{% endhighlight %}
+```
 
-{% include comments.html %}
+## Comments
 
 ## [Dvins](http://gravatar.com/dvins)
 

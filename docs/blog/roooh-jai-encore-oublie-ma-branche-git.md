@@ -17,7 +17,7 @@ En plus, nous sommes récemment passé d'un **workflow** old school (tout le mon
 
 Le merge d'une **feature branch** sur la branche d'**intégration** ne se fait qu'après **validation** (revue de code et tests fonctionnels) par quelqu'un qui n'a pas développé la feature. Dans cette optique, les [pull requests](http://help.github.com/send-pull-requests/) de GitHub se révèlent particulièrement pratiques.
 
-![](/static/blog_img/pull_request.png)
+![](images/pull_request.png)
 
 Mais trêve de bavardage, venons-en à l'objet de cet article.
 
@@ -31,13 +31,13 @@ Du coup, j'ai tendance à ne plus savoir sur **quelle branche je me trouve**, ou
 
 Un membre de l'équipe nous a envoyé un **script** plutôt pratique, qui ajoute le **nom de la branche** en cours au prompt de votre terminal :
 
-![](/static/blog_img/terminal.png)
+![](images/terminal.png)
 
 Le petit truc cool en plus, c'est que le nom s'affiche en **rouge** si vous avez des **modifications locales** (dirty working tree), et en **vert** dans le cas contraire.
 
 Instructions à ajouter à votre fichier **~/.bashrc** (ou **~/.profile** sur Mac) :
 
-{% highlight bash %}
+```bash
 # git branch name in prompt
 c_red=`tput setaf 1`
 c_green=`tput setaf 2`
@@ -70,20 +70,20 @@ branch_color () {
 }
 
 PS1="\[\$(branch_color)\]\$(parse_git_branch)\[$(tput sgr0)\]$PS1"
-{% endhighlight %}
+```
 
 Dans le même ordre d'idée, voici un [article bien pratique](http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/) pour disposer de l'autocomplétion des noms de branches.
 
 À vous, partagez vos astuces ;-) !
 
-{% include comments.html %}
+## Comments
 
 ## [Olivier Bazoud](http://www.twitter.com/obazoud)
 Je préfère utiliser celui ci livré par Git, utiliser la variable __git_ps1 et en plus ça gère beaucoup plus de cas (modifications locales, fichier non trackes, stash, uptream, commit locaux, commits remote, …)
 
 Dans mon ~/.bashrc:
 
-{% highlight bash %}
+```bash
 if [ -f /etc/bash_completion.d/git ]; then
     . /etc/bash_completion.d/git
 fi
@@ -93,7 +93,7 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWUPSTREAM="verbose"
 
 PS1='\A [${debian_chroot:+($debian_chroot)}\[33[01;32m\]\u@\[33[0;33m\]\h\[33[00m\]]\[33[01;31m\]$(__git_ps1)\[33[00m\]% '
-{% endhighlight %}
+```
 
 @obazoud
 

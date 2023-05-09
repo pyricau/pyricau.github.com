@@ -38,9 +38,9 @@ Backtrack démarre, se logue tout seul, et présente une ligne de commande une f
 
 Il suffit de taper **startx** pour lancer l'environnement graphique. 
 
-{% highlight bash %}
+```bash
 root@root:~# startx
-{% endhighlight %}
+```
 _Notez que le layout de clavier étant par défaut un qwerty, il vous faudra probablement taper **stqrtx**._
 
 Une fois l'environnement graphique démarré, vous pouvez changer le layout de clavier dans _System > Preferences > Keyboard > Layouts_.
@@ -60,21 +60,21 @@ Exécutez le script (double clic sur le fichier > _Run_).
 
 Et hop, une bonne grosse interface à la **clicouille** :
 
-![](/static/blog_img/wifite1.png)
+![](images/wifite1.png)
 
 Sélectionnez l'interface réseau à utiliser (en général, il n'y en a qu'une). Étant donné que l'on s'intéresse ici au WEP, vous pouvez sélectionner uniquement _WEP_ dans _encryption type_.
 
 De [nombreux paramètres](http://code.google.com/p/wifite/) sont disponibles, mais **pour mamie**, il suffit de cliquer sur **h4x0r 1t n40**, et d'aller **prendre une tisane**.
 
-![](/static/blog_img/wifite2.png)
+![](images/wifite2.png)
 
 Wifite se charge de tout, et note les mots de passe crackés dans le fichier **log.txt** créé à côté du script **wifite.py**.
 
-![](/static/blog_img/wifite3.png)
+![](images/wifite3.png)
 
 **Bingo !**
 
-{% include comments.html %}
+## Comments
 
 ## Rémi
 J’attendais avec impatience que quelqu’un fasse ce travail! Très intéressant en tout cas. Je me permets de m’abonner à ton flux RSS du coup.

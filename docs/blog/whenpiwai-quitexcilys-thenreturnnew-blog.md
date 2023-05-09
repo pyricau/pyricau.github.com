@@ -19,15 +19,15 @@ Je vais donc continuer sur [ce blog](http://blog.piwai.info) (n'oubliez pas le <
 
 J'héberge le blog sur [wordpress.com](http://wordpress.com), comme ça aucun souci de maintenance, et en prime ya même une **coloration syntaxique** :
 
-{% highlight java %}
+```java
 when(piwai.quit(excilys)).thenReturn(new Blog());
-{% endhighlight %}
+```
 
 Ça sera aussi l'occasion de vous parler des projets open source qui me tiennent à cœur : [AndroidAnnotations](http://code.google.com/p/androidannotations/), [Rockslide](https://github.com/pyricau/rockslide), [FunkyJFunctional](https://github.com/pyricau/FunkyJFunctional), [2H4U](https://github.com/pyricau/toohardforyou) ;-)
 
 On commence avec un peu de **clean code** : [Les IDE et la règle des 80 / 120](/2011/08/31/les-ide-et-la-regle-des-80-120/).
 
-{% include comments.html %}
+## Comments
 
 ## [Kévin Gaudin (@kevingaudin)](http://twitter.com/kevingaudin)  
 C’est bien de changer ;) Bonne chance pour la suite, alors !

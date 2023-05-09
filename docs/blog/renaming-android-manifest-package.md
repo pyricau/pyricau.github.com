@@ -17,13 +17,13 @@ There is another way: **aapt** has a `--rename-manifest-package` parameter that 
 
 Here is what **aapt** help says:
 
-{% highlight bash %}
+```bash
    --rename-manifest-package
        Rewrite the manifest so that its package name is the package name
        given here.  Relative class names (for example .Foo) will be
        changed to absolute names with the old package so that the code
        does not need to change.
-{% endhighlight %}
+```
 
 The great advantage is that your code won't change, the R class stays identical.
 
@@ -31,7 +31,7 @@ The great advantage is that your code won't change, the R class stays identical.
 
 Since [r17](http://code.google.com/p/android/issues/detail?id=21336), this option is available in the **aapt** Ant task, through the `manifestpackage` attribute. You'll need to override the `-package-resources` target, copied from the SDK `build.xml`:
 
-{% highlight xml %}
+```xml
 <target name="-package-resources" depends="-crunch">
   <do-only-if-not-library elseText="Library project: do not package resources..." >
     <aapt executable="${aapt}"
@@ -41,7 +41,7 @@ Since [r17](http://code.google.com/p/android/issues/detail?id=21336), this optio
     </aapt>
   </do-only-if-not-library>
 </target>
-{% endhighlight %}
+```
 
 ## Maven
 
@@ -53,11 +53,11 @@ If you load some resource ids at runtime, you may need to update your code.
 
 I used to do this:
 
-{% highlight java %}
+```java
 String packageName = context.getPackageName();
 Resources res = context.getResources();
 int id = res.getIdentifier("my_drawable", "drawable", packageName);
-{% endhighlight %}
+```
 
 This usually works great, especially in library projects where you do not know the package name.
 
@@ -67,30 +67,30 @@ It's easy to fix though, by retrieving the package name of another resource with
 
 Let's create a resource id dedicated to that purpose, for example in `res/values/ids.xml`:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <item name="used_for_package_name_retrieval" type="id"/>
 </resources>
-{% endhighlight %}
+```
 
 And now we get the right package:
 
-{% highlight java %}
+```java
 Resources res = context.getResources();
 String packageName = res.getResourcePackageName(R.id.used_for_package_name_retrieval);
 int id = res.getIdentifier("some_drawable", "drawable", packageName);
-{% endhighlight %}
+```
 
 ## Conclusion
 
 This tip helps creating different versions of the same app. 
 
-![](/static/blog_img/manifest_package.png)
+![](images/manifest_package.png)
 
 As you can see on this screenshot, the package name can then be set as a build parameter, to create parameterized builds in Jenkins.
 
-{% include comments.html %}
+## Comments
 
 <!--
 

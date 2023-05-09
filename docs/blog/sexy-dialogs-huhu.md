@@ -36,7 +36,7 @@ Voici un exemple classique de boîte de dialogue :
 
 
 
-{% highlight java %}
+```java
 new AlertDialog.Builder(this)
 		.setMessage("Un message pas sexy")
 		.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
@@ -45,13 +45,13 @@ new AlertDialog.Builder(this)
 			}
 		})
 		.show();
-{% endhighlight %}
+```
 
 _Je préfère créer et gérer manuellement mes boîtes de dialogue plutôt qu'utiliser `showDialog()` et `onCreateDialog()`, que je n'ai jamais réussi à utiliser correctement dès que les cas d'utilisation se corsent._
 
 
 
-![](/static/blog_img/pas_sexy.png)
+![](images/pas_sexy.png)
 
 
 
@@ -69,7 +69,7 @@ Je vous propose de personnaliser le message affiché par notre boîte de dialogu
 
 Par exemple une `TextView`, définie ici dans un `layout` :
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -78,7 +78,7 @@ Par exemple une `TextView`, définie ici dans un `layout` :
     android:textSize="30sp"
     android:padding="20dp"
     />
-{% endhighlight %}
+```
 
 _Petit rappel, vos layouts xml n'ont **aucune raison** de commencer systématiquement par un `LinearLayout` ou un `RelativeLayout`._
 
@@ -86,7 +86,7 @@ _Petit rappel, vos layouts xml n'ont **aucune raison** de commencer systématiqu
 
 Ensuite, il suffit de gonfler (_inflate_ ;)) ce `layout`, et de le définir comme vue de la boîte de dialogue :
 
-{% highlight java %}
+```java
 TextView messageView = (TextView) View.inflate(this, R.layout.dialog, null);
 messageView.setText("Un message à peine plus sexy");
 
@@ -99,7 +99,7 @@ new AlertDialog.Builder(this) //
 			}
 		}) //
 		.show();
-{% endhighlight %}
+```
 
 _Notez l'utilisation de `View.inflate()`, plutôt que `LayoutInflater.from(context).inflate()`, ou encore **pire**, `((LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate()`_
 
@@ -107,7 +107,7 @@ _Notez l'utilisation de `View.inflate()`, plutôt que `LayoutInflater.from(conte
 
 Et voilà le travail :
 
-![](/static/blog_img/sexy1.png)
+![](images/sexy1.png)
 
 
 
@@ -121,15 +121,15 @@ Dans un [précédent article](/2011/10/01/un-peu-de-style-dans-la-textview/), no
 
 
 
-{% highlight java %}
+```java
 TextView messageView = (TextView) View.inflate(this, R.layout.dialog, null);
 CharSequence message = Html.fromHtml("I like <b>sexy</b> <font color=\"#42dd42\">turtles</font>!");
 messageView.setText(message);
-{% endhighlight %}
+```
 
 
 
-![](/static/blog_img/sexy2.png)
+![](images/sexy2.png)
 
 
 
@@ -137,13 +137,13 @@ messageView.setText(message);
 
 
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ... -->
     <string name="dialog_message"><![CDATA[I like <b>sexy</b> <font color="#42dd42">turtles</font>!"]]></string>
 </resources>
-{% endhighlight %}
+```
 
 
 
@@ -151,9 +151,9 @@ Et notre code devient :
 
 
 
-{% highlight java %}
+```java
 CharSequence message = Html.fromHtml(getString(R.string.dialog_message));
-{% endhighlight %}
+```
 
 
 
@@ -173,13 +173,13 @@ Ajoutons une image à notre message :
 
 
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ... -->
     <string name="dialog_message"><![CDATA[I like <img src="turtle" /> <b>sexy</b> <font color=\"#42dd42\">turtles</font>!"]]></string>
 </resources>
-{% endhighlight %}
+```
 
 
 
@@ -187,7 +187,7 @@ Ainsi que la **ressource** correspondante :
 
 
 
-![](/static/blog_img/turtle_res.png)
+![](images/turtle_res.png)
 
 
 
@@ -195,7 +195,7 @@ Il n'y a plus qu'à créer un `ImageGetter` qui sait charger un `Drawable` à pa
 
 
 
-{% highlight java %}
+```java
 ImageGetter imageGetter = new ImageGetter() {
 	@Override
 	public Drawable getDrawable(String source) {
@@ -213,7 +213,7 @@ ImageGetter imageGetter = new ImageGetter() {
 };
 
 CharSequence message = Html.fromHtml(getString(R.string.dialog_message), imageGetter, null);
-{% endhighlight %}
+```
 
 
 
@@ -221,7 +221,7 @@ Et le tour est joué :
 
 
 
-[![](/static/blog_img/sexy3.png)](http://commons.wikimedia.org/wiki/File:Trachemys_scripta_elegans.JPG)
+[![](images/sexy3.png)](http://commons.wikimedia.org/wiki/File:Trachemys_scripta_elegans.JPG)
 
 _turtle's head by Betta.1_
 
@@ -235,4 +235,4 @@ Ces quelques lignes de code permettent de **rapidement** mettre en avant les **i
 
 Bien entendu, **l'abus** de boîte de dialogues est **dangereux** pour la santé mentale des utilisateurs, à afficher avec **modération** !
 
-{% include comments.html %}
+## Comments

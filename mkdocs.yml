@@ -6,12 +6,17 @@ theme:
   name: material
   palette:
     primary: light blue
-  favicon: 'images/medium.jpg'
-  logo: 'images/medium.jpg'
+  favicon: 'images/wedding.jpg'
+  logo: 'images/wedding.jpg'
   features:
     - navigation.instant
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
     - content.code.copy
+    - navigation.footer
+  font:
+    text: Inter
 
 site_description: "Pierre-Yves Ricau's personal website."
 site_author: Pierre-Yves Ricau
@@ -29,7 +34,11 @@ nav:
   - 'Open Source': open_source.md
   - 'Public Speaking': public_speaking.md
   - 'Articles': articles.md
-
+  - 'Blog':
+    - '2013':
+      - 'Square Cash - you owe me money!': blog/square-cash-mailto.md
+      - 'Transparency with JPEGs done right': blog/transparent-jpegs-done-right.md
+      - 'Chathead Basics': blog/chatheads-basics.md
 
 extra:
   social:

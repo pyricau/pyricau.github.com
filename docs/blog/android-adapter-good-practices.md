@@ -40,7 +40,7 @@ If you [read the source](http://grepcode.com/file/repository.grepcode.com/java/e
 
 In most apps, it's actually a lot simpler to implement your own `BaseAdapter`:
 
-{% highlight java %}
+```java
 public class BananaPhoneAdapter extends BaseAdapter {
 
 	private List<BananaPhone> bananaPhones = Collections.emptyList();
@@ -82,7 +82,7 @@ public class BananaPhoneAdapter extends BaseAdapter {
 	}
 
 }
-{% endhighlight %}
+```
 
 ## <a id="Thread-safety" href="#Thread-safety">Thread safety</a>
 
@@ -90,17 +90,17 @@ I mentioned that the `ArrayAdapter` uses a lock to ensure thread safety. That's 
 
 You can easily enforce that with a fail fast strategy:
 
-{% highlight java %}
+```java
 public void updateBananas(List<BananaPhone> bananaPhones) {
 	ThreadPreconditions.checkOnMainThread();
 	this.bananaPhones = bananaPhones;
 	notifyDataSetChanged();
 }
-{% endhighlight %}
+```
 
 Here is an example implementation:
 
-{% highlight java %}
+```java
 public class ThreadPreconditions {
 	public static void checkOnMainThread() {
 		if (BuildConfig.DEBUG) {
@@ -110,13 +110,13 @@ public class ThreadPreconditions {
 		}
 	}
 }
-{% endhighlight %}
+```
 
 ## <a id="getView-recycling" href="#getView-recycling">getView() recycling</a>
 
 A naive implementation of `getView()` could be:
 
-{% highlight java %}
+```java
 @Override
 public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -132,11 +132,11 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 	return rootView;
 }
-{% endhighlight %}
+```
 
 However, `ListView` recycles the views that are not shown any more, and gives them back through `convertView`. Let's take advantage of this:
 
-{% highlight java %}
+```java
 @Override
 public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -154,7 +154,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 	return convertView;
 }
-{% endhighlight %}
+```
 
 ## <a id="findViewById-mi-amor" href="#findViewById-mi-amor">findViewById() mi amor</a>
 
@@ -162,7 +162,7 @@ There is still one subtle problem with `getView()`: each time it is called, it r
 
 How does `findViewById()` work exactly ? Here is a simplified version:
 
-{% highlight java %}
+```java
 public View findViewById(int id) {
 	if (this.id == id) {
 		return this;
@@ -175,7 +175,7 @@ public View findViewById(int id) {
 	}
 	return null;
 }
-{% endhighlight %}
+```
 
 As you can see, `findViewById()` navigates through the whole view hierarchy until it finds the requested view, each time you call it.
 
@@ -185,7 +185,7 @@ Whether or not this is a problem is up to you. If your `ListView` scrolls fine e
 
 The **ViewHolder Pattern** is a well known pattern to limit the number of calls to `findViewById()`. The idea is that you call it once, then store the child view references in a `ViewHolder` instance that will be associated with the `convertView` thanks to `View.setTag()`.
 
-{% highlight java %}
+```java
 
 private static class ViewHolder {
 	public final ImageView bananaView;
@@ -220,7 +220,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 	return convertView;
 }
-{% endhighlight %}
+```
 
 ## <a id="Tag-with-id" href="#Tag-with-id">Tag with id</a>
 
@@ -231,7 +231,7 @@ Since Android 1.6, there is an overloaded version of `View.setTag(int, Object)` 
 > By the way, the `SparseArray` javadoc says that *it is intended to be more efficient than using a HashMap to map Integers to Objects*. The intent is nice, but that is quite a vague assertion. Is it more efficient in terms of space? runtime? Less GC? Under which conditions? Why does it need key ordering? E.g it could have been a hashtable implementation with int keys.
 
 Notice how we reuse the view ids as tag keys:
-{% highlight java %}
+```java
 @Override
 public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -255,7 +255,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 	return convertView;
 }
-{% endhighlight %}
+```
 
 As mentioned before, although the API is available since Android 1.6, you shouldn't use it prior to Android 4.0, because the implementation wasn't a per-view `SparseArray`.
 
@@ -265,7 +265,7 @@ As mentioned before, although the API is available since Android 1.6, you should
 
 There is a third way that provides better decoupling. The idea is to create a custom ViewGroup, e.g. `BananaPhoneView`, for each item. `BananaPhoneView` will keep the references to it child views. `BananaPhoneView` is now responsible for updating `bananaView` and `phoneView`.
 
-{% highlight java %}
+```java
 @Override
 public View getView(int position, View convertView, ViewGroup parent) {
 	BananaPhoneView bananaPhoneView;
@@ -282,13 +282,13 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 	return bananaPhoneView;
 }
-{% endhighlight %}
+```
 
 ## <a id="Custom-item-view" href="#Custom-item-view">Custom item view</a>
 
 Your performance measurements may tell you that you spend too much time going through the view hierarchy when measuring and drawing. You can flatten your view hierarchy by combining components, or by creating a custom view that draws the whole item manually. That's how the mail list in Gmail works.
 
-![Gmail Screenshot](/static/blog_img/gmail_screenshot.png)
+![Gmail Screenshot](images/gmail_screenshot.png)
 
 If you haven't already, take at look at [Android Performance Case Study](http://www.curious-creature.org/2012/12/01/android-performance-case-study/).
 
@@ -304,7 +304,7 @@ Benoît Lubek suggested another solution on [Google+](http://plus.google.com/107
 
 The idea is to reproduce the `View.setTag(int, Object)` ICS+ behavior as an external API, relying on `View.setTag(Object)`:
 
-{% highlight java %}
+```java
 public class ViewHolder {
     // I added a generic return type to reduce the casting noise in client code
 	@SuppressWarnings("unchecked")
@@ -322,11 +322,11 @@ public class ViewHolder {
 		return (T) childView;
 	}
 }
-{% endhighlight %}
+```
 
 This solution is elegant, and the code looks even simpler:
 
-{% highlight java %}
+```java
 @Override
 public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -344,11 +344,11 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 	return convertView;
 }
-{% endhighlight %}
+```
 
 I really like this approach!
 
-{% include comments.html %}
+## Comments
 
 <!--
 

@@ -27,7 +27,7 @@ Dès lors que l'on met en place un formatage du code automatique et partagé par
 
 Voici la configuration que j'utilise :
 
-![](/static/blog_img/line_width.png)
+![](images/line_width.png)
 
 
 Vous avez bien lu, je préfère **1000**. Ou 2000. Ou 10000. Ou... bon, je suppose que vous avez compris.
@@ -58,11 +58,11 @@ Mais en combinant cela avec l'idée qu'une variable locale, c'est forcément de 
 
 Un exemple de la vraie vie :
 
-{% highlight java %}
+```java
 
 WebApplicationContextUtils.getWebApplicationContext(this.getServletContext()).getAutowireCapableBeanFactory().autowireBeanProperties(this, AutowireCapableBeanFactory.AUTOWIRE_BY_TYPE, true);
 
-{% endhighlight %}
+```
 
 
 **Vous trouvez-ça lisible vous ?**
@@ -79,12 +79,12 @@ Moins de **5 lignes**, c'est bien. Au passage, je vous recommande chaudement la 
 
 On comprend déjà mieux :
 
-{% highlight java %}
+```java
 ServletContext servletContext = this.getServletContext();
 WebApplicationContext applicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
 AutowireCapableBeanFactory beanFactory = applicationContext.getAutowireCapableBeanFactory();
 beanFactory.autowireBeanProperties(this, AutowireCapableBeanFactory.AUTOWIRE_BY_NAME, true);
-{% endhighlight %}
+```
 
 
 
@@ -97,7 +97,7 @@ Le mec, un jour, il a découvert Google Guava et ses [Function](http://guava-lib
 
 Encore un exemple de la vraie vie, un peu maquillé et allégé pour l'occasion :
 
-{% highlight java %}
+```java
 public class MyPanel extends Composite {
 
 	public MyPanel() {
@@ -141,7 +141,7 @@ public class MyPanel extends Composite {
 		});
 	}
 }
-{% endhighlight %}
+```
 
 
 Quand je tombe sur une classe qui comporte 1000 lignes comme ça, j'ai beaucoup de mal à suivre le **flux d'exécution**. Pas vous ?
@@ -160,9 +160,9 @@ Si la chaîne d'appels de méthode est courte et a un sens grammatical, il para�
 
 Exemple avec un binding [Guice](http://code.google.com/p/google-guice/) :
 
-{% highlight java %}
+```java
 bind(Geek.class).annotatedWith(Piwai.class).toInstance(piwai);
-{% endhighlight %}
+```
 
 Par contre, si la chaîne d'appels est trop longue, à vous de la découper à votre goût sur plusieurs lignes.
 
@@ -172,17 +172,17 @@ Une astuce simple consiste à ajouter "//" en fin de ligne, pour empêcher l'IDE
 
 Par exemple, pour utiliser un [SharedPreferences helper](http://code.google.com/p/androidannotations/wiki/SharedPreferencesHelpers) généré par AndroidAnnotations:
 
-{% highlight java %}
+```java
 prefs.edit() //
   .clear() //
   .name().put("John Smith") //
   .age().put(42) //
   .done();
-{% endhighlight %}
+```
 
 A vous maintenant : qui a d'autres exemples de longlignite aigüe ?
 
-{% include comments.html %}
+## Comments
 
 ## [Baztoune](http://bastien-colmard.com/)
 Ah, l'éternelle question :D ça me rappelle [ce topic](http://stackoverflow.com/questions/110928/is-there-a-valid-reason-for-enforcing-a-maximum-width-of-80-characters-in-a-code) sur SO  

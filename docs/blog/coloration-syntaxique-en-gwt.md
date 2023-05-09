@@ -74,10 +74,10 @@ Tout d'abord, il faut [télécharger](http://alexgorbatchev.com/SyntaxHighlighte
 
 Ces fichiers devront être inclus dans l'application GWT. Il existe [différentes méthodes](http://code.google.com/webtoolkit/doc/latest/DevGuideOrganizingProjects.html#DevGuideModules). J'ai choisi de créer un répertoire **public** au même niveau que le répertoire **client**, et d'y placer les répertoires **scripts** et **styles**.
 
-![](/static/blog_img/public.png)
+![](images/public.png)
 
 Ensuite, il suffit de les ajouter au module (fichier **.gwt.xml**) :
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
 
@@ -96,7 +96,7 @@ Ensuite, il suffit de les ajouter au module (fichier **.gwt.xml**) :
 
     <!-- [...] -->
 </module>
-{% endhighlight %}
+```
 
 
 ### Go, Go, GO!
@@ -110,7 +110,7 @@ Un _brush_ (pinceau) est nécessaire pour colorer du code. Il existe en fait un 
 
 Il nous faut donc une fabrique de pinceaux :
 
-{% highlight java %}
+```java
 public class BrushFactory {
     public native JavaScriptObject newJavaBrush() /*-{
         return new $wnd.SyntaxHighlighter.brushes.Java();
@@ -120,10 +120,10 @@ public class BrushFactory {
         return new $wnd.SyntaxHighlighter.brushes.Xml();
     }-*/;
 }
-{% endhighlight %}
+```
 
 Voici le code [JSNI](http://code.google.com/webtoolkit/doc/latest/DevGuideCodingBasicsJSNI.html) utilisant SyntaxHighlighter pour transformer du code en html :
-{% highlight java %}
+```java
 public class SyntaxHighlighter {
     public static native String highlight(String code, JavaScriptObject brush, boolean toolbar) /*-{
         var params = {};
@@ -132,19 +132,19 @@ public class SyntaxHighlighter {
         return brush.getHtml(code);
     }-*/;
 }
-{% endhighlight %}
+```
 _Notez le paramètre toolbar qui permet d'afficher ou non la barre d'outil. De [nombreux paramètres](http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/) sont disponibles ; à vous de les intégrer._
 
 Ya plus qu'à utiliser tout ça, par exemple en récupérant le code contenu dans une [TextArea](http://google-web-toolkit.googlecode.com/svn/javadoc/latest/com/google/gwt/user/client/ui/TextArea.html) et en l'affichant via un [HTML](http://google-web-toolkit.googlecode.com/svn/javadoc/latest/com/google/gwt/user/client/ui/HTML.html).
 
-{% highlight java %}
+```java
 public void bindTextAreaCodeToHtml(TextArea textArea, HTML html) {
     JavaScriptObject brush = BrushFactory.newJavaBrush();
     String code = textArea.getValue();
     String htmlCode = SyntaxHighlighter.highlight(code, brush, false);
     html.setHTML(htmlCode);
 }
-{% endhighlight %}
+```
 
 
 ## Conclusion
@@ -154,7 +154,7 @@ Vous avez désormais toutes les clés en main pour faire de la coloration syntax
 
 Bien entendu, ce code est à adapter suivant vos besoins. Vous n'êtes pas obligés d'utiliser des **static** partout ;-) .
 
-{% include comments.html %}
+## Comments
 
 ## [Raphaël Brugier (@rbrugier)](http://twitter.com/rbrugie)
 

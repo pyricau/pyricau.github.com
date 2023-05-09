@@ -9,7 +9,7 @@ more: 429
 
 Two years ago, I created [AndroidAnnotations](http://androidannotations.org). 
 
-[![First commit](/static/blog_img/first_commit.png)](https://github.com/excilys/androidannotations/commit/df8981f2e224bb0e85f0c299c03945ceaf9e2ec7)
+[![First commit](images/first_commit.png)](https://github.com/excilys/androidannotations/commit/df8981f2e224bb0e85f0c299c03945ceaf9e2ec7)
 
 > Lesson n°1: think before writing your first commit message
 
@@ -39,7 +39,7 @@ On the 14th of december 2010, Olivier Croisier presented the Annotation Processo
 
 The focus in AndroidAnnotations has never really been about dependency injection, but rather about creating annotations to simplify your code and make your life easier, at compile time. It started with view injection, then event binding (based on GWT [@UiHandler](http://google-web-toolkit.googlecode.com/svn/javadoc/2.0/com/google/gwt/uibinder/client/UiHandler.html)), resource injection, simplified threading…
 
-![AndroidAnnotations logo](/static/blog_img/logo.png)
+![AndroidAnnotations logo](images/logo.png)
 
 ## @Timeline
 
@@ -61,7 +61,7 @@ The focus in AndroidAnnotations has never really been about dependency injection
 
 * **October 2012** Talk at [Devoxx](http://www.parleys.com/#id=3550)
 
-![Diet Driven Development](/static/blog_img/ddd.png)
+![Diet Driven Development](images/ddd.png)
 
 ## @RandomStats
 
@@ -84,7 +84,7 @@ Here is a [sample project](https://github.com/pyricau/CleanAndroidCode) that use
 
 Let's see what happens over the next two years!
 
-{% include comments.html %}
+## Comments
 
 <!--
 

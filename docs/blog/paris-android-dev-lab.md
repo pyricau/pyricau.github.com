@@ -21,11 +21,11 @@ J'ai eu la chance d'être invité à cet évènement ; j'en ai donc profité pou
 
 Avant tout, laissez-moi vous parler de l'[apéro Android](http://www.paug.fr/2011/10/apero-android-le-27-octobre-avec-les.html). Sachant que les places pour l'ADL étaient limitées, le Paris Android User Group ([PAUG](http://www.paug.fr/)) a organisé un **apéro Android** le jeudi soir, pour permettre à tous de discuter et de rencontrer les _Android Developer Advocates_.
 
-![](/static/blog_img/aperoandroid.png)
+![](images/aperoandroid.png)
 
 Les Googlers sont très ouverts et abordables, et nous avons passé une soirée sympatique, en partie aux frais de [FrAndroid](http://www.frandroid.com/). Je vous conseille vivement ce type de rencontre ; c'est un bon moyen d'apprendre et de rencontrer des gens intéressants tout en passant un bon moment.
 
-[![](/static/blog_img/logo.png)](http://code.google.com/p/androidannotations/)
+[![](images/logo.png)](http://code.google.com/p/androidannotations/)
 
 Au cours de la soirée, j'ai eu le plaisir de constater que deux _Android Developer Advocates_ ([Nick Butcher](https://plus.google.com/118292708268361843293/posts) et [Richard Hyndman](https://plus.google.com/115995639636688350464/posts)) connaissaient [AndroidAnnotations](http://code.google.com/p/androidannotations/), suite au [talk](http://uk.droidcon.com/programme/day-2#kaeppler-development) de [Matthias Kaeppler](http://twitter.com/twoofour) à la **DroidCon** 2011.
 
@@ -52,27 +52,27 @@ Notez qu'Honeycomb est uniquement orienté tablette : l'équipe Android n'avait 
 
 Auparavant, les informations système et les notifications étaient situées dans une barre **en haut** de l'écran.
 
-![](/static/blog_img/top_bar.png)
+![](images/top_bar.png)
 
 Désormais, cette barre se situe **en bas** de l'écran, et contient en outre les boutons de **navigation**. Cela permet de se débarrasser des boutons **physiques**, qui étaient mal placés lorsque l'on passait en **mode paysage**.
 
-![](/static/blog_img/bottom_bar.png)
+![](images/bottom_bar.png)
 
 Les **notifications** sont désormais accessibles sans couvrir totalement l'écran, de même qu'un certain nombre de **réglages** et **informations** bien pratiques.
 
-![](/static/blog_img/bottom_bar_notif.png)
+![](images/bottom_bar_notif.png)
 
 Cette barre peut distraire l'**attention visuelle** lorsque vous souhaitez une **expérience immersive**. Il est possible de la **cacher** en utilisant le code suivant :
 
-{% highlight java %}
+```java
 mView.setSystemUiVisibility(View.STATUS_BAR_HIDDEN)
-{% endhighlight %}
+```
 
 _Note : je me demande bien pourquoi cette méthode n'est pas statique et appartient à View ; si vous avez une idée, n'hésitez pas à commenter._
 
 Dans le screenshot suivant, comme vous le voyez, la barre ne disparaît **pas totalement**. Elle devient noire, mais les icônes sont remplacés par des points gris **toujours cliquables**.
 
-![](/static/blog_img/bottom_bar_dark.png)
+![](images/bottom_bar_dark.png)
 
 _Note : ce screenshot montre le dernier niveau de [Wind-up Knight](https://market.android.com/details?id=com.robotinvader.knightmare), un **jeu sympa** qui est un bon exemple de l'efficacité du paiement **in-app** (la preuve, je n'ai pas résisté et ce fût l'occasion de réaliser mon premier paiement in-app)._
 
@@ -80,7 +80,7 @@ _Note : ce screenshot montre le dernier niveau de [Wind-up Knight](https://marke
 
 Vous souvenez-vous d'Android 1.X, où la barre de titre occupait une place énorme qui ne servait à rien ?
 
-![](/static/blog_img/title_1_5.png)
+![](images/title_1_5.png)
 
 Autant utiliser cet espace !
 
@@ -93,16 +93,16 @@ Cette **action bar** n'est pas nécessairement un composant Android, il s'agit p
 Le projet **ActionBarCompat**, disponible dans les samples depuis **ADT 14**, met à disposition tout le code et les ressources nécessaires à la création d'une action bar fonctionnant sur toutes les versions d'Android.
 
 
-![](/static/blog_img/action_bar_compat.png)
+![](images/action_bar_compat.png)
 
 _ActionBarCompat sur mon Nexus One (Gingerbread)_
 
 Les **menu items** dans l'**Options Menu** peuvent être rendus disponibles dans les boutons d'action. Il suffit juste d'ajouter l'attribut suivant aux items dans votre **menu.xml** :
 
 
-{% highlight xml %}
+```xml
     android:showAsAction="ifRoom|withText";
-{% endhighlight %}
+```
 
 #### Les fragments
 
@@ -112,7 +112,7 @@ Sans trop rentrer dans les détails : les fragments sont des composants de UI, r
 Pour être tout à fait honnête, je ne suis qu'à moitié convaincu par ce nouveau système de fragment. Le principe reste proche de celui des activités : il s'agit d'un **controller**, chargé d'**orchestrer** le **code métier** lié à un assemblage de composants graphiques (des **View**).
 
 
-![](/static/blog_img/fragment.png)
+![](images/fragment.png)
 
 
 En soit, ce n'est pas une mauvaise idée. Par contre, on se retrouve encore avec un **modèle par héritage**, comme pour les **activités**. Tout fragment doit hériter de **Fragment**. Il existe un **ListFragment**, un **XXXFragment**, etc, qui tous héritent de **Fragment**.
@@ -121,7 +121,7 @@ En soit, ce n'est pas une mauvaise idée. Par contre, on se retrouve encore avec
 Le problème, c'est que dès lors que l'on souhaite factoriser du code commun à plusieurs Fragments, il va falloir recréer une sous classe pour chacun des types de Fragment. **AbstractCustomFragment**, **AbstractCustomListFragment**, etc. Et évidemment, si deux frameworks s'amusent à créer leurs propres fragments à étendre, il devient compliqué de les combiner.
 
 
-![](/static/blog_img/fragment_inheritance.png)
+![](images/fragment_inheritance.png)
 
 
 Pour faire un parallèle, j'ai l'impression que l'équipe Android persiste à proposer des **servlets**, quand il serait bien plus utile de proposer des **controllers** Spring.
@@ -135,7 +135,7 @@ Pour moi, ces différentes responsabilités devraient appartenir à différents 
 Les [Loaders](http://developer.android.com/guide/topics/fundamentals/loaders.html) sont un nouveau moyen pour récupérer des données en tâche de fond, en gérant convenablement les problématiques liées au cycle de vie des composants Android.
 
 
-[![](/static/blog_img/Samsung_loader.jpeg)](http://commons.wikimedia.org/wiki/File:Samsung_loader.JPEG)
+[![](images/Samsung_loader.jpeg)](http://commons.wikimedia.org/wiki/File:Samsung_loader.JPEG)
 
 _Samsung loader, by A1C Beatrice Cassetty, U.S. Air Force (public domain)_
 
@@ -162,9 +162,9 @@ Et pour simplifier votre code de gestion des Threads sur Android, pourquoi ne pa
 Pensez à activer le flag suivant dans votre manifest :
 
 
-{% highlight xml %}
+```xml
 android:hardwareAccelerated="true"
-{% endhighlight %}
+```
 
 
 Cela permet de bénéficier de l'accélération matérielle pour le rendering, gratos. Il est désactivé par défaut car certaines implémentations dessinant via des canvas peuvent ralentir ou faire crasher votre appli.
@@ -195,7 +195,7 @@ Ce n'est normalement pas le cas des composants standards. Comment décider s'il 
 Les applications **Google Books** et **YouTube** utilisent renderscript : Google Books pour **tourner les pages**, et YouTube pour l'écran avec toutes les vidéos visibles en même temps.
 
 
-![](/static/blog_img/youtube.png)
+![](images/youtube.png)
 
 
 
@@ -220,7 +220,7 @@ Voilà qui conclu la première moitié de ce compte rendu sur l'Android Dev Lab,
 
 > Edit: en fait, il n'y a jamais eu de prochain article :)
 
-{% include comments.html %}
+## Comments
 
 ## [Frank Harper (@franklinharper)](http://twitter.com/franklinharper)
 

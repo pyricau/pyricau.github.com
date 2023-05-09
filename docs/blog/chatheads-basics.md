@@ -1,32 +1,23 @@
----
-layout: post
-title: Chathead Basics
-filename: 2013-04-14-chatheads-basics.markdown
-more: 360
-draft: false
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
 Facebook recently released a new feature in Facebook Messenger: [Chatheads](http://www.engadget.com/2013/04/12/facebook-messenger-updated/).
 
-![Sheldon Chathead](/static/blog_img/sheldon_chathead.png)
+![Sheldon Chathead](images/sheldon_chathead.png)
 
 I was surprised that chatheads could be drawn on top of any app. Here is a quick explanation of how it works.
 
-## <a id="NoActivity" href="#NoActivity">No Activity?</a>
+## No Activity?
 
 At first you may think it's a trick with a transparent activity. Let's see:
 
-{% highlight bash %}
+```bash
 $ adb shell dumpsys activity
 Running activities (most recent first):
   TaskRecord{42b03c38 #2 A com.android.launcher U 0}
     Run #0: ActivityRecord{42adf3f8 u0 com.android.launcher/com.android.launcher2.Launcher}
-{% endhighlight %}
+```
 
 No activity! And that's because Messenger uses a service:
 
-{% highlight bash %}
+```bash
 $ adb shell dumpsys activity services
 ACTIVITY MANAGER SERVICES (dumpsys activity services)
 * ServiceRecord{43242ae0 u0 com.facebook.orca/.chatheads.ChatHeadService}
@@ -39,33 +30,33 @@ ACTIVITY MANAGER SERVICES (dumpsys activity services)
   createTime=-9m19s542ms lastActivity=-3m20s499ms
   executingStart=-3m20s499ms restartTime=-9m19s542ms
   startRequested=true stopIfKilled=false callStart=true lastStartId=65
-{% endhighlight %}
+```
 
-## <a id="Principle" href="#Principle">Principle</a>
+## Principle
 
 It's simple: just add a view to a [Window](http://developer.android.com/reference/android/view/Window.html).
 
 As you probably know, an Activity has a Window instance. Dialogs also have their own dedicated Window. Even Services can have Window: [InputMethodService](http://developer.android.com/reference/android/inputmethodservice/InputMethodService.html) uses a Window to receive touch events and draw a keyboard on top of another Window, and [DreamService](http://developer.android.com/reference/android/service/dreams/DreamService.html) is used to create screensavers.
 
-## <a id="Permission" href="#Permission">Permission</a>
+## Permission
 
 To open a new window in which you will draw the chathead, you need the [SYSTEM_ALERT_WINDOW](http://developer.android.com/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW) permission.
 
 > Allows an application to open windows using the type TYPE_SYSTEM_ALERT, shown on top of all other applications. Very few applications should use this permission; these windows are intended for system-level interaction with the user.
 
-{% highlight xml %}
+```xml
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-{% endhighlight %}
+```
 
 This is what your users will see when installing the app:
 
-![Draw Permission](/static/blog_img/draw_permission.png)
+![Draw Permission](images/draw_permission.png)
 
-## <a id="AndroidHead" href="#AndroidHead">Android Head</a>
+## Android Head
 
 Now that you have the right permission, you just need to call <a href="http://developer.android.com/reference/android/view/ViewManager.html#addView(android.view.View, android.view.ViewGroup.LayoutParams)">WindowManager#addView()</a> with the view and the corresponding layout params:
 
-{% highlight java %}
+```java
 public class ChatHeadService extends Service {
 
   private WindowManager windowManager;
@@ -104,22 +95,22 @@ public class ChatHeadService extends Service {
     if (chatHead != null) windowManager.removeView(chatHead);
   }
 }
-{% endhighlight %}
+```
 
 Don't forget to start the service somehow:
 
-{% highlight java %}
+```java
 startService(new Intent(context, ChatHeadService.class));
-{% endhighlight %}
+```
 
-![Chathead Android](/static/blog_img/chathead_android.png)
+![Chathead Android](images/chathead_android.png)
 
 
-## <a id="draghead" href="#draghead">Drag the head</a>
+## Drag the head
 
 You can now interact with the view. For example, here is a **quick hack** to drag the Android head around:
 
-{% highlight java %}
+```java
 chatHead.setOnTouchListener(new View.OnTouchListener() {
   private int initialX;
   private int initialY;
@@ -145,9 +136,9 @@ chatHead.setOnTouchListener(new View.OnTouchListener() {
     return false;
   }
 });
-{% endhighlight %}
+```
 
-## <a id="Conclusion" href="#Conclusion">Conclusion</a>
+## Conclusion
 
 Prior to Facebook Chatheads, this trick was already used by some apps. A few examples:
 
@@ -160,13 +151,13 @@ This feature is nice, but remember that *with great power comes great responsibi
 
 Please take care of your user pixels.
 
-{% include comments.html %}
+## Comments
 
-## hidden-markov
+### hidden-markov
 Does this imply that Facebook Chatheads (or any application with SYSTEM_ALERT_WINDOW permission) is able to conduct keylogging and take screenshots at arbitrary time?
 
 
-## kvgr
+### kvgr
 Great tutorial!
 Is there a way to display image only in launcher? When some activity is started, the icon should disapear.
 I thing there may be two ways:
@@ -174,14 +165,5 @@ I thing there may be two ways:
 2. detecting running app
 But I wasnt lucky to find the solution...
 
-## pickledolives
+### pickledolives
 Your tutorial is missing the point, that you need to register your service in the Android manifest file under the application tab.
-
-<!--
-
-To comment, copy and paste the following block
-
-## [Nickname](http://website)
-Comment
-
--->

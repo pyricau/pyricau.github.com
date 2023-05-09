@@ -21,7 +21,7 @@ Vous le savez probablement, il est possible d'inclure ses propres widgets GWT da
 
 Il suffit pour cela d'étendre la classe **Widget**. Prenons l'exemple d'un bouton ouvrant une fenêtre d'alerte :
 
-{% highlight java %}
+```java
 public class AlertButton extends Button implements ClickHandler {
 
 	public AlertButton() {
@@ -33,11 +33,11 @@ public class AlertButton extends Button implements ClickHandler {
 		Window.alert("I like turtles");
 	}
 }
-{% endhighlight %}
+```
 
 Vous pouvez ensuite l'inclure dans vos templates UiBinder, en ajoutant un **namespace** correspondant au **package** de votre widget :
 
-{% highlight xml %}
+```xml
 <ui:UiBinder
     xmlns:ui='urn:ui:com.google.gwt.uibinder'
     xmlns:g='urn:import:com.google.gwt.user.client.ui'
@@ -49,7 +49,7 @@ Vous pouvez ensuite l'inclure dans vos templates UiBinder, en ajoutant un **name
 	</g:FlowPanel>
 
 </ui:UiBinder>
-{% endhighlight %}
+```
 
 Un peu limité quand même...
 
@@ -59,7 +59,7 @@ Un peu limité quand même...
 
 Il y a mieux ! Vous pouvez tout à fait passer des paramètres à votre widget. Il suffit d'ajouter des paramètres de **constructeur** (donc obligatoires) ou des **setters** (donc facultatifs) à votre widget :
 
-{% highlight java %}
+```java
 public class AlertButton extends Button implements ClickHandler {
 
 	private final String msg;
@@ -75,12 +75,12 @@ public class AlertButton extends Button implements ClickHandler {
 		Window.alert(msg);
 	}
 }
-{% endhighlight %}
+```
 _Notez la présence de **@UiConstructor**, nécessaire lorsque le constructeur par défaut n'est pas défini._
 
 Puis d'utiliser les **attributs correspondants** dans vos templates UiBinder :
 
-{% highlight xml %}
+```xml
 <ui:UiBinder
     xmlns:ui='urn:ui:com.google.gwt.uibinder'
     xmlns:g='urn:import:com.google.gwt.user.client.ui'
@@ -92,7 +92,7 @@ Puis d'utiliser les **attributs correspondants** dans vos templates UiBinder :
 	</g:FlowPanel>
 
 </ui:UiBinder>
-{% endhighlight %}
+```
 
 
 ## Les attributs, ça pue ?
@@ -100,7 +100,7 @@ Puis d'utiliser les **attributs correspondants** dans vos templates UiBinder :
 
 Si votre widget implémente [HasText](http://google-web-toolkit.googlecode.com/svn/javadoc/latest/com/google/gwt/user/client/ui/HasText.html), vous pourrez alors définir ce texte directement au **sein de la balise** au lieu d'utiliser des **attributs**. Modifions **AlertButton** :
 
-{% highlight java %}
+```java
 public class AlertButton extends Button implements ClickHandler, HasText {
 
 	private String msg = "Default Message";
@@ -124,11 +124,11 @@ public class AlertButton extends Button implements ClickHandler, HasText {
 		throw new UnsupportedOperationException();
 	}
 }
-{% endhighlight %}
+```
 _Notez que l'interface **HasText** impose d'implémenter **getText()**, mais cette méthode n'est pas nécessaire pour nos besoins._
 
 C'est déjà plus sympa :
-{% highlight xml %}
+```xml
 <ui:UiBinder
     xmlns:ui='urn:ui:com.google.gwt.uibinder'
     xmlns:g='urn:import:com.google.gwt.user.client.ui'
@@ -140,7 +140,7 @@ C'est déjà plus sympa :
 	</g:FlowPanel>
 
 </ui:UiBinder>
-{% endhighlight %}
+```
 
 
 ## Quid du HTML ?
@@ -150,7 +150,7 @@ Vous pouvez aussi inclure, au sein de vos widgets, du HTML défini dans votre te
 
 Par exemple, supposons que je souhaite enrichir mon **AlertButton** pour afficher de belles popups, en utilisant une [DialogBox](http://google-web-toolkit.googlecode.com/svn/javadoc/latest/com/google/gwt/user/client/ui/DialogBox.html) :
 
-{% highlight java %}
+```java
 public class AlertButton extends Button implements ClickHandler, HasHTML {
 
 	private String html = "";
@@ -195,12 +195,12 @@ public class AlertButton extends Button implements ClickHandler, HasHTML {
 	}
 
 }
-{% endhighlight %}
+```
 _La méthode **setHTML()** est appelée avec en paramètre le HTML sous forme de String._
 
 Je peux désormais spécifier le **contenu HTML** de cette boîte de dialogue dans mon template UiBinder : 
 
-{% highlight xml %}
+```xml
 <ui:UiBinder
     xmlns:ui='urn:ui:com.google.gwt.uibinder'
     xmlns:g='urn:import:com.google.gwt.user.client.ui'
@@ -217,7 +217,7 @@ Je peux désormais spécifier le **contenu HTML** de cette boîte de dialogue da
 	</g:FlowPanel>
 
 </ui:UiBinder>
-{% endhighlight %}
+```
 
 
 ## &amp;nbsp; ?
@@ -225,7 +225,7 @@ Je peux désormais spécifier le **contenu HTML** de cette boîte de dialogue da
 
 Comment utiliser des entités HTML dans vos templates UiBinder ? Il suffit d'ajouter [la DTD](http://code.google.com/webtoolkit/doc/latest/DevGuideUiBinder.html#HTML_entities) fournie par Google :
 
-{% highlight xml %}
+```xml
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder
     xmlns:ui='urn:ui:com.google.gwt.uibinder'
@@ -242,7 +242,7 @@ Comment utiliser des entités HTML dans vos templates UiBinder ? Il suffit d'ajo
 	</g:FlowPanel>
 
 </ui:UiBinder>
-{% endhighlight %}
+```
 
 
 ## Paramètres complexes
@@ -254,7 +254,7 @@ Un exemple d'utilisation serait l'injection d'une **Enum** afin de paramétrer u
 
 Reprenons notre fenêtre d'alerte initiale :
 
-{% highlight java %}
+```java
 public class AlertButton extends Button implements ClickHandler {
 
 	private final Animal animal;
@@ -270,17 +270,17 @@ public class AlertButton extends Button implements ClickHandler {
 		Window.alert("I like " + animal.toString());
 	}
 }
-{% endhighlight %}
+```
 
 **Animal** est une simple Enum :
-{% highlight java %}
+```java
 public Enum Animal {
   TURTLES, DOLPHINS;
 }
-{% endhighlight %}
+```
 
 Il ne reste plus qu'à utiliser l'Enum en question dans le template UiBinder :
-{% highlight xml %}
+```xml
 <ui:UiBinder
     xmlns:ui='urn:ui:com.google.gwt.uibinder'
     xmlns:g='urn:import:com.google.gwt.user.client.ui'
@@ -293,7 +293,7 @@ Il ne reste plus qu'à utiliser l'Enum en question dans le template UiBinder :
 	</g:FlowPanel>
 
 </ui:UiBinder>
-{% endhighlight %}
+```
 _Cerise sur le gateau, on bénéficie de l'autocomplétion : en tapant **{animal.}**, l'IDE propose **TURTLES** ou **DOLPHINS** !_
 
 
@@ -304,20 +304,20 @@ En combinant tout ce qui a été dit précédemment, il est possible d'écrire d
 
 Avant de passer aux choses sérieuses, un rappel. Dans [l'article précédent](http://blog.piwai.info/2011/09/05/coloration-syntaxique-en-gwt/), nous utilisions le code suivant pour faire de la coloration syntaxique en GWT :
 
-{% highlight java %}
+```java
 public void bindTextAreaCodeToHtml(TextArea textArea, HTML html) {
     JavaScriptObject brush = BrushFactory.newJavaBrush();
     String code = textArea.getValue();
     String htmlCode = SyntaxHighlighter.highlight(code, brush, false);
     html.setHTML(htmlCode);
 }
-{% endhighlight %}
+```
 
 Une précision : Le **parseur UiBinder** utilisé pour les widgets implémentant **HasHTML** ne garde pas les retours à la ligne, ce qui se révèle gênant lorsque son contenu est du code mis en forme. Pour contourner cela, on peut utiliser une balise `<pre>` dans le template UiBinder.
 
 Trêve de suspens, voici le résultat :
 
-{% highlight java %}
+```java
 public class Code extends Composite implements HasHTML {
 
 	private JavaScriptObject brush = null;
@@ -364,12 +364,12 @@ public class Code extends Composite implements HasHTML {
 	}
 
 }
-{% endhighlight %}
+```
 _Notez l'utilisation du [Scheduler](http://google-web-toolkit.googlecode.com/svn/javadoc/latest/com/google/gwt/core/client/Scheduler.html) pour afficher le code immédiatement **après** la construction du widget. L'ordre de valorisation des attributs n'étant pas garanti, cela permet d'être sûr que la valeur du champ **brush** aura été préalablement injectée au moment de l'appel à **SyntaxHighlighter**._
 
 On peut ensuite utiliser ce widget dans un template UiBinder classique :
 
-{% highlight xml %}
+```xml
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder
     xmlns:ui='urn:ui:com.google.gwt.uibinder'
@@ -391,7 +391,7 @@ On peut ensuite utiliser ce widget dans un template UiBinder classique :
 	</g:FlowPanel>
 
 </ui:UiBinder>
-{% endhighlight %}
+```
 _Les caractères **<** et **>** doivent être échappés pour éviter qu'ils ne soient interprétés par UiBinder et ne conduisent à des erreurs de validation. Ainsi, au lieu de **List<String>**, on écrit **List&lt;String&gt;**_
 
 **Edit :** Merci [@matboniface](https://twitter.com/#!/matboniface/status/113509239925915648), j'avais au départ parlé d'échapper des entités HTML, ce qui n'a pas beaucoup de sens.
@@ -406,7 +406,7 @@ N'hésitez pas à compléter ce billet avec vos **trucs et astuces** UiBinder en
 
 Vous pouvez aussi vous abonner au <a href="{{ site.rss_feed }}">Flux RSS</a>. Je me suis fixé comme objectif de publier un article par semaine, on verra si je tiens le rythme ;-) .
 
-{% include comments.html %}
+## Comments
 
 ## [Nicolas François](http://injectinto.blogspot.fr/)
 
@@ -416,16 +416,16 @@ Admettons que j'utilise une api gwt externe, et que le composant que je souhaite
 La solution est très simple :
 Je l'utilise l'air de rien dans le xml, mais dans le java, je le déclare de la façon suivante :
 
-{% highlight java %}
+```java
 @UiField(provided=true)
 MegaComponentOfTheDeath mcoth= new MegaComponentOfTheDeath(machin, bidule, truc);
-{% endhighlight %}
+```
 
 Le provided indique que l'instanciation est fournie par le java.
 
 Autre cas où c'est utile : Injection de ressources via GIN, le composant utilise un resource bundle qui est injecté dans le code java grace à gin.
 
-{% highlight java %}
+```java
 @UiField(provided=true)
 Resource res;
 
@@ -433,7 +433,7 @@ Resource res;
 public void setRes(Resource res){
   this.res = res;
 }
-{% endhighlight %}
+```
 
 ## [Eric B. (@vvinnie)](http://twitter.com/vvinnie)
 Et pourquoi pas un petit enrobage en CDATA plutôt que de rendre les illisibles. D'ailleurs, question philosophique : et si les generics avaient mauvaise réputation seulement parce que les gens essaient d'en parler en html ? hum ?

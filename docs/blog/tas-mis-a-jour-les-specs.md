@@ -23,7 +23,7 @@ Mais qu'en est-il des documents de **spécifications** fonctionnelles et techniq
 
 
 
-[![](/static/blog_img/Archaeological_post-it_label_-_geograph.org.uk_-_1303183.jpeg)](https://secure.wikimedia.org/wikipedia/commons/wiki/File:Archaeological_post-it_label_-_geograph.org.uk_-_1303183.jpg)
+[![](images/Archaeological_post-it_label_-_geograph.org.uk_-_1303183.jpeg)](https://secure.wikimedia.org/wikipedia/commons/wiki/File:Archaeological_post-it_label_-_geograph.org.uk_-_1303183.jpg)
 
 _Archaeological post-it label by Evelyn Simak_
 
@@ -41,7 +41,7 @@ N'oubliez pas, _être agile_ ne constitue pas une excuse pour ne pas écrire de 
 
 
 
-[![](/static/blog_img/SteacieLibrary.jpeg)](https://secure.wikimedia.org/wikipedia/commons/wiki/File:SteacieLibrary.jpg)
+[![](images/SteacieLibrary.jpeg)](https://secure.wikimedia.org/wikipedia/commons/wiki/File:SteacieLibrary.jpg)
 
 _Steacie Science and Engineering Library at York University, by Raysonho@Open Grid Scheduler_
 
@@ -50,7 +50,7 @@ Vous qui posez un tag sur votre code dans votre système de gestion de version (
 
 
 
-![](/static/blog_img/git_tag.png)
+![](images/git_tag.png)
 
 
 
@@ -78,7 +78,7 @@ Il existe pourtant un format textuel tout à fait adapté: [Markdown](http://fr.
 
 
 
-{% highlight text %}
+```text
 # Titre du document
 ## Mon sous titre
 
@@ -89,7 +89,7 @@ Un paragraphe contenant un [lien absolu](http://www.google.com), un
 * avec une sous liste
   * contenant un élément *en italique*
   * et un élément **en gras**
-{% endhighlight %}
+```
 
 
 
@@ -121,7 +121,7 @@ Lorsque la **User Story** est prête à être intégrée sur la branche de déve
 
 
 
-![](/static/blog_img/spec_diff.png)
+![](images/spec_diff.png)
 
 
 
@@ -157,7 +157,7 @@ A moins que... en êtes-vous si sûr ?
 
 
 
-{% highlight text %}
+```text
 UI->StuffManager: doSomeStuff()
 note over StuffManager: HandlesStuff
 activate StuffManager
@@ -171,11 +171,11 @@ DataStore->StuffManager:
 deactivate DataStore
 StuffManager-->UI:
 deactivate StuffManager
-{% endhighlight %}
+```
 
 
 
-[![](/static/blog_img/websequencediagrams1.png)](http://www.websequencediagrams.com/?lz=VUktPlN0dWZmTWFuYWdlcjogZG9Tb21lAA8FKCkKbm90ZSBvdmVyIAAYDkhhbmRsZXMANgUKYWN0aXZhdGUAFw0KAEsMLT5EYXRhU3RvcmU6Z2ltbWVEYQBaCAA0CQAZCQoAIwkAgQ0PCmRlABsTAFAYdXBkYXQAEFktPlVJAIEEDQCCOgw&s=qsd)
+[![](images/websequencediagrams1.png)](http://www.websequencediagrams.com/?lz=VUktPlN0dWZmTWFuYWdlcjogZG9Tb21lAA8FKCkKbm90ZSBvdmVyIAAYDkhhbmRsZXMANgUKYWN0aXZhdGUAFw0KAEsMLT5EYXRhU3RvcmU6Z2ltbWVEYQBaCAA0CQAZCQoAIwkAgQ0PCmRlABsTAFAYdXBkYXQAEFktPlVJAIEEDQCCOgw&s=qsd)
 
 
 
@@ -191,7 +191,7 @@ deactivate StuffManager
 
 
 
-{% highlight text %}
+```text
 [Activity]^[MyActivity]
 [MyActivity]-[note: I like turtles!]
 [Step]^[FirstStep]
@@ -201,17 +201,17 @@ deactivate StuffManager
 [MyActivity]++-*>[Step]
 [FirstStep]+->[StateHolder]
 [SecondStep]+->[StateHolder]
-{% endhighlight %}
+```
 
 
 
-[![](/static/blog_img/yuml_class.png)](http://yuml.me/diagram/class/[Activity]^[MyActivity], [MyActivity]-[note: I like turtles!], [Step]^[FirstStep], [Step]^[SecondStep], [Step]^[FinalStep], [MyActivity]++->[StateHolder], [MyActivity]++-*>[Step], [FirstStep]+->[StateHolder], [SecondStep]+->[StateHolder].)
+[![](images/yuml_class.png)](http://yuml.me/diagram/class/[Activity]^[MyActivity], [MyActivity]-[note: I like turtles!], [Step]^[FirstStep], [Step]^[SecondStep], [Step]^[FinalStep], [MyActivity]++->[StateHolder], [MyActivity]++-*>[Step], [FirstStep]+->[StateHolder], [SecondStep]+->[StateHolder].)
 
 
 
 Connaissez-vous d'autres outils bien pratiques de ce type ?
 
-{% include comments.html %}
+## Comments
 
 ## [Maxime Sinclair](http://eclectic.eklablog.com/)
 
