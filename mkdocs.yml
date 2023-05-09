@@ -14,7 +14,6 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - content.code.copy
-    - navigation.footer
   font:
     text: Inter
 
@@ -23,8 +22,6 @@ site_author: Pierre-Yves Ricau
 
 copyright: 'Copyright &copy; 2018 Pierre-Yves Ricau'
 
-# TODO: RSS feed (old: http://feeds.feedburner.com/Piwai)
-# TODO Backport blog
 # TODO google_analytics
 # TODO redirect http://www.piwai.info to p-y.wtf
 
@@ -34,29 +31,6 @@ nav:
   - 'Open Source': open_source.md
   - 'Public Speaking': public_speaking.md
   - 'Articles': articles.md
-  - 'Blog':
-    - '2013':
-      - 'Square Cash - you owe me money!': blog/square-cash-mailto.md
-      - 'Transparency with JPEGs done right': blog/transparent-jpegs-done-right.md
-      - 'Chathead Basics': blog/chatheads-basics.md
-      - 'Android String Placeholders': blog/android-string-placeholders.md
-    - '2012':
-      - 'Android Adapter Good Practices': blog/android-adapter-good-practices.md
-      - 'Happy Birthday AndroidAnnotations!': blog/happy-birthday-androidannotations.md
-      - 'Renaming the Android Manifest package': blog/renaming-android-manifest-package.md
-      - 'Blog meets Monster Octocat': blog/blog-meets-monster-octocat.md
-    - '2011':
-      - 'Paris Android Dev Lab': blog/paris-android-dev-lab.md
-      - 'Coup de balai : déblayer les branches d''un repo Git': blog/coup-de-balai-deblayer-les-branches-dun-repo-git.md
-      - 'Sexy dialogs, huhu': blog/sexy-dialogs-huhu.md
-      - 'T''as mis à jour les specs ?': blog/tas-mis-a-jour-les-specs.md
-      - 'Roooh, j''ai encore oublié ma branche Git !': blog/roooh-jai-encore-oublie-ma-branche-git.md
-      - 'Un peu de style dans la TextView': blog/un-peu-de-style-dans-la-textview.md
-      - 'Quand mamie craque du Wifi': blog/quand-mamie-craque-du-wifi.md
-      - 'Les mains dans le cambUiBinder': blog/les-mains-dans-le-cambuibinder.md
-      - 'Coloration Syntaxique en GWT': blog/coloration-syntaxique-en-gwt.md
-      - 'Les IDE, et la règle des 80 / 120': blog/les-ide-et-la-regle-des-80-120.md
-      - 'when(piwaï.quit(excilys)).thenReturn(new Blog());': blog/whenpiwai-quitexcilys-thenreturnnew-blog.md
 
 extra:
   social:
