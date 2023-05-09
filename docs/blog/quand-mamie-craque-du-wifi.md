@@ -1,13 +1,5 @@
----
-date: 2011-09-23 00:35:02
-layout: post
-title: Quand mamie craque du Wifi
-permalink: /2011/09/23/quand-mamie-craque-du-wifi/
-filename: 2011-09-23-quand-mamie-craque-du-wifi.markdown
-more: 1050
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
+|:material-calendar-edit:|September 23, 2011|
 
----
 Imaginons que vous ayez besoin de **craquer** le mot de passe de votre propre réseau Wifi, protégé par une **clé WEP**. Je parle bien de _votre propre réseau Wifi_, car je suis sûr qu'il ne vous viendrait jamais à l'idée de craquer l'accès de votre voisin, sachant que c'est totalement **illégal**. 
 
 Craquer une clé WEP peut être l'affaire de quelques minutes, et pourtant, aujourd'hui encore, de très nombreux réseaux Wifi de particuliers sont protégés par WEP. Même le [New York Times](http://www.nytimes.com/2011/02/17/technology/personaltech/17basics.html) en parle. Faites passer le mot, il faut que cela change.
@@ -79,11 +71,11 @@ Wifite se charge de tout, et note les mots de passe crackés dans le fichier **l
 ## Rémi
 J’attendais avec impatience que quelqu’un fasse ce travail! Très intéressant en tout cas. Je me permets de m’abonner à ton flux RSS du coup.
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 Je t'y autorise avec plaisir
 
-## [Bastien](http://blog.excilys.com/)
+### [Bastien](http://blog.excilys.com/)
 C’est un peu dommage, du coup ça devient une boite noire à la IIS. On clique sur un bouton et ça fait tout, mais on sait pas vraiment ce que ça fait. Les plus intéressés devraient plutôt se tourner vers aerodump et cie, avec masse de tutos qui explique ce que ça fait, les différentes attaques etc.
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 Certes, mais Mamie n'en a rien à carrer de comprendre ce que ça fait ;-). Elle veut juste craquer son Wifi, elle est comme ça Mamie.

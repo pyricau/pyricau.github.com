@@ -1,14 +1,6 @@
----
-date: 2011-09-13 08:13:02
-layout: post
-title: Les mains dans le cambUiBinder
-permalink: /2011/09/13/les-mains-dans-le-cambuibinder/
-filename: 2011-09-13-les-mains-dans-le-cambuibinder.markdown
-more: 733
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
+|:material-calendar-edit:|September 13, 2011|
 
----
-L'article précédent montrait comment faire de la [coloration syntaxique en GWT](http://blog.piwai.info/2011/09/05/coloration-syntaxique-en-gwt/).
+L'article précédent montrait comment faire de la [coloration syntaxique en GWT](coloration-syntaxique-en-gwt.md).
 
 Toujours pour [Rockslide](http://pyricau.github.com/rockslide), je souhaitais pouvoir écrire le code à mettre en forme dans des **templates** [UiBinder](http://code.google.com/webtoolkit/doc/latest/DevGuideUiBinder.html), plutôt que dans des Strings statiques portées par des classes Java.
 
@@ -404,11 +396,11 @@ Cet article s'est révélé **plus long** que ce que j'avais en tête initialeme
 
 N'hésitez pas à compléter ce billet avec vos **trucs et astuces** UiBinder en **commentaire** !
 
-Vous pouvez aussi vous abonner au <a href="{{ site.rss_feed }}">Flux RSS</a>. Je me suis fixé comme objectif de publier un article par semaine, on verra si je tiens le rythme ;-) .
+Vous pouvez aussi vous abonner au <a href="http://feeds.feedburner.com/Piwai">Flux RSS</a>. Je me suis fixé comme objectif de publier un article par semaine, on verra si je tiens le rythme ;-) .
 
 ## Comments
 
-## [Nicolas François](http://injectinto.blogspot.fr/)
+### [Nicolas François](http://injectinto.blogspot.fr/)
 
 Article sympa !
 Bon allez, j'ai aussi un truc sympa qui n'est pas dans tes astuces.
@@ -435,10 +427,10 @@ public void setRes(Resource res){
 }
 ```
 
-## [Eric B. (@vvinnie)](http://twitter.com/vvinnie)
+### [Eric B. (@vvinnie)](http://twitter.com/vvinnie)
 Et pourquoi pas un petit enrobage en CDATA plutôt que de rendre les illisibles. D'ailleurs, question philosophique : et si les generics avaient mauvaise réputation seulement parce que les gens essaient d'en parler en html ? hum ?
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 
 "rendre les illisibles" => "rendre les `< >` illisibles" (les signes ont sautés de ton commentaire, vu que le HTML est activé  )
 
@@ -446,6 +438,6 @@ Grumph. Je n'y avais pas pensé... ça a l'air de fonctionner, en tout cas ya au
 
 Je testerai ça à l'occasion, mais si ça marche c'est plutôt génial, ça permet de simplifier à mort le code. Merci !
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 
 Je viens de vérifier : CDATA permet effectivement de ne plus échapper les chevrons. Par contre, avec UiBinder, il ne conserve pas les retours chariot. Il convient donc d'utiliser pre et CDATA en complément.

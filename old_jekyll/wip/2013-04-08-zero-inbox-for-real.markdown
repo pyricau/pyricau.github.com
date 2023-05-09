@@ -18,7 +18,7 @@ I had an *almost empty* inbox, where I kept everything that was *waiting for som
 
 I never achieved a real zero inbox. **Until now**. And it feels good. Really.
 
-## <a id="Principle" href="#Principle">Principle</a>
+## Principle
 
 The core idea is simple: never leave an email in your inbox. The inbox is good at triage, and that's all.
 
@@ -36,13 +36,13 @@ Combine that workflow with keyboard shortcuts, and you'll reach *empty inbox* re
 
 Then, once your inbox is empty, you can start doing the stuff that's on your todo list.
 
-## <a id="TODO Lists" href="#TODO Lists">TODO Lists</a>
+## TODO Lists
 
 There are a lot of Todo list tools out there. My everyday todo list is called *white sheet of paper*. For longer term todos, I use [Evernote](http://evernote.com/).
 
 TODO: Use Google task
 
-## <a id="Keyboard Shortcuts" href="#Keyboard Shortcuts">Keyboard Shortcuts</a>
+## Keyboard Shortcuts
 
 To activate keyboard shortcuts in Gmail, go to the settings:
 
@@ -63,7 +63,7 @@ Reprendre le workflow en remplacant par les shortcuts
 
 
 
-## <a id="Conclusion" href="#Conclusion">Conclusion</a>
+## Conclusion
 
 You may think that this article is nonsense, that I just moved my "pending things" from the inbox to a todo list. Yes, that's right. Still, it makes me feel better. I don't need to recheck my inbox every 5 minutes and scan through the mails to see if 
 
@@ -81,7 +81,7 @@ Filters: mark as read, archive. No labels
 
 To comment, copy and paste the following block
 
-## [Nickname](http://website)
+### [Nickname](http://website)
 Comment
 
 -->

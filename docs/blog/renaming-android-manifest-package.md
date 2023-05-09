@@ -1,11 +1,4 @@
----
-layout: post
-title: Renaming the Android Manifest package
-filename: 2012-12-20-renaming-android-manifest-package.markdown
-more: 292
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|December 20, 2012|
 
 I recently needed to be able to change the package name of an app at build time. This is a common need when you have a paid and a free version of an app. It's also useful if you want to be able to install multiple versions of an app on your phone, such as a "dev" and a "stable" build.
 
@@ -92,11 +85,4 @@ As you can see on this screenshot, the package name can then be set as a build p
 
 ## Comments
 
-<!--
 
-To comment, copy and paste the following block
-
-## [Nickname](http://website)
-Comment
-
--->

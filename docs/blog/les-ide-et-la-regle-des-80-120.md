@@ -1,13 +1,4 @@
----
-date: 2011-08-31 15:38:09
-layout: post
-title: 'Les IDE, et la règle des 80 / 120 '
-permalink: /2011/08/31/les-ide-et-la-regle-des-80-120/
-filename: 2011-08-31-les-ide-et-la-regle-des-80-120.markdown
-more: 786
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|August 31, 2011|
 
 Cet article n'a strictement rien à voir avec [Pareto](http://fr.wikipedia.org/wiki/Loi_de_Pareto). Un peu plus avec un [tweet](https://twitter.com/MathildeLemee/status/71688421596344320) datant de quelques mois.
 
@@ -184,7 +175,7 @@ A vous maintenant : qui a d'autres exemples de longlignite aigüe ?
 
 ## Comments
 
-## [Baztoune](http://bastien-colmard.com/)
+### [Baztoune](http://bastien-colmard.com/)
 Ah, l'éternelle question :D ça me rappelle [ce topic](http://stackoverflow.com/questions/110928/is-there-a-valid-reason-for-enforcing-a-maximum-width-of-80-characters-in-a-code) sur SO  
 Dans l'absolu, je suis d'accord, c'est bien au développeur de découper ses lignes, pour donner du rythme à son code et le rendre lisible, mais en équipe, ne vaut-il mieux pas assurer l'uniformisation de l'apparence du code? Pas spécialement pour le gestionnaire de sources qui se débrouille très bien, mais pour la lisibilité globale du code, et ainsi éviter les disparités de style entre développeurs.
 
@@ -201,5 +192,5 @@ J'ai déjà galéré sur des méthodes dont le bug se voyait quand on scrollait 
 C'est pq dans Eclipse je laisse une line width de 120 à peu près.  
 L'écran est une feuille.
 
-## [Francois Marot](https://twitter.com/FrancoisMarot)
+### [Francois Marot](https://twitter.com/FrancoisMarot)
 Entierement d'accord avec ce post. Pour moi le formatteur est un mal nécessaire (pour uniformiser tout ce qui est tabulation, espacement, supprimer d'éventuels saut de lignes multiple, et surtout faciliter les diff/merges) mais il doit en faire le strict minimum. Le développeur doit rester au manette, et si ponctuellement on veut pouvoir faire un ligne longue (pour mettre un commentaire sur un truc touchy par exemple), on doit pouvoir le faire. Tant que ca reste de facon exceptionnelle et justifiée. Donc des formatteurs de code, oui, mais de facon minimum.

@@ -1,13 +1,4 @@
----
-date: 2011-10-14 20:49:18
-layout: post
-title: T'as mis à jour les specs ?
-permalink: /2011/10/14/tas-mis-a-jour-les-specs/
-filename: 2011-10-14-tas-mis-a-jour-les-specs.markdown
-more: 954
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|October 14, 2011|
 
 ## Introduction
 
@@ -213,7 +204,7 @@ Connaissez-vous d'autres outils bien pratiques de ce type ?
 
 ## Comments
 
-## [Maxime Sinclair](http://eclectic.eklablog.com/)
+### [Maxime Sinclair](http://eclectic.eklablog.com/)
 
 Tout à fait en ligne avec ton article. Ce qu’il faut versionner, c’est le produit logiciel. Et le logiciel ce n’est pas juste du code, c’est aussi l’ensemble de la documentation associée (spécification, cahier de tests, manuel utilisateur,…).
 
@@ -221,5 +212,5 @@ Pour la documentation, il faut savoir que Word propose un mode différentiel où
 En ce qui concerne les diagrammes, il y a [PlantUML](http://plantuml.sourceforge.net) qui supporte tous les diagrammes UML mais aussi les diagrammes [Ditaa](http://ditaa.sourceforge.net), qui est aussi disponible en mode cloud et, ce qui ne gâte rien, qui est open source.
 Allez, un petit [sudoku](http://www.plantuml.com/plantuml/img/AovDoSyk1G00) pour conclure.
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 Merci Maxime pour le complément d’info, je ne connaissais pas ces deux derniers !

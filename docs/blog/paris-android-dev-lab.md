@@ -1,13 +1,4 @@
----
-date: 2011-11-06 20:03:59
-layout: post
-title: Paris Android Dev Lab
-permalink: /2011/11/06/paris-android-dev-lab/
-filename: 2011-11-06-paris-android-dev-lab.markdown
-more: 534
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|November 6, 2011|
 
 ## Introduction
 
@@ -222,7 +213,7 @@ Voilà qui conclu la première moitié de ce compte rendu sur l'Android Dev Lab,
 
 ## Comments
 
-## [Frank Harper (@franklinharper)](http://twitter.com/franklinharper)
+### [Frank Harper (@franklinharper)](http://twitter.com/franklinharper)
 
 Tout à fait d’accord quand tu soulignes la pénibilité de sous classer chacun des types de Fragment/Activity! J’espérais qu’une solution plus élégante allait apparaître avec Android 4.0.
 

@@ -1,11 +1,4 @@
----
-layout: post
-title: Happy Birthday AndroidAnnotations!
-filename: 2012-12-22-happy-birthday-androidannotations.markdown
-more: 429
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|December 22, 2012|
 
 Two years ago, I created [AndroidAnnotations](http://androidannotations.org). 
 
@@ -86,11 +79,4 @@ Let's see what happens over the next two years!
 
 ## Comments
 
-<!--
 
-To comment, copy and paste the following block
-
-## [Nickname](http://website)
-Comment
-
--->

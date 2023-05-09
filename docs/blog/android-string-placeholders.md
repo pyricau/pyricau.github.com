@@ -1,16 +1,8 @@
----
-layout: post
-title: Android String Placeholders
-filename: 2013-01-10-android-string-placeholders.markdown
-more: 93
-draft: false
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|January 10, 2013|
 
 This article reviews different ways to create dynamic translatable strings in Android.
 
-## <a id="Quick-reminder" href="#Quick-reminder">Quick reminder</a>
+## Quick reminder
 
 In Android, message strings are extracted to XML files, and the system loads the resources corresponding to the current configuration.
 
@@ -35,9 +27,9 @@ Resources resources = context.getResources();
 String sexyButtonTitle = resources.getString(R.string.sexy_button_title);
 ```
 
-## <a id="Formatting-strings" href="#Formatting-strings">Formatting strings</a>
+## Formatting strings
 
-Let's say we want to display a dynamic string, such as *Player **Foo** - Score: **42***.
+Let's say we want to display a dynamic string, such as *Player* **Foo** *- Score:* **42**.
 
 We may be tempted to implement that quickly with `String.format()`.
 
@@ -53,10 +45,8 @@ String scoreString = String.format(resources.getString(R.string.score_format), p
 
 You will get a compile time error message on the `<string />` definition.
 
-<div class="alert alert-error">
-<h4 class="alert-heading">Error</h4>
-<p>Multiple substitutions specified in non-positional format; did you mean to add the formatted="false" attribute?</p>
-</div>
+!!! failure "Error"
+    Multiple substitutions specified in non-positional format; did you mean to add the formatted="false" attribute?
 
 This error message is misleading, because one may believe that using `formatted="false"` is the way to go.
 
@@ -73,7 +63,7 @@ Although the error message now disappears, the real solution is to use a positio
 ```
 
 When translating strings, the word order will change.
-For instance, *Name: **John Smith*** in English becomes *Nom : **Smith John*** in French.
+For instance, *Name:* **John Smith** in English becomes *Nom :* **Smith John** in French.
 
 ```java
 Resources resources = context.getResources();
@@ -98,7 +88,7 @@ String scoreString = String.format(resources.getString(R.string.name), firstname
 
 Using positional format prevents translation mistakes.
 
-## <a id="getString" href="#getString">getString()</a>
+## getString()
 
 Did you know that instead of `String.format()`, you can use an overloaded version of `getString()` that handles formatting?
 
@@ -155,9 +145,9 @@ public abstract class Context {
 }
 ```
 
-> If someone knows the story behind this weird shortcut method, let me know. For now, I'll just assume this is a consequence of **D**runk **D**riven **D**evelopment.
+> If someone knows the story behind this weird shortcut method, let me know. For now, I'll just assume this is a consequence of Drunk Driven Development.
 
-## <a id="Professional-Translation" href="#Professional-Translation">Professional Translation</a>
+## Professional Translation
 
 Your users deserve better than *Google translate*. XML resource files should be translated by a professional translator.
 
@@ -176,7 +166,7 @@ You can use comments to help the translator.
 
 > By the way, if you need excellent quality software translation, I know someone that's been [translating software](http://rtsi.fr/) for more than 25 years. Yes, he is my father :) .
 
-## <a id="Using-placeholders" href="#Using-placeholders">Using placeholders</a>
+## Using placeholders
 
 Another interesting approach is to use named placeholders instead of format specifiers.
 
@@ -236,7 +226,7 @@ String scoreString = TagFormat.from(getString(R.string.score_format))
   .format();
 ```
 
-## <a id="Conclusion" href="#Conclusion">Conclusion</a>
+## Conclusion
 
 I shamelessly stole this `{placeholder}` idea from [Eric Burke](https://twitter.com/burke_eric), and thought it was worth sharing. 
 
@@ -244,11 +234,4 @@ Of course, you may already use Java libraries that can do this. If you are aware
 
 ## Comments
 
-<!--
 
-To comment, copy and paste the following block
-
-## [Nickname](http://website)
-Comment
-
--->

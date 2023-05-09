@@ -1,18 +1,6 @@
----
-date: 2011-10-23 20:58:00
-layout: post
-title: Sexy dialogs, huhu
-permalink: /2011/10/23/sexy-dialogs-huhu/
-filename: 2011-10-23-sexy-dialogs-huhu.markdown
-more: 880
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|October 23, 2011|
 
 ## Introduction
-
-
-
 
 
 On reproche souvent aux **applications Android** d'être... **moches**. Et ce serait la faute du framework Android, qui fournirait des composants qui n'ont pas la _Apple sexy touch_. Peut-être est-ce le cas, mais faudrait voir à ne pas être trop **paresseux**.

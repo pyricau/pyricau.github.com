@@ -1,16 +1,6 @@
----
-date: 2011-10-30 23:30:34
-layout: post
-title: 'Coup de balai : déblayer les branches d''un repo Git'
-permalink: /2011/10/30/coup-de-balai-deblayer-les-branches-dun-repo-git/
-filename: 2011-10-30-coup-de-balai-deblayer-les-branches-dun-repo-git.markdown
-more: 1117
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
+|:material-calendar-edit:|October 30, 2011|
 
----
-
-Comme je vous l'indiquais dans un [précédent article](http://blog.piwai.info/2011/10/14/tas-mis-a-jour-les-specs/), chez [Siine](http://www.siine.com/), nous hébergeons nos projets sur [GitHub](http://github.com/), et chaque User Story fait l’objet d’une [branche dédiée](http://blog.piwai.info/2011/10/09/roooh-jai-encore-oublie-ma-branche-git/).
-
+Comme je vous l'indiquais dans un [précédent article]tas-mis-a-jour-les-specs.md), chez [Siine](http://www.siine.com/), nous hébergeons nos projets sur [GitHub](http://github.com/), et chaque User Story fait l’objet d’une [branche dédiée](roooh-jai-encore-oublie-ma-branche-git.md).
 
 
 Lorsqu'une **branche** qui a fait l'objet d'une **pull request** est validée, elle est **mergée** sur la branche d'intégration. Nous n'avons cependant pas pris l'habitude de **supprimer** ces branches une fois mergées. Je pense que nous aurions probablement du les supprimer au fur et à mesure, car nous nous retrouvons aujourd'hui avec de **nombreuses branches mergées**, qui ne servent à rien et qui **polluent** nos repository.
@@ -94,14 +84,14 @@ git branch -r --no-merged origin/integration
 
 ## Comments
 
-## [Dvins](http://gravatar.com/dvins)
+### [Dvins](http://gravatar.com/dvins)
 
 Salut Piwai !
 Cet historique des branches supprimées est-il propre à Github ou est-ce inclus de base dans Git ?
 J’utilise Git depuis peu (ASI = SVN comme tu le sais) et je commence en effet à me retrouver avec un tas de branches mergées qui polluent le dépôt !
 Merci d’avance !
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 Salut Dvins!
 
 Github conserve l’historique des “pull request”, pas des “branches supprimées”. Il n’y a pas de notion “d’historique des branches supprimées” dans git. Les branches, tout comme les tags, sont de simples marqueurs sur un graphe, qui identifient des commits particuliers.

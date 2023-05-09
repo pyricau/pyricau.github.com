@@ -1,12 +1,4 @@
----
-layout: post
-title: Android Adapter Good Practices
-filename: 2012-12-27-android-adapter-good-practices.markdown
-more: 547
-draft: false
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|December 27, 2012|
 
 In Android, the standard way to display a list of items is to use `ListView` together with a `ListAdapter`. The `ListView` draws the currently shown items, and the `ListAdapter` provides the `ListView` with the `View` corresponding to each item.
 
@@ -14,7 +6,7 @@ The aim is to create only the necessary number of views to fill the screen, and 
 
 This article will explain various `ListAdapter` patterns and good practices.
 
-## <a id="ArrayAdapter-sucks" href="#ArrayAdapter-sucks">ArrayAdapter sucks</a>
+## ArrayAdapter sucks
 
 Let's say you want to display a list of `BananaPhone` that can be updated. 
 
@@ -36,7 +28,7 @@ According to the Javadoc:
 
 If you [read the source](http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.1.1_r1/android/widget/ArrayAdapter.java), you'll realize that `ArrayAdapter` is designed to deal with a lot of use cases which you probably do not care about.
 
-## <a id="BaseAdapter-rocks" href="#BaseAdapter-rocks">BaseAdapter rocks</a>
+## BaseAdapter rocks
 
 In most apps, it's actually a lot simpler to implement your own `BaseAdapter`:
 
@@ -84,7 +76,7 @@ public class BananaPhoneAdapter extends BaseAdapter {
 }
 ```
 
-## <a id="Thread-safety" href="#Thread-safety">Thread safety</a>
+## Thread safety
 
 I mentioned that the `ArrayAdapter` uses a lock to ensure thread safety. That's fine, but there is an even better way: **get rid of threading**. Make sure your adapter is used only from one thread, the Main thread.
 
@@ -112,7 +104,7 @@ public class ThreadPreconditions {
 }
 ```
 
-## <a id="getView-recycling" href="#getView-recycling">getView() recycling</a>
+## getView() recycling
 
 A naive implementation of `getView()` could be:
 
@@ -156,7 +148,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 }
 ```
 
-## <a id="findViewById-mi-amor" href="#findViewById-mi-amor">findViewById() mi amor</a>
+## findViewById() mi amor
 
 There is still one subtle problem with `getView()`: each time it is called, it retrieves `bananaView` and `phoneView` through `findViewById()`.
 
@@ -181,7 +173,7 @@ As you can see, `findViewById()` navigates through the whole view hierarchy unti
 
 Whether or not this is a problem is up to you. If your `ListView` scrolls fine even on crap devices, don't bother optimizing. Otherwise, start [traceview](http://developer.android.com/tools/help/traceview.html) and measure how much time is spent in `findViewById()`.
 
-## <a id="ViewHolder-Pattern" href="#ViewHolder-Pattern">ViewHolder Pattern</a>
+## ViewHolder Pattern
 
 The **ViewHolder Pattern** is a well known pattern to limit the number of calls to `findViewById()`. The idea is that you call it once, then store the child view references in a `ViewHolder` instance that will be associated with the `convertView` thanks to `View.setTag()`.
 
@@ -222,7 +214,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 }
 ```
 
-## <a id="Tag-with-id" href="#Tag-with-id">Tag with id</a>
+## Tag with id
 
 Here is an alternative to the **ViewHolder Pattern** that you can start using with Android 4.0 (API level 15). **Do not use it prior to ICS** (more on this below).
 
@@ -261,7 +253,7 @@ As mentioned before, although the API is available since Android 1.6, you should
 
 `View.setTag(int, Object)` clearly wasn't designed with the **ViewHolder Pattern** in mind. The `key => tag` association was stored in a static `WeakHashMap` using the `View` object as the key. A `WeakHashMap` stores weak references to its keys. The idea was that as soon as a view wasn't referenced anywhere else then in the `WeakHashMap`, the entry could be garbage collected. However, if the value of a `WeakHashMap` entry contains a hard reference to its key (the view), it will never be garbage collected, and you'll get a **memory leak**. More on this [here](https://plus.google.com/u/0/104906570725395999813/posts/2cH1tw3bCy9), also see the [issue](http://code.google.com/p/android/issues/detail?id=18273).
 
-## <a id="Custom-item-ViewGroup" href="#Custom-item-ViewGroup">Custom item ViewGroup</a>
+## Custom item ViewGroup
 
 There is a third way that provides better decoupling. The idea is to create a custom ViewGroup, e.g. `BananaPhoneView`, for each item. `BananaPhoneView` will keep the references to it child views. `BananaPhoneView` is now responsible for updating `bananaView` and `phoneView`.
 
@@ -284,7 +276,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 }
 ```
 
-## <a id="Custom-item-view" href="#Custom-item-view">Custom item view</a>
+## Custom item view
 
 Your performance measurements may tell you that you spend too much time going through the view hierarchy when measuring and drawing. You can flatten your view hierarchy by combining components, or by creating a custom view that draws the whole item manually. That's how the mail list in Gmail works.
 
@@ -292,13 +284,13 @@ Your performance measurements may tell you that you spend too much time going th
 
 If you haven't already, take at look at [Android Performance Case Study](http://www.curious-creature.org/2012/12/01/android-performance-case-study/).
 
-## <a id="Conclusion" href="#Conclusion">Conclusion</a>
+## Conclusion
 
 Adapters in Android are frightening at first, but when you get to know them, they are actually quite friendly beasts. The best way to get there is to read the Android source, as well as other apps source, such as [GitHub Android](https://github.com/github/android), [White House for Android](https://github.com/WhiteHouse/wh-app-android), or [ioshed](http://code.google.com/p/iosched/).
 
 > Many thanks to [Frank Harper](http://twitter.com/franklinharper), [Eric Bottard](http://twitter.com/ebottard) and [Joan Zapata](http://twitter.com/JoanZap) for reviewing this article.
 
-## <a id="Update" href="#Update">Update</a>
+## Update
 
 Benoît Lubek suggested another solution on [Google+](http://plus.google.com/107264729678111825621/posts/aykMojDjYxU).
 
@@ -350,30 +342,23 @@ I really like this approach!
 
 ## Comments
 
-<!--
 
-To comment, copy and paste the following block
-
-## [Nickname](http://website)
-Comment
-
--->
-## [hub]()
+### [hub]()
 You explain a difficult thing in a simple way.
 Thank you very much.
 
-## [James]()
+### [James]()
 Clear illustration of the choice of different adapters, very practical and very useful! Thanks!
 
-## [Xiao]()
+### [Xiao]()
 I was looking for a way to replace the entire list of items inside an ArrayAdapter without calling clear()/addAll() which generates garbage. This looks like a good solution (referring to the updateBananas() function).
 
-## [imherolddev](http://www.imherolddev.com)
+### [imherolddev](http://www.imherolddev.com)
 I have done a lot of research, written different adapters, duct taped and glued some together, and now that I come back to revisit ListView, I find your post! I hope to see a comparison between RecylerView and the ViewHolders you have described here. However, the BaseAdapter example has me excited to write my next Adapter, which should be far more complex than what I have done to date... Thank you for your write up here! I will be sure to share with my circles.
 
-## [robertoallende](http://robertoallende.com)
+### [robertoallende](http://robertoallende.com)
 Great article, you've saved my day. Thank you very much!
 
-## [Mário Valney](http://mariovalney.com)
+### [Mário Valney](http://mariovalney.com)
 I really loved your article. Great explanation!
 I confess I started with another approach, but when I read your article I just changed everything because it's much more elegant!

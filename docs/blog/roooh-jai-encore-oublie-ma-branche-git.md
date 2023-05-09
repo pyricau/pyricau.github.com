@@ -1,17 +1,9 @@
----
-date: 2011-10-09 08:15:31
-layout: post
-title: Roooh, j'ai encore oublié ma branche Git !
-permalink: /2011/10/09/roooh-jai-encore-oublie-ma-branche-git/
-filename: 2011-10-09-roooh-jai-encore-oublie-ma-branche-git.markdown
-more: 560
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
+|:material-calendar-edit:|October 9, 2011|
 
----
 ## Introduction
 
 
-La **startup** pour laquelle je bosse [depuis peu](/2011/08/31/whenpiwai-quitexcilys-thenreturnnew-blog/) héberge son **code source** sur [GitHub](http://github.com), et ça, c'est carrément cool.
+La **startup** pour laquelle je bosse [depuis peu](whenpiwai-quitexcilys-thenreturnnew-blog.md) héberge son **code source** sur [GitHub](http://github.com), et ça, c'est carrément cool.
 
 En plus, nous sommes récemment passé d'un **workflow** old school (tout le monde commit comme des sauvages sur la même branche) à un workflow de type [feature branching](http://nvie.com/posts/a-successful-git-branching-model). Encore plus cool !
 
@@ -78,7 +70,7 @@ Dans le même ordre d'idée, voici un [article bien pratique](http://www.codetha
 
 ## Comments
 
-## [Olivier Bazoud](http://www.twitter.com/obazoud)
+### [Olivier Bazoud](http://www.twitter.com/obazoud)
 Je préfère utiliser celui ci livré par Git, utiliser la variable __git_ps1 et en plus ça gère beaucoup plus de cas (modifications locales, fichier non trackes, stash, uptream, commit locaux, commits remote, …)
 
 Dans mon ~/.bashrc:
@@ -97,7 +89,7 @@ PS1='\A [${debian_chroot:+($debian_chroot)}\[33[01;32m\]\u@\[33[0;33m\]\h\[33[00
 
 @obazoud
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 
 Merci Olivier, j’avais découvert **bash_completion.d** dans l’[article](http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/) cité plus haut, mais je n’avais pas testé la partie modification du PS1.
 
@@ -105,28 +97,28 @@ Je m’en vais essayer ça de ce pas !
 
 PS : je me suis permis d’ajouter la coloration syntaxique à ton commentaire ;).
 
-## [Sam Bessalah (@samklr)](http://twitter.com/samklr)
+### [Sam Bessalah (@samklr)](http://twitter.com/samklr)
 
 Ou bien tu peux utiliser [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), qui prend en compte git nativement et t’averti dans quelle branche tu te trouves, etc ..
 En tout cas impossible d’utiliser le shell sans, pour moi.
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 
 @Olivier : après avoir testé, c’est effectivement pas mal mais il manque la couleur :).
 
 @Sam : depuis le temps qu’un de mes potes me bassine avec ZSH, je crois que c’est l’occasion de tester :).
 
-## [Sam Bessalah (@samklr)](http://twitter.com/samklr)
+### [Sam Bessalah (@samklr)](http://twitter.com/samklr)
 
 Tu devrais, j’étais dubitatif moi aussi, mais là côté productivité on fais pas mieux. :)
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 
 Merci Sam, ça fait à peine 40 minutes, je sais que j’ai déjà switché définitivement vers ZSH :). oh-my-zsh est magique, et les themes dispos sont bien sympas :).
 
-## [hugoch](http://gravatar.com/hugoch)
+### [hugoch](http://gravatar.com/hugoch)
 Ah c’est assez niquel ! Merci pour l’astuce.
 A quand un article sur zsh du coup ?!
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 Oh, pas vraiment besoin d’un article, en gros ça marche comme bash mais en mieux, et il suffit de suivre les instructions du [lien](https://github.com/robbyrussell/oh-my-zsh) donné par @samklr pour démarrer ;).

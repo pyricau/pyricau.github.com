@@ -1,13 +1,4 @@
----
-date: 2011-09-05 10:59:39
-layout: post
-title: Coloration Syntaxique en GWT
-permalink: /2011/09/05/coloration-syntaxique-en-gwt/
-filename: 2011-09-05-coloration-syntaxique-en-gwt.markdown
-more: 528
-# TO COMMENT, EDIT THIS FILE AND ADD YOUR COMMENT AT THE BOTTOM
-
----
+|:material-calendar-edit:|September 5, 2011|
 
 Vous connaissez peut-être [Rockslide](http://pyricau.github.com/rockslide), qui permet de réaliser une présentation (des slides) en [GWT](http://code.google.com/webtoolkit).
 
@@ -156,7 +147,7 @@ Bien entendu, ce code est à adapter suivant vos besoins. Vous n'êtes pas oblig
 
 ## Comments
 
-## [Raphaël Brugier (@rbrugier)](http://twitter.com/rbrugie)
+### [Raphaël Brugier (@rbrugier)](http://twitter.com/rbrugie)
 
 Hello,
 
@@ -168,6 +159,6 @@ En tout cas continue les posts sur gwt, il y a du public
 
 Raphaël.
 
-## [Piwaï](/contact.html)
+### [Piwaï](/contact.html)
 
 Cool :) Je vais tâcher de continuer, j’ai quelques idées dans mon sac :)

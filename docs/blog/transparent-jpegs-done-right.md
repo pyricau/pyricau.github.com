@@ -88,7 +88,7 @@ ImageView trollFace = (ImageView) findViewById(R.id.troll_face);
 trollFace.setImageBitmap(bitmap);
 ```
 
-## <a id="Result" href="#Result">Result</a>
+## Result
 
 There you go, Troll Face Golden Gate!
 ![Troll Face](images/troll_face_screenshot.png)
@@ -120,14 +120,14 @@ public static Bitmap getMaskedBitmap(Resources res, int sourceResId, int maskRes
 }
 ```
 
-## <a id="Update" href="#Update">Update</a>
+## Update
 
 If you want to understand Porter-Duff blending modes in details, you should read this great article: [Porter/Duff Compositing and Blend Modes](http://ssp.impulsetrain.com/2013/03/17/porterduff-compositing-and-blend-modes/) (special thanks to [Cyril Mottier](http://cyrilmottier.com/) for the link).
 
 ## Comments
 
-### [DreamingInDroids](http://www.google.com)
+#### [DreamingInDroids](http://www.google.com)
 Brilliant! Thanks for the pictures demonstrating the different Porter-Duff modes! I had been wondering about them for a long time!
 
-### [Casey](http://www.google.com)
+#### [Casey](http://www.google.com)
 Very useful! I'm writing a children's puzzle app and this is a quick and easy way to create a base (ie. a square with the puzzle shape cut out of it) for the puzzle with an interesting texture. Thanks =)
