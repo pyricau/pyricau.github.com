@@ -7,3 +7,7 @@ pip install mkdocs-material
 pip install mkdocs-badges
 pip install mkdocs-markdownextradata-plugin
 ```
+
+Deploy locally: `mkdocs serve`
+
+Deploy for realz: `mkdocs gh-deploy`
