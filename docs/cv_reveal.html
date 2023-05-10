@@ -1,8 +1,38 @@
----
-title: Pierre-Yves Ricau's Curriculum Vitae
-layout: reveal
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
+    <meta charset="utf-8">
+    <title>Pierre-Yves Ricau's Curriculum Vitae</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <link href="{{ site.rss_feed }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
+    <meta name="author" content="Pierre-Yves Ricau">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/small.jpg" sizes="16x16" />
+    <link rel="icon" type="image/x-icon" href="/static/small.jpg" sizes="16x16" />
+    <link rel="apple-touch-icon-precomposed" href="/static/medium.jpg" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="/reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="/reveal.js/css/theme/sky.css" id="theme">
+
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+  </head>
+
+  <body>
+
+	<div class="reveal">
+		<div class="slides">
 <section id="welcome">
     <h1>Welcome!</h1>
     <p>I am <strong>Pierre-Yves Ricau</strong></p>
@@ -280,3 +310,36 @@ I wrote more then 20 technical articles on the Excilys blog (http://blog.excilys
 
 
 -->
+
+		</div>
+	</div>
+
+  		<script src="/reveal.js/lib/js/head.min.js"></script>
+		<script src="/reveal.js/js/reveal.min.js"></script>
+
+		<script>
+			Reveal.initialize({
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+				theme: 'sky',
+				transition: 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				]
+			});
+
+		</script>
+
+
+  </body>
+</html>
+
+
+
+

@@ -13,6 +13,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - toc.integrate
     - content.code.copy
   font:
     text: Inter
@@ -21,9 +22,6 @@ site_description: "Pierre-Yves Ricau's personal website."
 site_author: Pierre-Yves Ricau
 
 copyright: 'Copyright &copy; 2018 Pierre-Yves Ricau'
-
-# TODO google_analytics
-# TODO redirect http://www.piwai.info to p-y.wtf
 
 nav:
   - 'Welcome': index.md
@@ -44,7 +42,9 @@ extra:
       link: https://twitter.com/Piwai
     - icon: fontawesome/brands/stack-overflow
       link: https://stackoverflow.com/users/703646/pierre-yves-ricau
-
+  analytics:
+    provider: google
+    property: G-QQY2958CPY
 
 markdown_extensions:
   - attr_list

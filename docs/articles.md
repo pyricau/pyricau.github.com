@@ -45,7 +45,9 @@
 ## 2018
 
 * [Building a photo booth for Droidcon NYC](https://developer.squareup.com/blog/building-a-photo-booth-for-droidcon-nyc/)
+* [A silent meeting is worth a thousand words](https://medium.com/square-corner-blog/a-silent-meeting-is-worth-a-thousand-words-2c7213b12fb6)
 * [LeakCanary 1.6 🐤](https://medium.com/square-corner-blog/leakcanary-1-6-91fad513b5cf)
+* [Lightning Talks: How to Create and Deliver a Successful Tech Talk](https://medium.com/square-corner-blog/how-to-create-and-deliver-a-successful-tech-talk-823b1f43fa02)
 
 ## 2017
 
