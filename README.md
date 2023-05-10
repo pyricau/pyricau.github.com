@@ -1,4 +1,4 @@
-This is the source repository for the p-y.wtf website.
+This is the source repository for the [p-y.wtf](https://p-y.wtf) website.
 
 # Setup
 
