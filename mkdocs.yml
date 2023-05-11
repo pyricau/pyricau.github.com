@@ -38,10 +38,13 @@ extra:
       link: https://staging.bsky.app/profile/p-y.wtf
     - icon: fontawesome/brands/mastodon
       link: https://androiddev.social/@py
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/py.ricau/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/Piwai
     - icon: fontawesome/brands/stack-overflow
       link: https://stackoverflow.com/users/703646/pierre-yves-ricau
+
   analytics:
     provider: google
     property: G-QQY2958CPY
