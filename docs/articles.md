@@ -1,5 +1,17 @@
+## 2024
+
+* [Cutting some Slack, for leaks and giggles](https://blog.p-y.wtf/cutting-some-slack-for-leaks-and-giggles)
+* [A weirder HashMap](https://blog.p-y.wtf/a-weirder-hashmap)
+* [DIY: your own Dependency Injection library!](https://blog.p-y.wtf/diy-your-own-dependency-injection-library)
+
 ## 2023
 
+* [ANR internals: touch dispatching through the view hierarchy](https://blog.p-y.wtf/anr-internals-touch-dispatching-through-the-view-hierarchy)
+* [A script to compare two Macrobenchmarks runs](https://blog.p-y.wtf/a-script-to-compare-two-macrobenchmarks-runs)
+* [Freezes & ANRs? Check memory leaks!](https://blog.p-y.wtf/freezes-anrs-check-memory-leaks)
+* [Tracking Android App Launch in production](https://blog.p-y.wtf/tracking-android-app-launch-in-production)
+* [User-Centric Mobile Performance](https://blog.p-y.wtf/user-centric-mobile-performance)
+* [Avoid Java double brace initialization](https://blog.p-y.wtf/avoid-java-double-brace-initialization)
 * [Statistically Rigorous Android Macrobenchmarks](https://py.hashnode.dev/statistically-rigorous-android-macrobenchmarks)
 * [Callback leaks: cancel your Picasso requests!](https://py.hashnode.dev/callback-leaks-cancel-your-picasso-requests)
 

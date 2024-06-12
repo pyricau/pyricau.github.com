@@ -34,8 +34,8 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/pyricau/
-    - icon: fontawesome/regular/square
-      link: https://staging.bsky.app/profile/p-y.wtf
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/p-y.wtf
     - icon: fontawesome/brands/mastodon
       link: https://androiddev.social/@py
     - icon: fontawesome/brands/instagram

@@ -1,5 +1,8 @@
+Want to invite me to your conference, podcast or similar? Reach out: [:fontawesome-brands-mastodon:](https://androiddev.social/@py) [:fontawesome-brands-instagram:](https://instagram.com/py.ricau/) [:fontawesome-brands-twitter:](https://twitter.com/Piwai)
+
 ## Podcasts
 
+* _:material-podcast: Code with the Italians_ [LeakCanary Masterclass - Unraveling Android Memory Leaks](https://youtu.be/ZdZSGnJw3mY?si=ZHe52y3EdsNrx5V3&t=371)
 * _:material-podcast: CodingWithMitch_ [Android Performance with P.Y.](https://youtu.be/RCcA5f13ESo)
 * _:material-podcast: Android Leaks_ [Épisode 59 – Rappelez le plombier, on a un poireau 2.0](https://androidleakspodcast.com/2020/02/09/episode-59-rappelez-le-plombier-on-a-un-poireau-2-0/)
 * _:material-podcast: Les Cast Codeurs Podcast_ [LCC 222 - Interview sur Android avec Pierre-Yves Ricau et Romain Guy](https://lescastcodeurs.com/2019/12/24/lcc-222-interview-sur-android-avec-pierre-yves-ricau-et-romain-guy-l-integrale/)
@@ -11,9 +14,14 @@
 
 ## Presentations
 
+### 2024
+
+* _:fontawesome-solid-map-location: Droidcon SF_ Cutting Edges: universal heap trimming with LeakCanary 3 (video pending)
+
 ### 2023
 
-* _:fontawesome-solid-map-location: Android Makers_ En quête de perf: l’art subtil du profiling Android (video pending)
+* _:fontawesome-solid-map-location: Droidcon SF_ [The Subtle Art of Profiling Android Apps model](https://www.droidcon.com/2023/07/20/the-subtle-art-of-profiling-android-apps/)
+* _:fontawesome-solid-map-location: Android Makers_ [En quête de perf: l’art subtil du profiling Android](https://youtu.be/IG0u7dja6Hk)
 
 ### 2022
 
