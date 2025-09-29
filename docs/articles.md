@@ -1,3 +1,8 @@
+## 2025
+
+* [Rendering the Java heap as a Treemap](https://blog.p-y.wtf/rendering-the-java-heap-as-a-treemap)
+* [Parallelism with Android SQLite](https://blog.p-y.wtf/parallelism-with-android-sqlite)
+
 ## 2024
 
 * [Cutting some Slack, for leaks and giggles](https://blog.p-y.wtf/cutting-some-slack-for-leaks-and-giggles)

@@ -1,4 +1,4 @@
-Want to invite me to your conference, podcast or similar? Reach out: [:fontawesome-brands-mastodon:](https://androiddev.social/@py) [:fontawesome-brands-instagram:](https://instagram.com/py.ricau/) [:fontawesome-brands-twitter:](https://twitter.com/Piwai)
+Want to invite me to your conference, podcast or similar? Reach out: [:fontawesome-brands-bluesky:](https://bsky.app/profile/p-y.wtf) [:fontawesome-brands-instagram:](https://instagram.com/py.ricau/)
 
 ## Podcasts
 
@@ -14,9 +14,18 @@ Want to invite me to your conference, podcast or similar? Reach out: [:fontaweso
 
 ## Presentations
 
+### 2025
+
+* _:fontawesome-solid-map-location: Droidcon Berlin_ [Embracing the Chaos: Investigating Production Madness](https://youtu.be/kOH1Kdj9c1c)
+* _:fontawesome-solid-map-location: Droidcon Berlin_ [Keynote: The Future of Android...And How to Prepare For It](https://youtu.be/CmTSnxCTyIk?t=592)
+* _:fontawesome-solid-map-location: Block 16th anniversary_ **Eng Keynote: Coffee + War story, with Jesse Wilson** (internal talk at Block)
+* _:fontawesome-solid-map-location: Block 16th anniversary_ **Mobile-First Observability** (internal talk at Block)
+* _:fontawesome-solid-map-location: Block Day of Learning_ **Pattern mismatching: Understanding odd behaviors** (internal talk at Block)
+
 ### 2024
 
-* _:fontawesome-solid-map-location: Droidcon SF_ Cutting Edges: universal heap trimming with LeakCanary 3 (video pending)
+* _:fontawesome-solid-map-location: Droidcon NYC_ [Root causing memory growth with LeakCanary 3](https://www.droidcon.com/2024/10/17/root-causing-memory-growth-with-leakcanary-3/)
+* _:fontawesome-solid-map-location: Droidcon SF_ [Cutting Edges: universal heap trimming with LeakCanary 3](https://www.droidcon.com/2024/07/17/cutting-edges-universal-heap-trimming-with-leakcanary-3/)
 
 ### 2023
 

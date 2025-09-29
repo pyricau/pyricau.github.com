@@ -1,19 +1,19 @@
 !!! tip "My Ideal Job"
-    * Strong _technical_ culture
-    * High _impact_
-    * _Remote_ friendly
-    * _Small_ teams
-	
+    * Strong **technical culture**
+    * High **impact**
+    * **Remote** first
+
 ## Experience
 
 ### Software Engineer - Square
 
 |:material-calendar-multiple:|February 2013 - Present|
 |:fontawesome-solid-map-location:|San Francisco|
+|:fontawesome-solid-map-location:|Lyon|
 
-I got in touch with Square after contributing to their open source libraries. I moved to the San Francisco office to work with the best Android engineers.
+I filed a [GitHub issue on dagger/square](https://github.com/square/dagger/issues/40) and Jesse Wilson responded over email: "are you interested in coming to work for Square?". I moved to the San Francisco office to work with the best Android engineers.
 
-I contributed to every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since March 2013.
+I have contributed to every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since March 2013.
 
 In June 2013 I led the Android software side of the [new Square Reader](http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/).
 
@@ -34,6 +34,10 @@ In August 2018 we released the [Square Reader SDK](https://squareup.com/us/en/de
 In January 2019 we released the [In-App Payments SDK](https://squareup.com/us/en/developers/in-app-payments). Our team built it really fast and really well, as a high functioning team with almost a hive mind, knocking out bugs and features left and right. This isn't just an SDK, it's a delightful experience. We carefully crafted every detail, from the shape of (Kotlin first) APIs, to the SDK UI (only XML vector drawables, advanced canvas drawing, responsive animations with ConstraintLayout), to the code of the sample app (examplary example code!), to the structure of the quick start guide.
 
 In March 2019 I joined the Developer Empowerment organization to take on a new challenge, focusing on the reliability on Square mobile apps and SDKs.
+
+From August 2019 to April 2020, I was the manager of an Android + iOS team of 4 (growing up to 6) focused on scaling our monorepo codebases (e.g. modularization strategy)
+
+I then moved back to an IC role, with a focus on helping scale our mobile organization, advising leadership, and investing in performance & observability areas.
 
 ### Lead Software Developer - Siine
 
