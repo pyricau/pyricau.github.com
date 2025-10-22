@@ -16,6 +16,8 @@ Want to invite me to your conference, podcast or similar? Reach out: [:fontaweso
 
 ### 2025
 
+* _:fontawesome-solid-map-location: Paris Android User Group_ **Des benchmarks dignes de confiance** (video pending)
+* _:fontawesome-solid-map-location: Dev Community Android NYC_ **Benchmarking with confidence** (video pending)
 * _:fontawesome-solid-map-location: Droidcon Berlin_ [Embracing the Chaos: Investigating Production Madness](https://youtu.be/kOH1Kdj9c1c)
 * _:fontawesome-solid-map-location: Droidcon Berlin_ [Keynote: The Future of Android...And How to Prepare For It](https://youtu.be/CmTSnxCTyIk?t=592)
 * _:fontawesome-solid-map-location: Block 16th anniversary_ **Eng Keynote: Coffee + War story, with Jesse Wilson** (internal talk at Block)
