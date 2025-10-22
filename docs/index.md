@@ -5,7 +5,7 @@
 
 ## Life
 
-After 12 years in San Francisco, I just moved to Lyon, France! I enjoy being with my family, [rollerblading, baking](https://instagram.com/py.ricau/) and reading [sci-fi](https://twitter.com/Piwai/status/1180292158361747456).
+After 12 years in San Francisco, I just moved near Lyon, France! I enjoy investigating bugs, being with my family, [rollerblading and baking](https://instagram.com/py.ricau/).
 
 ## Work
 
