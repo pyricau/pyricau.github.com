@@ -8,7 +8,7 @@
 ### Principal Android Engineer - Block
 
 |:material-calendar-multiple:|2022 - Present|
-|:fontawesome-solid-map-location:|Lyon|
+|:fontawesome-solid-map-location:|San Francisco -> Lyon|
 
 In early 2022 I widely shared "Diary of a Slow Squid", a deep-dive that brought POS and Squid's (Square's fork of the Android OS) performance degradation into the collective consciousness of engineering leadership. This led to funding and scaling the Mobile Performance & Reliability (MPR) team from 1 to 7 engineers in a matter of months. I became the go-to person for everything performance: I built tooling inside POS, created guides and dashboards now used by teams across all verticals (performance investigation, profiling, Android Vitals, interaction latency, benchmarking), and taught engineers across the organization how to investigate and fix performance issues. I also ran a blog series on Android performance in production that reached 10K+ views and was featured four times in Android Weekly.
 
@@ -20,9 +20,9 @@ In 2024 I led as engineering DRI for a cross-org, cross-platform mobile performa
 
 At the end of 2024 I built infrastructure to automatically capture and upload heap dumps on OutOfMemory crashes in production. I also extended [LeakCanary](https://github.com/square/leakcanary) with a heap dump sanitization utility that strips primitive arrays and PII before upload, making safe production heap analysis at scale practical.
 
-I explored the future of mobile observability at Block and ran a Bitdrift trial. After a successful pilot and an ADR-driven vendor evaluation, I shaped Square's mobile analytics and observability strategy and drove the creation of a dedicated observability squad, which unfortunately did not survive the 2026 RIF apocalypse.
-
 Within Block, I initiated a group trip to Droidcon NYC 2025 and led the initial budget push — we sent 55 engineers across Block.
+
+I explored the future of mobile observability at Block and ran a Bitdrift trial. After a successful pilot and an ADR-driven vendor evaluation, I shaped Square's mobile analytics and observability strategy and drove the creation of a dedicated observability squad, which unfortunately did not survive the 2026 RIF apocalypse.
 
 ### Staff Android Engineer - Square / Block
 
