@@ -5,11 +5,60 @@
 
 ## Experience
 
+### Principal Android Engineer - Block
+
+|:material-calendar-multiple:|2022 - Present|
+|:fontawesome-solid-map-location:|Lyon|
+
+In early 2022 I widely shared "Diary of a Slow Squid", a deep-dive that brought POS and Squid's (Square's fork of the Android OS) performance degradation into the collective consciousness of engineering leadership. This led to funding and scaling the Mobile Performance & Reliability (MPR) team from 1 to 7 engineers in a matter of months. I became the go-to person for everything performance: I built tooling inside POS, created guides and dashboards now used by teams across all verticals (performance investigation, profiling, Android Vitals, interaction latency, benchmarking), and taught engineers across the organization how to investigate and fix performance issues. I also ran a blog series on Android performance in production that reached 10K+ views and was featured four times in Android Weekly.
+
+After a [multi-hour Square outage in September 2023](https://developer.squareup.com/blog/incident-summary-2023-09-07/), we realized we lacked the metrics to correctly evaluate customer impact. [Ben VandenBos](https://www.linkedin.com/in/bvandenbos) started an initiative to establish success rate metrics for all Critical Jobs across Square, but it initially did not encompass what sellers experienced inside POS. I spotted the potential in a hackweek project on client-side instrumentation, co-opted it, and drove adoption across the codebase to ship User Journeys to production within weeks — filling that gap for POS. The approach was later adopted by the Dashboard web app and by Cash App.
+
+I convinced the Perfetto team at Google to extend their Kotlin tracing API from Android-only to JVM, enabling tools that can automatically analyze traces at scale. I also wrote a guide that led the Jetpack Compose team at Google to turn on LeakCanary in their CI UI tests — they fixed a number of leaks, including one tied to a Kotlin coroutine bug I helped investigate.
+
+In 2024 I led as engineering DRI for a cross-org, cross-platform mobile performance squad that wrapped up in H1 2025 with significant improvements across the board, including a meaningful ANR rate reduction — the culmination of that multi-year effort.
+
+At the end of 2024 I built infrastructure to automatically capture and upload heap dumps on OutOfMemory crashes in production. I also extended [LeakCanary](https://github.com/square/leakcanary) with a heap dump sanitization utility that strips primitive arrays and PII before upload, making safe production heap analysis at scale practical.
+
+I explored the future of mobile observability at Block and ran a Bitdrift trial. After a successful pilot and an ADR-driven vendor evaluation, I shaped Square's mobile analytics and observability strategy and drove the creation of a dedicated observability squad, which unfortunately did not survive the 2026 RIF apocalypse.
+
+Within Block, I initiated a group trip to Droidcon NYC 2025 and led the initial budget push — we sent 55 engineers across Block.
+
+### Staff Android Engineer - Square / Block
+
+|:material-calendar-multiple:|2016 - 2022|
+|:fontawesome-solid-map-location:|San Francisco|
+
+In February 2016, I joined the new Developer Platform team as its Android lead. We released [Register API](https://github.com/square/register-android-sdk) 1.0 a few months later.
+
+In March 2016 I started organizing EngTsq, a monthly internal lightning talk series: one hour, 5 lightning talks across all of engineering, consistently drawing 150+ engineers. Over five years, roughly 200 engineers gave their first tech talk in front of a large audience.
+
+In August 2016 my team took ownership of the [Mobile Payments SDK](https://developer.squareup.com/docs/mobile-payments-sdk) (an SDK for connecting to the Square reader) after two previous attempts by other teams had failed — one trying to extract our spaghetti reader code, another trying to rewrite it from scratch. We had just built the [Point of Sale API](https://developer.squareup.com/docs/pos-api/what-it-does), an API that used app links to preload POS with a target amount. I had the idea to sidestep the extraction problem entirely: bundle the entire POS app code inside the SDK and leverage the Point of Sale API from within it. While not the cleanest approach, it let us build a working POC in one day and ship to alpha customers in one quarter, getting real feedback fast. We released in August 2018 after 1.5 years of private betas. I talked about the technical challenges in [AARAWR! Fantastic Bits and Where to Dex Them](https://www.youtube.com/watch?v=semnhz5EYGU).
+
+In September 2018 I ran a hackweek project building on the hooks we had created for the Mobile Payments SDK to prototype a push-based extension. This proved that [Terminal API](https://developer.squareup.com/docs/terminal-api/overview) was within reach, and the Terminal API team was formed a few months later.
+
+In January 2019 we released the [In-App Payments SDK](https://squareup.com/us/en/developers/in-app-payments). Our team built it really fast and really well, as a high functioning team with almost a hive mind, knocking out bugs and features left and right. This isn't just an SDK, it's a delightful experience. We carefully crafted every detail, from the shape of (Kotlin first) APIs, to the SDK UI (only XML vector drawables, advanced canvas drawing, responsive animations with ConstraintLayout), to the code of the sample app (examplary example code!), to the structure of the quick start guide.
+
+In 2018, as several teams were struggling to fill senior Android positions, I partnered with a colleague and worked with recruiters to organize informal Android dinners: a mix of Square engineers and candidates, geek-talking about Android over dinner. The results exceeded expectations — in one case the recruiter told us that closing a single candidate justified the cost of ten more of these events.
+
+In March 2019 I joined the Developer Empowerment organization to take on a new challenge, focusing on the reliability on Square mobile apps and SDKs.
+
+From August 2019 to April 2020, I led the Isolated Development team as TLM, growing it from 3 to 6 Android and iOS engineers. Our goal was to increase developer velocity by decoupling the POS monorepo into smaller, independently iterable pieces. We drove organic adoption of a new module structure with explicit boundaries — by March 2020, 67% of our 1,650 Android modules had adopted it — and grew from 7 to 50+ demo apps on Android and equivalent on iOS. We also rolled out module ownership across both iOS and Android repositories, with every module owned by exactly one team, which became foundational for crash triaging and cross-team collaboration. I also nudged [Ralf Wondratschek](https://ralf-wondratschek.com) to explore and open source [Anvil](https://github.com/square/anvil), a Dagger auto-configuration library that became a game changer for multi-module Android development and was adopted by Dropbox, Slack, Snap, Tonal, and others.
+
+I then moved back to an IC role. I started by migrating the entire POS codebase to AndroidX — 2.8K files and 5K lines of code changed in a single after-hours PR — unblocking POS from updating dozens of Android ecosystem dependencies that had stalled for over a year.
+
+I tackled our UI test flakiness problem by building flake monitoring dashboards and tooling to run tests directly on Firebase, dramatically speeding up iteration. While improving Espresso error messages during this work, I reused view hierarchy printing code I had originally written in 2014 inside POS — code that had since become the basis of my interview question. In 2020, [Zach Klippenstein](https://blog.zachklipp.com) and I open sourced that code as [Radiography](https://github.com/square/radiography). Similarly, [Curtains](https://github.com/square/curtains) grew out of my investigation into window callback hooks while chasing crashes. I also built and evangelized the foundation for network and UI performance monitoring across Square mobile.
+
+I discovered that our analytics event library was silently dropping at least 35% of events from at least 30% of active devices. A simple queue size increase from 256KB to 2MB brought the drop rate down to ~10%. I also found that three Android app targets had never had server-side analytics logging enabled at all.
+
+I invested deeply in understanding the crash triage process by working closely alongside our RelOps team, then redesigned it end to end. The results were dramatic: average resolution time dropped from 60 to 21 days, the resolution rate improved from 68% to 89%, and the crash rate fell from 0.47% to 0.31%.
+
+Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on [Square Register](https://squareup.com/hardware/register) and [Square Terminal](https://squareup.com/hardware/terminal) that traced back to configuration bugs in the Linux kernel of Square's Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrades. I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into [square/papa](https://github.com/square/papa) ([talk](https://www.youtube.com/watch?v=aPCGYNk3Wzw&feature=youtu.be)), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced [square/logcat](https://github.com/square/logcat) in September 2021, after production logging mistakes had caused significant performance issues in POS.
+
 ### Software Engineer - Square
 
-|:material-calendar-multiple:|February 2013 - Present|
+|:material-calendar-multiple:|March 2013 - 2016|
 |:fontawesome-solid-map-location:|San Francisco|
-|:fontawesome-solid-map-location:|Lyon|
 
 I filed a [GitHub issue on dagger/square](https://github.com/square/dagger/issues/40) and Jesse Wilson responded over email: "are you interested in coming to work for Square?". I moved to the San Francisco office to work with the best Android engineers.
 
@@ -24,20 +73,6 @@ In March 2014, I started leading the engineering effort to bring Square POS to A
 In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done [catching up](https://squareup.com/au/townsquare/new-features-android-devices) with the iPad and started focusing on building new features. Our work was the app foundation for the [Square Register](https://squareup.com/hardware/register).
 
 From September 2015 to January 2016 I worked on a super cool secret project that I cannot mention here. Small team, high throughput, we built a great app really fast.
-
-In February 2016, I joined the new Developer Platform team as its Android lead. We released [Register API](https://github.com/square/register-android-sdk) 1.0 a few months later.
-
-In March 2016 I started organizing a monthly internal lightning talk series. One hour, 5 lightning talks across all of engineering. This has been running since, with an attendance of about 100-150 engineers.
-
-In August 2018 we released the [Square Reader SDK](https://squareup.com/us/en/developers/reader-sdk). This was a high complexity and high risk project. We prototyped it during a hackweek in August 2016, built a pilot in just a quarter, and then iterated through private betas for another 1.5 year.
-
-In January 2019 we released the [In-App Payments SDK](https://squareup.com/us/en/developers/in-app-payments). Our team built it really fast and really well, as a high functioning team with almost a hive mind, knocking out bugs and features left and right. This isn't just an SDK, it's a delightful experience. We carefully crafted every detail, from the shape of (Kotlin first) APIs, to the SDK UI (only XML vector drawables, advanced canvas drawing, responsive animations with ConstraintLayout), to the code of the sample app (examplary example code!), to the structure of the quick start guide.
-
-In March 2019 I joined the Developer Empowerment organization to take on a new challenge, focusing on the reliability on Square mobile apps and SDKs.
-
-From August 2019 to April 2020, I was the manager of an Android + iOS team of 4 (growing up to 6) focused on scaling our monorepo codebases (e.g. modularization strategy)
-
-I then moved back to an IC role, with a focus on helping scale our mobile organization, advising leadership, and investing in performance & observability areas.
 
 ### Lead Software Developer - Siine
 
@@ -108,7 +143,35 @@ I discovered Android, had fun with it, and soon enough I was creating a prototyp
 |:material-calendar-multiple:|May 2015 - Present|
 |:fontawesome-solid-map-location:|San Francisco|
 
-[LeakCanary](https://github.com/square/leakcanary) is an Open Source memory leak detection library for Android.
+[LeakCanary](https://github.com/square/leakcanary) is an Open Source memory leak detection library for Android. We leveraged it to reduce OutOfMemory crashes in POS by 90% in 2015, then by another 60% since 2019. Adopted by most professional Android teams worldwide — 140K monthly downloads, 7K monthly documentation visitors — it has also found memory leaks in the Android Framework itself, with fixes benefiting millions of apps and billions of devices in newer Android versions.
+
+### Radiography
+
+|:material-calendar-multiple:|2020 - Present|
+|:fontawesome-solid-map-location:|San Francisco|
+
+[Radiography](https://github.com/square/radiography) is an Open Source library for pretty-printing Android view hierarchies. It grew out of work improving Espresso error messages while investigating UI test flakiness.
+
+### Curtains
+
+|:material-calendar-multiple:|2021 - Present|
+|:fontawesome-solid-map-location:|San Francisco|
+
+[Curtains](https://github.com/square/curtains) is an Open Source library providing a structured API for hooking into Android window callbacks. It grew out of crash investigation work.
+
+### square/logcat
+
+|:material-calendar-multiple:|2021 - Present|
+|:fontawesome-solid-map-location:|San Francisco|
+
+[square/logcat](https://github.com/square/logcat) is an Open Source Android logging utility built after production logging mistakes caused significant performance issues in POS.
+
+### square/papa
+
+|:material-calendar-multiple:|2021 - Present|
+|:fontawesome-solid-map-location:|San Francisco|
+
+[square/papa](https://github.com/square/papa) is an Open Source library for Android production performance tracking, extracted from POS instrumentation code. It enabled Cash Android to build its performance dashboard much faster than originally planned.
 
 ### Call For Paper committee - Devoxx France 2013
 
@@ -203,6 +266,11 @@ I also learnt how to make a really good Tortilla de patatas.
 I was in a European class, which meant more English courses.
 
 On my free time, I learnt a lot about coding by contributing to a 3D RTS game. My last year practical work was on generic algorithms, I wrote a somewhat working implementation for the traveling salesman problem, in DarkBasic (a Basic with 2D commands).
+
+## Patents
+
+* REPROGRAMMABLE POINT-OF-SALE TRANSACTION FLOWS
+    * US10692055, US10762480, US10496973, US10872320
 
 ## Certifications
 
