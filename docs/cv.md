@@ -10,7 +10,7 @@
 |:material-calendar-multiple:|2022 - Present|
 |:fontawesome-solid-map-location:|San Francisco -> Lyon|
 
-In early 2022 I widely shared "Diary of a Slow Squid", a deep-dive that brought POS and Squid's (Square's fork of the Android OS) performance degradation into the collective consciousness of engineering leadership. This led to funding and scaling the Mobile Performance & Reliability (MPR) team from 1 to 7 engineers in a matter of months. I became the go-to person for everything performance: I built tooling inside POS, created guides and dashboards now used by teams across all verticals (performance investigation, profiling, Android Vitals, interaction latency, benchmarking), and taught engineers across the organization how to investigate and fix performance issues. I also ran a blog series on Android performance in production that reached 10K+ views and was featured four times in Android Weekly.
+In early 2022 I wrote the story of an investigation into the performance degradation of Square's fork of the Android OS (Squid): "Diary of a Slow Squid" (learn more in [this public talk](https://youtu.be/kOH1Kdj9c1c?si=bykCD_r8Yxzn7u-b&t=1626)). This convinced Square's leadership that we needed to invest in performance at both the app & the OS level, which led to funding and scaling the Mobile Performance & Reliability (MPR) team from 1 to 7 engineers in a matter of months. I became the go-to person for everything performance: I built tooling inside POS, created guides and dashboards now used by teams across all verticals (performance investigation, profiling, Android Vitals, interaction latency, benchmarking), and taught engineers across the organization how to investigate and fix performance issues. I also ran a blog series on Android performance in production that reached 10K+ views and was featured four times in Android Weekly.
 
 After a [multi-hour Square outage in September 2023](https://developer.squareup.com/blog/incident-summary-2023-09-07/), we realized we lacked the metrics to correctly evaluate customer impact. [Ben VandenBos](https://www.linkedin.com/in/bvandenbos) started an initiative to establish success rate metrics for all Critical Jobs across Square, but it initially did not encompass what sellers experienced inside POS. I spotted the potential in a hackweek project on client-side instrumentation, co-opted it, and drove adoption across the codebase to ship User Journeys to production within weeks — filling that gap for POS. The approach was later adopted by the Dashboard web app and by Cash App.
 
@@ -60,7 +60,9 @@ Starting in 2021 I drove several high-impact performance investigations. I surfa
 |:material-calendar-multiple:|March 2013 - 2016|
 |:fontawesome-solid-map-location:|San Francisco|
 
-I filed a [GitHub issue on dagger/square](https://github.com/square/dagger/issues/40) and Jesse Wilson responded over email: "are you interested in coming to work for Square?". I moved to the San Francisco office to work with the best Android engineers.
+While working for Siine, I had the opportunity to interview at Google in Paris. I barely did any prep and flunked the interview.. the recruiter told me the feedback was "good technical skills but lacking cognitive skills". My pride was hurt, so from then on I started paying more attention to algorithms and data structure implementation details. That helped a ton with my next step!
+
+With [AndroidAnnotations](https://github.com/androidannotations/androidannotations) (a framework that reduced code boilerplate), I had built the first Android annotation processor. I had tried to add dependency injection support but wasn't happy with the result, so when Square released Dagger, I filed a [GitHub issue on dagger/square](https://github.com/square/dagger/issues/40) asking for a plugin architecture. Jesse Wilson responded over email: "are you interested in coming to work for Square?". Square flew me from Paris to SF for the interviews, and I also used that opportunity to interview at Facebook. Both companies had interviews that were a full day of mostly leet code. However, on the Facebook side I met 20-something engineers I'd never heard of, who talked about reimplementing the feed with OpenGL, and we were coding on whiteboards. On the Square side, we were coding on a laptop, and I already knew the names of almost everyone that interviewed me (Jake Wharton, Jesse Wilson, Ray Ryan, and even the CTO Bob Lee). I knew I'd found my people, and I moved to the San Francisco office to work with the best Android engineers.
 
 I have contributed to every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since March 2013.
 
@@ -98,6 +100,8 @@ It was a challenging time to join the team, after all the software engineers had
 
 These applications had been developed with a full team over several years. In order to keep potential regressions under control, I introduced continuous integration, a clean release process, and frequent small releases.
 
+I also created [AndroidAnnotations](https://github.com/androidannotations/androidannotations) as a side project, initially as a toy after seeing a talk on Java 6 annotation processing.
+
 ### Software Engineer - JCDecaux
 
 |:material-calendar-multiple:|November 2009 - November 2010|
@@ -116,7 +120,7 @@ I also wrote their first GWT app, a map with a live overview of the state of the
 
 After my engineering internship at Excilys, I got a full time offer.
 
-Over these two year as a contractor, I worked for two clients: JCDecaux and bfinance.
+Over a two year period I worked as a contractor for two clients: JCDecaux and bfinance.
 
 I also managed Excilys technical blog, gave Android & GWT trainings, and created a widely used Open Source library for Android: AndroidAnnotations.
 
@@ -133,10 +137,6 @@ I discovered Android, had fun with it, and soon enough I was creating a prototyp
 
 ## Side projects
 
-### Call For Paper committee - Devoxx US 2017
-
-|:material-calendar-multiple:|October 2016 - March 2017|
-|:fontawesome-solid-map-location:|San Francisco|
 
 ### LeakCanary
 
@@ -172,6 +172,11 @@ I discovered Android, had fun with it, and soon enough I was creating a prototyp
 |:fontawesome-solid-map-location:|San Francisco|
 
 [square/papa](https://github.com/square/papa) is an Open Source library for Android production performance tracking, extracted from POS instrumentation code. It enabled Cash Android to build its performance dashboard much faster than originally planned.
+
+### Call For Paper committee - Devoxx US 2017
+
+|:material-calendar-multiple:|October 2016 - March 2017|
+|:fontawesome-solid-map-location:|San Francisco|
 
 ### Call For Paper committee - Devoxx France 2013
 
