@@ -5,6 +5,8 @@
 
 ## Experience
 
+I started writing code in 2000 in middle school (turns out making video games was cooler than playing them!) and I haven't stopped since.
+
 ### Principal Engineer - Block
 
 |:material-calendar-multiple:|2022 - Present|
@@ -55,6 +57,8 @@ I invested deeply in understanding the crash triage process by working closely a
 
 Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on [Square Register](https://squareup.com/hardware/register) and [Square Terminal](https://squareup.com/hardware/terminal) that traced back to configuration bugs in the Linux kernel of Square's Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrades. I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into [square/papa](https://github.com/square/papa) ([talk](https://www.youtube.com/watch?v=aPCGYNk3Wzw&feature=youtu.be)), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced [square/logcat](https://github.com/square/logcat) in September 2021, after production logging mistakes had caused significant performance issues in POS.
 
+### Promo
+
 In 2022 I was promoted to L8 (Principal Engineer).
 
 ### Software Engineer - Square
@@ -62,11 +66,24 @@ In 2022 I was promoted to L8 (Principal Engineer).
 |:material-calendar-multiple:|March 2013 - 2016|
 |:fontawesome-solid-map-location:|San Francisco|
 
+### How I ended up at Square
+
 While working for Siine, I had the opportunity to interview at Google in Paris. I barely did any prep and flunked the interview: the recruiter told me the feedback was "good technical skills but lacking cognitive skills". My pride was hurt, so from then on I started paying more attention to algorithms and data structure implementation details. That helped a ton with my next step!
 
-With [AndroidAnnotations](https://github.com/androidannotations/androidannotations) (a framework that reduced code boilerplate), I had built the first Android annotation processor. I had tried to add dependency injection support but wasn't happy with the result, so when Square released Dagger, I filed a [GitHub issue on dagger/square](https://github.com/square/dagger/issues/40) asking for a plugin architecture. Jesse Wilson responded over email: "are you interested in coming to work for Square?". Square flew me from Paris to SF for the interviews, and I also used that opportunity to interview at Facebook. Both companies had interviews that were a full day of mostly leet code. However, on the Facebook side I met 20-something engineers I'd never heard of, who talked about reimplementing the feed with OpenGL, and we were coding on whiteboards. On the Square side, we were coding on a laptop, and I already knew the names of almost everyone that interviewed me (Jake Wharton, Jesse Wilson, Ray Ryan, and even the CTO Bob Lee). I knew I'd found my people, and I moved to the San Francisco office to work with the best Android engineers.
+![Introduction to Algorithms](/images/algorithms.jpg)
 
-I have contributed to every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since March 2013.
+With [AndroidAnnotations](https://github.com/androidannotations/androidannotations) (a framework that reduced code boilerplate), I had built the first Android annotation processor. I had tried to add dependency injection support but wasn't happy with the result, so when Square released Dagger, I filed a [GitHub issue on dagger/square](https://github.com/square/dagger/issues/40) asking for a plugin architecture. Jesse Wilson responded over email: "are you interested in coming to work for Square?".
+
+
+![Plugin architecture ?](/images/jesse.png)
+
+Square flew me from Paris to San Francisco for the interviews, and I also used that opportunity to interview at Facebook. Both companies had interviews that were a full day of mostly leet code. However, on the Facebook side I met 20-something engineers I'd never heard of, who talked about reimplementing the feed with OpenGL, and we were coding on whiteboards. On the Square side, we were coding on a laptop, and I already knew the names of almost everyone that interviewed me (Jake Wharton, Jesse Wilson, Ray Ryan, and even the CTO Bob Lee). I knew I had found my people, and I moved to the San Francisco office to work with the best Android engineers.
+
+![Square office](/images/office.png)
+
+### Work
+
+I have contributed to every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since I joined in March 2013.
 
 In June 2013 I led the Android software side of the [new Square Reader](http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/).
 
@@ -78,31 +95,31 @@ In August 2015 I wrapped up my work on the Android Tablets team, which had grown
 
 In Q4 2015 I worked on a white label loyalty app (the idea was: any small seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO.
 
-In 2016 I was promoted to L7 (Staff Engineer), for growing the Android Tablets team, and numerous technical feats such as creating LeakCanary or safely migrating the entire codebase from Dagger1 to Dagger2 in pieces.
+### Promo
+
+In 2016 I was promoted to L7 (Staff Engineer), for growing the Android Tablets team, and numerous technical feats such as creating LeakCanary or safely migrating the entire codebase from Dagger1 to Dagger2.
 
 ### Lead Software Developer - Siine
 
 |:material-calendar-multiple:|September 2011 - January 2013|
 |:fontawesome-solid-map-location:|Barcelona & Paris|
 
-After two years of contracting work, I decided it was time to have fun and work on more impactful projects. 
+The CEO of Siine reached out, and after two years of consulting work, I decided it was time to have fun and work on more impactful projects. The small founding team had built a fun shortcut-based keyboard, raised 800K€, and hired several senior engineers in Barcelona (and me working remote from Paris). 6 months later, all the engineers had left but me. I quickly rebuilt the whole app on top of the AOSP keyboard so that we could focus our efforts on building new UX, cleaned up our build process, added feature toggles, CI, and automatic releases. We were told that we could be featured on the PlayStore if we redesigned the entire app to Android ICS's style within a week... so I crunched & did that. We were featured and went from 5K to 1M downloads in a few days, which helped with raising the next round. I distinctely remember being introduced to investors as "the tech lead", when in fact I was also the sole engineer.
 
-At Siine, we created a fun and easy to use Android Keyboard. Our goal was to improve context typing.
+![Siine](/images/siine.png)
 
-I rebuilt the whole app on top of the AOSP keyboard so that we could focus our efforts on building new UX, cleaned up our build process, added feature toggles, CI, and automatic releases.
-
-During my time at Siine, I released the [Siine Keyboard](https://play.google.com/store/apps/details?id=com.siine.ime), [RefereePro](http://thenextweb.com/insider/2012/11/15/football-comes-into-the-digital-age-as-the-first-professional-referee-swaps-penpaper-for-a-smartphone/) to empower soccer referees, and [PhOCD](https://play.google.com/store/apps/details?id=com.siine.phocd), a one day hackaton experiment.
+During my time at Siine, I released the [Siine Keyboard](https://www.youtube.com/@siineonline), [RefereePro](http://thenextweb.com/insider/2012/11/15/football-comes-into-the-digital-age-as-the-first-professional-referee-swaps-penpaper-for-a-smartphone/) to empower soccer referees, and [PhOCD](https://play.google.com/store/apps/details?id=com.siine.phocd), a one day hackaton experiment.
 
 ### Software Engineer - bfinance
 
 |:material-calendar-multiple:|November 2010 - September 2011|
 |:fontawesome-solid-map-location:|Paris|
 
-After a year at JCDecaux, I wanted to do less driving. Excilys found a nice new contract for me: bfinance, a financial services firm.
+After a year at JCDecaux, I wanted to do less driving. Excilys found a nice new client for me: bfinance, a financial services firm.
 
-It was a challenging time to join the team, after all the software engineers had left. Two weeks in, I was the sole developer of two complex tender managing applications. The first one is used for cash management analysis, and the other for financing and banking relationship analysis.
+It was a challenging time to join the team: all the software engineers had just left, I was now the sole developer of two complex tender managing applications that were critical to the business. The first one is used for cash management analysis, and the other for financing and banking relationship analysis.
 
-These applications had been developed with a full team over several years. In order to keep potential regressions under control, I introduced continuous integration, a clean release process, and frequent small releases.
+These applications had been developed with a team of 6+ software engineers over several years, who had all quit at once after disagreeing with executive leadership. In order to keep potential regressions under control, I introduced continuous integration, a clean release process, and frequent small releases.
 
 I also created [AndroidAnnotations](https://github.com/androidannotations/androidannotations) as a side project, initially as a toy after seeing a talk on Java 6 annotation processing.
 
@@ -124,7 +141,7 @@ I also wrote their first GWT app, a map with a live overview of the state of the
 
 After my engineering internship at Excilys, I got a full time offer.
 
-Over a two year period I worked as a contractor for two clients: JCDecaux and bfinance.
+Over a two year period I worked as a consultant for two clients: JCDecaux and bfinance.
 
 I also managed Excilys technical blog, gave Android & GWT trainings, and created a widely used Open Source library for Android: AndroidAnnotations.
 
