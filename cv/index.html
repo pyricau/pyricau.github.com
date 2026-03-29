@@ -468,7 +468,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Staff Engineer - Square / Block">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#promo" class="md-nav__link">
@@ -481,6 +482,11 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#software-engineer-square" class="md-nav__link">
     <span class="md-ellipsis">
@@ -490,7 +496,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Software Engineer - Square">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#how-i-ended-up-at-square" class="md-nav__link">
@@ -522,6 +529,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -953,26 +965,26 @@
 <p>I discovered that our analytics event library was silently dropping at least 35% of events from at least 30% of active devices. A simple queue size increase from 256KB to 2MB brought the drop rate down to ~10%. I also found that three Android app targets had never had server-side analytics logging enabled at all.</p>
 <p>I invested deeply in understanding the crash triage process by working closely alongside our RelOps team, then redesigned it end to end. The results were dramatic: average resolution time dropped from 60 to 21 days, the resolution rate improved from 68% to 89%, and the crash rate fell from 0.47% to 0.31%.</p>
 <p>Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on <a href="https://squareup.com/hardware/register">Square Register</a> and <a href="https://squareup.com/hardware/terminal">Square Terminal</a> that traced back to configuration bugs in the Linux kernel of Square&rsquo;s Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrades. I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into <a href="https://github.com/square/papa">square/papa</a> (<a href="https://www.youtube.com/watch?v=aPCGYNk3Wzw&amp;feature=youtu.be">talk</a>), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced <a href="https://github.com/square/logcat">square/logcat</a> in September 2021, after production logging mistakes had caused significant performance issues in POS.</p>
-<h3 id="promo">Promo<a class="headerlink" href="#promo" title="Permanent link">&para;</a></h3>
+<h4 id="promo">Promo<a class="headerlink" href="#promo" title="Permanent link">&para;</a></h4>
 <p>In 2022 I was promoted to L8 (Principal Engineer).</p>
 <h3 id="software-engineer-square">Software Engineer - Square<a class="headerlink" href="#software-engineer-square" title="Permanent link">&para;</a></h3>
 <p><span class="badge badge-normal"><span class=sep> [</span><span class=title><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17V8H7v9zm0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zM3 21h14v2H3a2 2 0 0 1-2-2V9h2zm16-6h-4v-4h4z"/></svg></span></span><span class=sep> : </span><span class=value>March 2013 - 2016</span><span class=sep>] </span></span>
 <span class="badge badge-normal"><span class=sep> [</span><span class=title><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M576 48c0-11.1-5.7-21.4-15.2-27.2s-21.2-6.4-31.1-1.4L413.5 77.5 234.1 17.6c-8.1-2.7-16.8-2.1-24.4 1.7l-128 64C70.8 88.8 64 99.9 64 112v352c0 11.1 5.7 21.4 15.2 27.2s21.2 6.4 31.1 1.4l116.1-58.1 173.3 57.8c-4.3-6.4-8.5-13.1-12.6-19.9-11-18.3-21.9-39.3-30-61.8l-101.2-33.7V92.4l128 42.7v99.3c31-35.8 77-58.4 128-58.4 22.6 0 44.2 4.4 64 12.5zM392 341.9c0 68.9 64.1 150.4 98.6 189.3 11.6 13 31.3 13 42.9 0 34.5-38.9 98.6-120.4 98.6-189.3 0-65.1-53.7-117.9-120-117.9S392 276.8 392 341.9"/></svg></span></span><span class=sep> : </span><span class=value>San Francisco</span><span class=sep>] </span></span></p>
-<h3 id="how-i-ended-up-at-square">How I ended up at Square<a class="headerlink" href="#how-i-ended-up-at-square" title="Permanent link">&para;</a></h3>
+<h4 id="how-i-ended-up-at-square">How I ended up at Square<a class="headerlink" href="#how-i-ended-up-at-square" title="Permanent link">&para;</a></h4>
 <p>While working for Siine, I had the opportunity to interview at Google in Paris. I barely did any prep and flunked the interview: the recruiter told me the feedback was &ldquo;good technical skills but lacking cognitive skills&rdquo;. My pride was hurt, so from then on I started paying more attention to algorithms and data structure implementation details. That helped a ton with my next step!</p>
 <p><img alt="Introduction to Algorithms" src="/images/algorithms.jpg" /></p>
 <p>With <a href="https://github.com/androidannotations/androidannotations">AndroidAnnotations</a> (a framework that reduced code boilerplate), I had built the first Android annotation processor. I had tried to add dependency injection support but wasn&rsquo;t happy with the result, so when Square released Dagger, I filed a <a href="https://github.com/square/dagger/issues/40">GitHub issue on dagger/square</a> asking for a plugin architecture. Jesse Wilson responded over email: &ldquo;are you interested in coming to work for Square?&rdquo;.</p>
 <p><img alt="Plugin architecture ?" src="/images/jesse.png" /></p>
 <p>Square flew me from Paris to San Francisco for the interviews, and I also used that opportunity to interview at Facebook. Both companies had interviews that were a full day of mostly leet code. However, on the Facebook side I met 20-something engineers I&rsquo;d never heard of, who talked about reimplementing the feed with OpenGL, and we were coding on whiteboards. On the Square side, we were coding on a laptop, and I already knew the names of almost everyone that interviewed me (Jake Wharton, Jesse Wilson, Ray Ryan, and even the CTO Bob Lee). I knew I had found my people, and I moved to the San Francisco office to work with the best Android engineers.</p>
 <p><img alt="Square office" src="/images/office.jpg" /></p>
-<h3 id="work">Work<a class="headerlink" href="#work" title="Permanent link">&para;</a></h3>
+<h4 id="work">Work<a class="headerlink" href="#work" title="Permanent link">&para;</a></h4>
 <p>I have contributed to every release of <a href="https://play.google.com/store/apps/details?id=com.squareup">Square Point of Sale</a> for Android since I joined in March 2013.</p>
 <p>In June 2013 I led the Android software side of the <a href="http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/">new Square Reader</a>.</p>
 <p>In August 2013 I led a HackWeek project: SQUA(RED), a special red edition of the Square reader to fight AIDS. Our great hardware team made that a <a href="http://techcrunch.com/2014/02/19/square-and-red-fight-aids-with-special-edition-reader-and-donate-links-in-receipts/">real product</a>.</p>
 <p>In March 2014, I started leading the engineering effort to bring Square POS to Android Tablets. I made sure to implement new features on mobile as well, as I believe the screen size frontier is much less clear today, and features should be ubiquitous.</p>
 <p>In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done <a href="https://squareup.com/au/townsquare/new-features-android-devices">catching up</a> with the iPad and started focusing on building new features. Our work was the app foundation for the <a href="https://squareup.com/hardware/register">Square Register</a>.</p>
 <p>In Q4 2015 I worked on a white label loyalty app (the idea was: any small seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO.</p>
-<h3 id="promo_1">Promo<a class="headerlink" href="#promo_1" title="Permanent link">&para;</a></h3>
+<h4 id="promo_1">Promo<a class="headerlink" href="#promo_1" title="Permanent link">&para;</a></h4>
 <p>In 2016 I was promoted to L7 (Staff Engineer), for growing the Android Tablets team, and numerous technical feats such as creating LeakCanary or safely migrating the entire codebase from Dagger1 to Dagger2.</p>
 <h3 id="lead-software-developer-siine">Lead Software Developer - Siine<a class="headerlink" href="#lead-software-developer-siine" title="Permanent link">&para;</a></h3>
 <p><span class="badge badge-normal"><span class=sep> [</span><span class=title><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17V8H7v9zm0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zM3 21h14v2H3a2 2 0 0 1-2-2V9h2zm16-6h-4v-4h4z"/></svg></span></span><span class=sep> : </span><span class=value>September 2011 - January 2013</span><span class=sep>] </span></span>
