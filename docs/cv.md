@@ -57,7 +57,7 @@ I invested deeply in understanding the crash triage process by working closely a
 
 Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on [Square Register](https://squareup.com/hardware/register) and [Square Terminal](https://squareup.com/hardware/terminal) that traced back to configuration bugs in the Linux kernel of Square's Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrades. I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into [square/papa](https://github.com/square/papa) ([talk](https://www.youtube.com/watch?v=aPCGYNk3Wzw&feature=youtu.be)), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced [square/logcat](https://github.com/square/logcat) in September 2021, after production logging mistakes had caused significant performance issues in POS.
 
-### Promo
+#### Promo
 
 In 2022 I was promoted to L8 (Principal Engineer).
 
@@ -66,7 +66,7 @@ In 2022 I was promoted to L8 (Principal Engineer).
 |:material-calendar-multiple:|March 2013 - 2016|
 |:fontawesome-solid-map-location:|San Francisco|
 
-### How I ended up at Square
+#### How I ended up at Square
 
 While working for Siine, I had the opportunity to interview at Google in Paris. I barely did any prep and flunked the interview: the recruiter told me the feedback was "good technical skills but lacking cognitive skills". My pride was hurt, so from then on I started paying more attention to algorithms and data structure implementation details. That helped a ton with my next step!
 
@@ -81,7 +81,7 @@ Square flew me from Paris to San Francisco for the interviews, and I also used t
 
 ![Square office](/images/office.jpg)
 
-### Work
+#### Work
 
 I have contributed to every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since I joined in March 2013.
 
@@ -95,7 +95,7 @@ In August 2015 I wrapped up my work on the Android Tablets team, which had grown
 
 In Q4 2015 I worked on a white label loyalty app (the idea was: any small seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO.
 
-### Promo
+#### Promo
 
 In 2016 I was promoted to L7 (Staff Engineer), for growing the Android Tablets team, and numerous technical feats such as creating LeakCanary or safely migrating the entire codebase from Dagger1 to Dagger2.
 
