@@ -5,7 +5,7 @@
 
 ## Experience
 
-### Principal Android Engineer - Block
+### Principal Engineer - Block
 
 |:material-calendar-multiple:|2022 - Present|
 |:fontawesome-solid-map-location:|San Francisco -> Lyon|
@@ -24,16 +24,16 @@ Within Block, I initiated a group trip to Droidcon NYC 2025 and led the initial 
 
 I explored the future of mobile observability at Block and ran a Bitdrift trial. After a successful pilot and an ADR-driven vendor evaluation, I shaped Square's mobile analytics and observability strategy and drove the creation of a dedicated observability squad, which unfortunately did not survive the 2026 RIF apocalypse.
 
-### Staff Android Engineer - Square / Block
+### Staff Engineer - Square / Block
 
 |:material-calendar-multiple:|2016 - 2022|
 |:fontawesome-solid-map-location:|San Francisco|
 
-In February 2016, I joined the new Developer Platform team as its Android lead. We released [Register API](https://github.com/square/register-android-sdk) 1.0 a few months later.
+In February 2016, I joined the new Developer Platform team as its Android lead. A few months later we released [Point of Sale API](https://developer.squareup.com/docs/pos-api/what-it-does), an API that used app links to preload POS with a target amount.
 
 In March 2016 I started organizing EngTsq, a monthly internal lightning talk series: one hour, 5 lightning talks across all of engineering, consistently drawing 150+ engineers. Over five years, roughly 200 engineers gave their first tech talk in front of a large audience.
 
-In August 2016 my team took ownership of the [Mobile Payments SDK](https://developer.squareup.com/docs/mobile-payments-sdk) (an SDK for connecting to the Square reader) after two previous attempts by other teams had failed — one trying to extract our spaghetti reader code, another trying to rewrite it from scratch. We had just built the [Point of Sale API](https://developer.squareup.com/docs/pos-api/what-it-does), an API that used app links to preload POS with a target amount. I had the idea to sidestep the extraction problem entirely: bundle the entire POS app code inside the SDK and leverage the Point of Sale API from within it. While not the cleanest approach, it let us build a working POC in one day and ship to alpha customers in one quarter, getting real feedback fast. We released in August 2018 after 1.5 years of private betas. I talked about the technical challenges in [AARAWR! Fantastic Bits and Where to Dex Them](https://www.youtube.com/watch?v=semnhz5EYGU).
+In August 2016 my team took ownership of the [Mobile Payments SDK](https://developer.squareup.com/docs/mobile-payments-sdk) (an SDK for connecting to the Square reader) after two previous attempts by other teams had failed — one trying to extract our spaghetti reader code, another trying to rewrite it from scratch. Having released the Point of Sale API, I had the idea to sidestep the extraction problem entirely: bundle the entire POS app code inside the SDK and leverage the Point of Sale API from within it. While not the cleanest approach, it let us build a working POC in one day and ship to alpha customers in one quarter, getting real feedback fast. We released in August 2018 after 1.5 years of private betas. I talked about the technical challenges in [AARAWR! Fantastic Bits and Where to Dex Them](https://www.youtube.com/watch?v=semnhz5EYGU).
 
 In September 2018 I ran a hackweek project building on the hooks we had created for the Mobile Payments SDK to prototype a push-based extension. This proved that [Terminal API](https://developer.squareup.com/docs/terminal-api/overview) was within reach, and the Terminal API team was formed a few months later.
 
@@ -41,11 +41,11 @@ In January 2019 we released the [In-App Payments SDK](https://squareup.com/us/en
 
 In 2018, as several teams were struggling to fill senior Android positions, I partnered with a colleague and worked with recruiters to organize informal Android dinners: a mix of Square engineers and candidates, geek-talking about Android over dinner. The results exceeded expectations — in one case the recruiter told us that closing a single candidate justified the cost of ten more of these events.
 
-In March 2019 I joined the Developer Empowerment organization to take on a new challenge, focusing on the reliability on Square mobile apps and SDKs.
+In March 2019 I joined the Developer Empowerment organization to take on a new challenge, initially focusing on the reliability on Square mobile apps and SDKs. Unfortunately I had to put that effort on the backburner as our organization needed folks to lead teams. From August 2019 to April 2020, I led the Isolated Development team as TLM, growing it from 3 to 6 Android and iOS engineers. Our goal was to increase developer velocity by decoupling the POS monorepo into smaller, independently iterable pieces. We drove organic adoption of a new module structure with explicit boundaries — by March 2020, 67% of our 1,650 Android modules had adopted it — and grew from 7 to 50+ demo apps on Android and equivalent on iOS. These demo apps were 11x faster to build, which explains the fast adoption (even CashApp adopted them after seeing our results).
 
-From August 2019 to April 2020, I led the Isolated Development team as TLM, growing it from 3 to 6 Android and iOS engineers. Our goal was to increase developer velocity by decoupling the POS monorepo into smaller, independently iterable pieces. We drove organic adoption of a new module structure with explicit boundaries — by March 2020, 67% of our 1,650 Android modules had adopted it — and grew from 7 to 50+ demo apps on Android and equivalent on iOS. We also rolled out module ownership across both iOS and Android repositories, with every module owned by exactly one team, which became foundational for crash triaging and cross-team collaboration. I also nudged [Ralf Wondratschek](https://ralf-wondratschek.com) to explore and open source [Anvil](https://github.com/square/anvil), a Dagger auto-configuration library that became a game changer for multi-module Android development and was adopted by Dropbox, Slack, Snap, Tonal, and others.
+We also rolled out module ownership across both iOS and Android repositories, with every module owned by exactly one team, which became foundational for crash triaging and cross-team collaboration. I also nudged [Ralf Wondratschek](https://ralf-wondratschek.com) to explore and open source [Anvil](https://github.com/square/anvil), a Dagger auto-configuration library that became a game changer for multi-module Android development and was adopted by Dropbox, Slack, Snap, Tonal, and others.
 
-I then moved back to an IC role. I started by migrating the entire POS codebase to AndroidX — 2.8K files and 5K lines of code changed in a single after-hours PR — unblocking POS from updating dozens of Android ecosystem dependencies that had stalled for over a year.
+In May 2020 I moved back to an IC role. I started by migrating the entire POS codebase to AndroidX — 2.8K files and 5K lines of code changed in a single after-hours PR — unblocking POS from updating dozens of Android ecosystem dependencies that had stalled for over a year.
 
 I tackled our UI test flakiness problem by building flake monitoring dashboards and tooling to run tests directly on Firebase, dramatically speeding up iteration. While improving Espresso error messages during this work, I reused view hierarchy printing code I had originally written in 2014 inside POS — code that had since become the basis of my interview question. In 2020, [Zach Klippenstein](https://blog.zachklipp.com) and I open sourced that code as [Radiography](https://github.com/square/radiography). Similarly, [Curtains](https://github.com/square/curtains) grew out of my investigation into window callback hooks while chasing crashes. I also built and evangelized the foundation for network and UI performance monitoring across Square mobile.
 
@@ -55,12 +55,14 @@ I invested deeply in understanding the crash triage process by working closely a
 
 Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on [Square Register](https://squareup.com/hardware/register) and [Square Terminal](https://squareup.com/hardware/terminal) that traced back to configuration bugs in the Linux kernel of Square's Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrades. I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into [square/papa](https://github.com/square/papa) ([talk](https://www.youtube.com/watch?v=aPCGYNk3Wzw&feature=youtu.be)), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced [square/logcat](https://github.com/square/logcat) in September 2021, after production logging mistakes had caused significant performance issues in POS.
 
+In 2022 I was promoted to L8 (Principal Engineer).
+
 ### Software Engineer - Square
 
 |:material-calendar-multiple:|March 2013 - 2016|
 |:fontawesome-solid-map-location:|San Francisco|
 
-While working for Siine, I had the opportunity to interview at Google in Paris. I barely did any prep and flunked the interview.. the recruiter told me the feedback was "good technical skills but lacking cognitive skills". My pride was hurt, so from then on I started paying more attention to algorithms and data structure implementation details. That helped a ton with my next step!
+While working for Siine, I had the opportunity to interview at Google in Paris. I barely did any prep and flunked the interview: the recruiter told me the feedback was "good technical skills but lacking cognitive skills". My pride was hurt, so from then on I started paying more attention to algorithms and data structure implementation details. That helped a ton with my next step!
 
 With [AndroidAnnotations](https://github.com/androidannotations/androidannotations) (a framework that reduced code boilerplate), I had built the first Android annotation processor. I had tried to add dependency injection support but wasn't happy with the result, so when Square released Dagger, I filed a [GitHub issue on dagger/square](https://github.com/square/dagger/issues/40) asking for a plugin architecture. Jesse Wilson responded over email: "are you interested in coming to work for Square?". Square flew me from Paris to SF for the interviews, and I also used that opportunity to interview at Facebook. Both companies had interviews that were a full day of mostly leet code. However, on the Facebook side I met 20-something engineers I'd never heard of, who talked about reimplementing the feed with OpenGL, and we were coding on whiteboards. On the Square side, we were coding on a laptop, and I already knew the names of almost everyone that interviewed me (Jake Wharton, Jesse Wilson, Ray Ryan, and even the CTO Bob Lee). I knew I'd found my people, and I moved to the San Francisco office to work with the best Android engineers.
 
@@ -74,7 +76,9 @@ In March 2014, I started leading the engineering effort to bring Square POS to A
 
 In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done [catching up](https://squareup.com/au/townsquare/new-features-android-devices) with the iPad and started focusing on building new features. Our work was the app foundation for the [Square Register](https://squareup.com/hardware/register).
 
-From September 2015 to January 2016 I worked on a super cool secret project that I cannot mention here. Small team, high throughput, we built a great app really fast.
+In Q4 2015 I worked on a white label loyalty app (the idea was: any small seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO.
+
+In 2016 I was promoted to L7 (Staff Engineer), for growing the Android Tablets team, and numerous technical feats such as creating LeakCanary or safely migrating the entire codebase from Dagger1 to Dagger2 in pieces.
 
 ### Lead Software Developer - Siine
 
