@@ -79,7 +79,7 @@ With [AndroidAnnotations](https://github.com/androidannotations/androidannotatio
 
 Square flew me from Paris to San Francisco for the interviews, and I also used that opportunity to interview at Facebook. Both companies had interviews that were a full day of mostly leet code. However, on the Facebook side I met 20-something engineers I'd never heard of, who talked about reimplementing the feed with OpenGL, and we were coding on whiteboards. On the Square side, we were coding on a laptop, and I already knew the names of almost everyone that interviewed me (Jake Wharton, Jesse Wilson, Ray Ryan, and even the CTO Bob Lee). I knew I had found my people, and I moved to the San Francisco office to work with the best Android engineers.
 
-![Square office](/images/office.png)
+![Square office](/images/office.jpg)
 
 ### Work
 
