@@ -107,7 +107,7 @@ In August 2015 I wrapped up my work on the Android Tablets team, which had grown
 
 ![Square Register](/images/register.jpg)
 
-In Q4 2015 I worked on a white label loyalty app (the pitch: any seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO. While the project was killed, I also used that experience as a technical experiment, playing with architecture & libraries that I succesfully brought back to Square POS. 
+In Q4 2015 I worked on a white label loyalty app (the pitch: any seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready to ship, executive leadership learnt about the project and told us not to start the project: there was too much app store risk and product risk, right as we were going through IPO. While the app was killed, I also used that experience as a technical experiment, playing with architecture & libraries that I succesfully brought back to Square POS. 
 
 ![Whitelabel app](/images/groundhog.png)
 
