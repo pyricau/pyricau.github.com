@@ -113,7 +113,7 @@ I have contributed to almost every release of [Square Point of Sale](https://pla
 
 In college, I didn't pay attention to signal processing courses, thinking I would never need that... I was wrong! Three months after joining Square, I was put in charge of integrating the code processing the signals sent by the [new Square Reader](http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/). The processing code had been written in Matlab and auto translated to C, and was a performance disaster. This two week integration turned into a 6 month project where I also ended up redesigning our reader data pipeline.
 
-In August 2013 I led a HackWeek project: SQUA(RED), a special red edition of the Square reader to fight AIDS. Our hardware team made that a [real product](http://techcrunch.com/2014/02/19/square-and-red-fight-aids-with-special-edition-reader-and-donate-links-in-receipts/).
+In August 2013 I led a HackWeek project: SQUA(RED), a special red edition of the Square reader to fight AIDS. Our hardware team turned that into a [real product](http://techcrunch.com/2014/02/19/square-and-red-fight-aids-with-special-edition-reader-and-donate-links-in-receipts/).
 
 Another fun HackWeek project of mine worth mentioning: Swipey Bird, a Flappy Bird clone were you swiped a credit card to make the bird fly. There was a 250ms delay between a swipe and the app picking up the reader signal, which made this game real hard!
 
