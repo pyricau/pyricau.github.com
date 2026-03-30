@@ -96,6 +96,10 @@ I have contributed to almost every release of [Square Point of Sale](https://pla
 In college, I didn't pay my attention to the signal processing courses, thinking I would never need that. I should have known better: 3 months after joining Square, I was put in charge of integrating the code processing the signals sent by the [new Square Reader](http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/). The processing code had been written in Matlab and auto translated to C, and was a performance disaster. This two week integration turned into a 6 month project where I also ended up redesigning our reader data pipeline.
 
 In August 2013 I led a HackWeek project: SQUA(RED), a special red edition of the Square reader to fight AIDS. Our hardware team made that a [real product](http://techcrunch.com/2014/02/19/square-and-red-fight-aids-with-special-edition-reader-and-donate-links-in-receipts/).
+
+Another fun HackWeek project of mine worth mentioning: Swipey Bird, a Flappy Bird clone were you swiped a credit card to make the bird fly. There was a 250ms delay between a swipe and the app picking up the reader signal, which made this game real hard!
+
+![Swipey Bird](/images/swipey.jpg)
                                                                                                                                                                
 In March 2014, I started leading the engineering effort to bring Square POS to Android Tablets. None of the iPad work had been documented, so this involved a lot of reverse engineering of expected product behavior from sources. While the iPad & iPhone implementations were wildly different, I made sure to implement new features no matter the screen size, as I strongly believed features should be ubiquitous.
 
