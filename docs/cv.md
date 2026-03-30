@@ -12,7 +12,7 @@ I started writing code in 2000 in middle school (turns out making video games wa
 |:material-calendar-multiple:|2022 - Present|
 |:fontawesome-solid-map-location:|San Francisco -> Lyon|
 
-![Hair Dryer](/images/squid.png)
+![Diary of a Slow Squid](/images/diary.png)
 
 In early 2022 I wrote the story of an investigation into the performance degradation of Square's fork of the Android OS (Squid): "Diary of a Slow Squid" (learn more in [this public talk](https://youtu.be/kOH1Kdj9c1c?si=bykCD_r8Yxzn7u-b&t=1626)). This convinced Square's leadership that we needed to invest in performance at both the app & the OS level, which led to funding and scaling the Mobile Performance & Reliability (MPR) team from 1 to 7 engineers in a matter of months. I became the go-to person for everything performance: I built tooling inside POS, created guides and dashboards now used by teams across all verticals (performance investigation, profiling, Android Vitals, interaction latency, benchmarking), and taught engineers across the organization how to investigate and fix performance issues. I also ran a blog series on Android performance in production that reached 10K+ views and was featured four times in Android Weekly.
 
@@ -63,7 +63,13 @@ I discovered that our analytics event library was silently dropping at least 35%
 
 I invested deeply in understanding the crash triage process by working closely alongside our RelOps team, then redesigned it end to end. The results were dramatic: average resolution time dropped from 60 to 21 days, the resolution rate improved from 68% to 89%, and the crash rate fell from 0.47% to 0.31%.
 
-Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on [Square Register](https://squareup.com/hardware/register) and [Square Terminal](https://squareup.com/hardware/terminal) that traced back to configuration bugs in the Linux kernel of Square's Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrades. I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into [square/papa](https://github.com/square/papa) ([talk](https://www.youtube.com/watch?v=aPCGYNk3Wzw&feature=youtu.be)), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced [square/logcat](https://github.com/square/logcat) in September 2021, after production logging mistakes had caused significant performance issues in POS.
+Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on [Square Register](https://squareup.com/hardware/register) and [Square Terminal](https://squareup.com/hardware/terminal) that traced back to configuration bugs in the Linux kernel of Square's Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrade.
+
+![Latency improvements](/images/latency.png)
+
+![Hair Dryer](/images/squid.png)
+
+I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into [square/papa](https://github.com/square/papa) ([talk](https://www.youtube.com/watch?v=aPCGYNk3Wzw&feature=youtu.be)), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced [square/logcat](https://github.com/square/logcat) in September 2021, after production logging mistakes had caused significant performance issues in POS.
 
 #### Promo to Principal Engineer
 
