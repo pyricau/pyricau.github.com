@@ -101,7 +101,7 @@ In March 2014, I started leading the engineering effort to bring Square POS to A
 
 In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done catching up with the iPad and started focusing on building new features. Our work was the app foundation for the [Square Register](https://squareup.com/hardware/register).
 
-![Square Register](/images/register.png)
+![Square Register](/images/register.jpg)
 
 In Q4 2015 I worked on a white label loyalty app (the pitch: any seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO. While the project was killed, I also used that experience as a technical experiment, playing with architecture & libraries that I succesfully brought back to Square POS. 
 
