@@ -69,6 +69,8 @@ Starting in 2021 I drove several high-impact performance investigations. I surfa
 
 ![Latency improvements](/images/latency.png)
 
+Debugging hardware is something else...
+
 ![Hair Dryer](/images/squid.png)
 
 I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into [square/papa](https://github.com/square/papa) ([talk](https://www.youtube.com/watch?v=aPCGYNk3Wzw&feature=youtu.be)), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced [square/logcat](https://github.com/square/logcat) in September 2021, after production logging mistakes had caused significant performance issues in POS.
