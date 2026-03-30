@@ -83,17 +83,21 @@ Square flew me from Paris to San Francisco for the interviews, and I also used t
 
 #### Work
 
-I have contributed to every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since I joined in March 2013.
+I have contributed to almost every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since I joined in March 2013.
 
-In June 2013 I led the Android software side of the [new Square Reader](http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/).
+![Square Reader](/images/reader.png)
 
-In August 2013 I led a HackWeek project: SQUA(RED), a special red edition of the Square reader to fight AIDS. Our great hardware team made that a [real product](http://techcrunch.com/2014/02/19/square-and-red-fight-aids-with-special-edition-reader-and-donate-links-in-receipts/).
+In college, I didn't pay my attention to the signal processing courses, thinking I would never need that. I should have known better: 3 months after joining Square, I was put in charge of integrating the code processing the signals sent by the [new Square Reader](http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/). The processing code had been written in Matlab and auto translated to C, and was a performance disaster. This two week integration turned into a 6 month project where I also ended up redesigning our reader data pipeline.
 
-In March 2014, I started leading the engineering effort to bring Square POS to Android Tablets. I made sure to implement new features on mobile as well, as I believe the screen size frontier is much less clear today, and features should be ubiquitous.
+In August 2013 I led a HackWeek project: SQUA(RED), a special red edition of the Square reader to fight AIDS. Our hardware team made that a [real product](http://techcrunch.com/2014/02/19/square-and-red-fight-aids-with-special-edition-reader-and-donate-links-in-receipts/).
+                                                                                                                                                               
+In March 2014, I started leading the engineering effort to bring Square POS to Android Tablets. None of the iPad work had been documented, so this involved a lot of reverse engineering of expected product behavior from sources. While the iPad & iPhone implementations were wildly different, I made sure to implement new features no matter the screen size, as I strongly believed features should be ubiquitous.
 
-In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done [catching up](https://squareup.com/au/townsquare/new-features-android-devices) with the iPad and started focusing on building new features. Our work was the app foundation for the [Square Register](https://squareup.com/hardware/register).
+In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done catching up with the iPad and started focusing on building new features. Our work was the app foundation for the [Square Register](https://squareup.com/hardware/register).
 
-In Q4 2015 I worked on a white label loyalty app (the idea was: any small seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO.
+In Q4 2015 I worked on a white label loyalty app (the idea was that any small seller could get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO. While the project was killed, I also used that experience as a technical experiment, playing with architecture & libraries that I succesfully brought back to Square POS. 
+
+![Whitelabel app](/images/groundhog.png)
 
 #### Promo
 
