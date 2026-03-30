@@ -39,6 +39,8 @@ In March 2016 I started organizing EngTsq ("Engineering Town Square"), a monthly
 
 In August 2016 my team was put in charge of building the [Mobile Payments SDK](https://developer.squareup.com/docs/mobile-payments-sdk) (an SDK for connecting to the Square reader) after two previous attempts by other teams had failed — one trying to extract our spaghetti reader code, another trying to rewrite it from scratch. Having released the Point of Sale API, I had the idea to sidestep the extraction problem entirely: bundle the entire POS app code inside the SDK and leverage the Point of Sale API from within it. While not the cleanest approach, it let us build a working POC in one day and ship to alpha customers in one quarter, getting real feedback fast. We released in August 2018 after 1.5 years of private betas. I talked about the technical challenges in [AARAWR! Fantastic Bits and Where to Dex Them](https://www.youtube.com/watch?v=semnhz5EYGU).
 
+![Lunch Testing](/images/fast9.png)
+
 In 2018, as several teams were struggling to fill senior Android positions, I partnered with a colleague and worked with recruiters to organize informal [Android dinners](https://www.eventbrite.com/e/dinner-with-square-developing-the-android-community-tickets-51529171138): a mix of Square engineers and candidates, geek-talking about Android over dinner. The results exceeded expectations — in one case the recruiter told us that closing a single candidate justified the cost of ten more of these events.
 
 In September 2018 I ran a hackweek project building on the hooks we had created for the Mobile Payments SDK to prototype a push-based extension. This proved that building a [Square Terminal API](https://developer.squareup.com/docs/terminal-api/overview) was within reach, and the Terminal API team was formed a few months later.
@@ -61,7 +63,7 @@ I invested deeply in understanding the crash triage process by working closely a
 
 Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on [Square Register](https://squareup.com/hardware/register) and [Square Terminal](https://squareup.com/hardware/terminal) that traced back to configuration bugs in the Linux kernel of Square's Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrades. I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into [square/papa](https://github.com/square/papa) ([talk](https://www.youtube.com/watch?v=aPCGYNk3Wzw&feature=youtu.be)), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced [square/logcat](https://github.com/square/logcat) in September 2021, after production logging mistakes had caused significant performance issues in POS.
 
-#### Promo
+#### Promo to Principal Engineer
 
 In 2022 I was promoted to L8 (Principal Engineer).
 
@@ -105,7 +107,7 @@ In Q4 2015 I worked on a white label loyalty app (the pitch: any seller can get 
 
 ![Whitelabel app](/images/groundhog.png)
 
-#### Promo
+#### Promo to Staff Engineer
 
 In 2016 I was promoted to L7 (Staff Engineer), for growing the Android Tablets team, and numerous technical feats such as creating LeakCanary or safely migrating the entire codebase from Dagger1 to Dagger2.
 
