@@ -22,11 +22,17 @@ After a [multi-hour Square outage in September 2023](https://developer.squareup.
 
 I convinced the Perfetto team at Google to extend their Kotlin tracing API from Android-only to JVM, enabling tools that can automatically analyze traces at scale. I also wrote a guide that led the Jetpack Compose team at Google to turn on LeakCanary in their CI UI tests — they fixed a number of leaks, including one tied to a Kotlin coroutine bug I helped investigate.
 
-In 2024 I led as engineering DRI for a cross-org, cross-platform mobile performance squad that wrapped up in H1 2025 with significant improvements across the board, including a meaningful ANR rate reduction — the culmination of that multi-year effort.
+In 2024 I led as engineering DRI for a cross-org, cross-platform mobile performance squad that wrapped up in H1 2025 with significant improvements across the board, including a meaningful ANR rate reduction.
+
+![Latency improvements](/images/improvements.png)
 
 At the end of 2024 I built infrastructure to automatically capture and upload heap dumps on OutOfMemory crashes in production. I also extended [LeakCanary](https://github.com/square/leakcanary) with a heap dump sanitization utility that strips primitive arrays and PII before upload, making safe production heap analysis at scale practical.
 
 Within Block, I initiated a group trip to Droidcon NYC 2025 and led the initial budget push — we sent 55 engineers across Block.
+
+![Droidcon NYC](/images/droidcon.jpg)
+([Source](https://www.flickr.com/photos/194372122@N07/54646747397/in/album-72177720327471177/))
+
 
 I explored the future of mobile observability at Block and ran a Bitdrift trial. After a successful pilot and an ADR-driven vendor evaluation, I shaped Square's mobile analytics and observability strategy and drove the creation of a dedicated observability squad, which unfortunately did not survive the 2026 RIF apocalypse.
 
