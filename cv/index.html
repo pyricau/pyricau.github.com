@@ -472,10 +472,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#promo" class="md-nav__link">
+  <a href="#promo-to-principal-engineer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Promo
+        Promo to Principal Engineer
       
     </span>
   </a>
@@ -522,10 +522,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#promo_1" class="md-nav__link">
+  <a href="#promo-to-staff-engineer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Promo
+        Promo to Staff Engineer
       
     </span>
   </a>
@@ -956,6 +956,7 @@
 <p>In March 2016 I started organizing EngTsq (&ldquo;Engineering Town Square&rdquo;), a monthly internal lightning talk series: one hour, 5 lightning talks across all of engineering, consistently drawing 150+ engineers. Over five years, roughly 200 engineers gave their first tech talk in front of a large audience.</p>
 <p><img alt="EngTsq" src="/images/engtsq.png" /></p>
 <p>In August 2016 my team was put in charge of building the <a href="https://developer.squareup.com/docs/mobile-payments-sdk">Mobile Payments SDK</a> (an SDK for connecting to the Square reader) after two previous attempts by other teams had failed — one trying to extract our spaghetti reader code, another trying to rewrite it from scratch. Having released the Point of Sale API, I had the idea to sidestep the extraction problem entirely: bundle the entire POS app code inside the SDK and leverage the Point of Sale API from within it. While not the cleanest approach, it let us build a working POC in one day and ship to alpha customers in one quarter, getting real feedback fast. We released in August 2018 after 1.5 years of private betas. I talked about the technical challenges in <a href="https://www.youtube.com/watch?v=semnhz5EYGU">AARAWR! Fantastic Bits and Where to Dex Them</a>.</p>
+<p><img alt="Lunch Testing" src="/images/fast9.png" /></p>
 <p>In 2018, as several teams were struggling to fill senior Android positions, I partnered with a colleague and worked with recruiters to organize informal <a href="https://www.eventbrite.com/e/dinner-with-square-developing-the-android-community-tickets-51529171138">Android dinners</a>: a mix of Square engineers and candidates, geek-talking about Android over dinner. The results exceeded expectations — in one case the recruiter told us that closing a single candidate justified the cost of ten more of these events.</p>
 <p>In September 2018 I ran a hackweek project building on the hooks we had created for the Mobile Payments SDK to prototype a push-based extension. This proved that building a <a href="https://developer.squareup.com/docs/terminal-api/overview">Square Terminal API</a> was within reach, and the Terminal API team was formed a few months later.</p>
 <p><img alt="Terminal API" src="/images/terminal-api.png" /></p>
@@ -967,7 +968,7 @@
 <p>I discovered that our analytics event library was silently dropping at least 35% of events from at least 30% of active devices. A simple queue size increase from 256KB to 2MB brought the drop rate down to ~10%. I also found that three Android app targets had never had server-side analytics logging enabled at all.</p>
 <p>I invested deeply in understanding the crash triage process by working closely alongside our RelOps team, then redesigned it end to end. The results were dramatic: average resolution time dropped from 60 to 21 days, the resolution rate improved from 68% to 89%, and the crash rate fell from 0.47% to 0.31%.</p>
 <p>Starting in 2021 I drove several high-impact performance investigations. I surfaced a major regression on <a href="https://squareup.com/hardware/register">Square Register</a> and <a href="https://squareup.com/hardware/terminal">Square Terminal</a> that traced back to configuration bugs in the Linux kernel of Square&rsquo;s Android fork — bugs that had already shipped to customers without anyone at Square noticing, and might otherwise have led to costly hardware spec upgrades. I unblocked the launch of a major POS UI redesign (introducing a nav bar) that teams had worked on for 1.5 years without migrating any UI tests — I figured out a path to migrate 3,000 UI tests to the new UI in just a few days. I extracted our production performance tracking code into <a href="https://github.com/square/papa">square/papa</a> (<a href="https://www.youtube.com/watch?v=aPCGYNk3Wzw&amp;feature=youtu.be">talk</a>), which also enabled Cash Android to build its performance dashboard much faster than planned. And I built and open sourced <a href="https://github.com/square/logcat">square/logcat</a> in September 2021, after production logging mistakes had caused significant performance issues in POS.</p>
-<h4 id="promo">Promo<a class="headerlink" href="#promo" title="Permanent link">&para;</a></h4>
+<h4 id="promo-to-principal-engineer">Promo to Principal Engineer<a class="headerlink" href="#promo-to-principal-engineer" title="Permanent link">&para;</a></h4>
 <p>In 2022 I was promoted to L8 (Principal Engineer).</p>
 <h3 id="software-engineer-square">Software Engineer - Square<a class="headerlink" href="#software-engineer-square" title="Permanent link">&para;</a></h3>
 <p><span class="badge badge-normal"><span class=sep> [</span><span class=title><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17V8H7v9zm0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zM3 21h14v2H3a2 2 0 0 1-2-2V9h2zm16-6h-4v-4h4z"/></svg></span></span><span class=sep> : </span><span class=value>March 2013 - 2016</span><span class=sep>] </span></span>
@@ -989,7 +990,7 @@
 <p><img alt="Square Register" src="/images/register.png" /></p>
 <p>In Q4 2015 I worked on a white label loyalty app (the pitch: any seller can get their own Starbucks-like app). Small team, high throughput, we built something great really fast. Too fast actually: by the time we were ready, executive leadership learnt about the project and told us not to start. There was too much app store risk and product risk, right as we were going through IPO. While the project was killed, I also used that experience as a technical experiment, playing with architecture &amp; libraries that I succesfully brought back to Square POS. </p>
 <p><img alt="Whitelabel app" src="/images/groundhog.png" /></p>
-<h4 id="promo_1">Promo<a class="headerlink" href="#promo_1" title="Permanent link">&para;</a></h4>
+<h4 id="promo-to-staff-engineer">Promo to Staff Engineer<a class="headerlink" href="#promo-to-staff-engineer" title="Permanent link">&para;</a></h4>
 <p>In 2016 I was promoted to L7 (Staff Engineer), for growing the Android Tablets team, and numerous technical feats such as creating LeakCanary or safely migrating the entire codebase from Dagger1 to Dagger2.</p>
 <h3 id="lead-software-developer-siine">Lead Software Developer - Siine<a class="headerlink" href="#lead-software-developer-siine" title="Permanent link">&para;</a></h3>
 <p><span class="badge badge-normal"><span class=sep> [</span><span class=title><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17V8H7v9zm0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zM3 21h14v2H3a2 2 0 0 1-2-2V9h2zm16-6h-4v-4h4z"/></svg></span></span><span class=sep> : </span><span class=value>September 2011 - January 2013</span><span class=sep>] </span></span>
