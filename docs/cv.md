@@ -39,7 +39,7 @@ In March 2016 I started organizing EngTsq ("Engineering Town Square"), a monthly
 
 In August 2016 my team was put in charge of building the [Mobile Payments SDK](https://developer.squareup.com/docs/mobile-payments-sdk) (an SDK for connecting to the Square reader) after two previous attempts by other teams had failed — one trying to extract our spaghetti reader code, another trying to rewrite it from scratch. Having released the Point of Sale API, I had the idea to sidestep the extraction problem entirely: bundle the entire POS app code inside the SDK and leverage the Point of Sale API from within it. While not the cleanest approach, it let us build a working POC in one day and ship to alpha customers in one quarter, getting real feedback fast. We released in August 2018 after 1.5 years of private betas. I talked about the technical challenges in [AARAWR! Fantastic Bits and Where to Dex Them](https://www.youtube.com/watch?v=semnhz5EYGU).
 
-![Lunch Testing](/images/fast9.png)
+![Lunch Testing](/images/fast9.jpg)
 
 In 2018, as several teams were struggling to fill senior Android positions, I partnered with a colleague and worked with recruiters to organize informal [Android dinners](https://www.eventbrite.com/e/dinner-with-square-developing-the-android-community-tickets-51529171138): a mix of Square engineers and candidates, geek-talking about Android over dinner. The results exceeded expectations — in one case the recruiter told us that closing a single candidate justified the cost of ten more of these events.
 
