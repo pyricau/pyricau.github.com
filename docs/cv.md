@@ -12,6 +12,8 @@ I started writing code in 2000 in middle school (turns out making video games wa
 |:material-calendar-multiple:|2022 - Present|
 |:fontawesome-solid-map-location:|San Francisco -> Lyon|
 
+![Hair Dryer](/images/squid.png)
+
 In early 2022 I wrote the story of an investigation into the performance degradation of Square's fork of the Android OS (Squid): "Diary of a Slow Squid" (learn more in [this public talk](https://youtu.be/kOH1Kdj9c1c?si=bykCD_r8Yxzn7u-b&t=1626)). This convinced Square's leadership that we needed to invest in performance at both the app & the OS level, which led to funding and scaling the Mobile Performance & Reliability (MPR) team from 1 to 7 engineers in a matter of months. I became the go-to person for everything performance: I built tooling inside POS, created guides and dashboards now used by teams across all verticals (performance investigation, profiling, Android Vitals, interaction latency, benchmarking), and taught engineers across the organization how to investigate and fix performance issues. I also ran a blog series on Android performance in production that reached 10K+ views and was featured four times in Android Weekly.
 
 After a [multi-hour Square outage in September 2023](https://developer.squareup.com/blog/incident-summary-2023-09-07/), we realized we lacked the metrics to correctly evaluate customer impact. [Ben VandenBos](https://www.linkedin.com/in/bvandenbos) started an initiative to establish success rate metrics for all Critical Jobs across Square, but it initially did not encompass what sellers experienced inside POS. I spotted the potential in a hackweek project on client-side instrumentation, co-opted it, and drove adoption across the codebase to ship User Journeys to production within weeks — filling that gap for POS. The approach was later adopted by the Dashboard web app and by Cash App.
@@ -103,7 +105,7 @@ Another fun HackWeek project of mine worth mentioning: Swipey Bird, a Flappy Bir
                                                                                                                                                                
 In March 2014, I started leading the engineering effort to bring Square POS to Android Tablets. None of the iPad work had been documented, so this involved a lot of reverse engineering of expected product behavior from sources. While the iPad & iPhone implementations were wildly different, I made sure to implement new features no matter the screen size, as I strongly believed features should be ubiquitous.
 
-In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done catching up with the iPad and started focusing on building new features. Our work was the app foundation for the [Square Register](https://squareup.com/hardware/register).
+In August 2015 I wrapped up my work on the Android Tablets team, which had grown from 1 to 6 engineers. We were done catching up with the iPad and started focusing on building new features. Our work was the foundation for the [Square Register](https://squareup.com/hardware/register).
 
 ![Square Register](/images/register.jpg)
 
