@@ -5,7 +5,11 @@
 
 ## Experience
 
-I started writing code in 2000 in middle school (turns out making video games was cooler than playing them!) and I haven't stopped since.
+I started writing code in 2000 in middle school and I haven't stopped since.
+
+I care deeply about 2 things: my community of engineers, and our customers. The former shows on both the body of tools and APIs I've created or improved, as well as my community initiatives over the years. The latter shows in how I've always pushed to do the right thing by our customers, striving to find creative ways to ship faster without compromising on the customer experience.
+
+Before joining Square, I was already fairly good at writing readable code, sharing knowledge, doing deep technical dives and thinking about customer experience. At Square, I greatly increased my skills in multiple areas, such as the breadth and depth of my technical knowledge, the impact of what I share with the world, my ability to bring people together in an urgent crisis, and my ability to influence a large organization (including external companies) and shift behaviors.
 
 ### Principal Engineer - Block
 
@@ -16,7 +20,7 @@ In early 2022 I wrote the story of an investigation into the performance degrada
 
 ![Diary of a Slow Squid](/images/diary.png)
 
-This convinced Square's leadership that we needed to invest in performance at both the app & the OS level, which led to funding and scaling the Mobile Performance & Reliability (MPR) team from 1 to 7 engineers in a matter of months. I became the go-to person for everything performance: I built tooling inside POS, created guides and dashboards now used by teams across all verticals (performance investigation, profiling, Android Vitals, interaction latency, benchmarking), and taught engineers across the organization how to investigate and fix performance issues. I also ran a blog series on Android performance in production that reached 10K+ views and was featured four times in Android Weekly.
+This convinced Square's leadership that we needed to invest in performance at both the app & the OS level, which led to funding and quickly scaling our Mobile Performance & Reliability team from 1 engineer to 8 engineers, a PM, and a data analyst. I became the go-to person for everything performance: I built tooling inside POS, created guides and dashboards now used by teams across all verticals (performance investigation, profiling, Android Vitals, interaction latency, benchmarking), and taught engineers across the organization how to investigate and fix performance issues. I also ran a blog series on Android performance in production that reached 10K+ views and was featured four times in Android Weekly.
 
 After a [multi-hour Square outage in September 2023](https://developer.squareup.com/blog/incident-summary-2023-09-07/), we realized we lacked the metrics to correctly evaluate customer impact. [Ben VandenBos](https://www.linkedin.com/in/bvandenbos) started an initiative to establish success rate metrics for all Critical Jobs across Square, but it initially did not encompass what sellers experienced inside POS. I spotted the potential in a hackweek project on client-side instrumentation, co-opted it, and drove adoption across the codebase to ship User Journeys to production within weeks — filling that gap for POS. The approach was later adopted by the Dashboard web app and by Cash App.
 
@@ -41,13 +45,24 @@ I explored the future of mobile observability at Block and ran a Bitdrift trial.
 |:material-calendar-multiple:|2016 - 2022|
 |:fontawesome-solid-map-location:|San Francisco|
 
+#### Summary
+
+
+
+
+#### Body of Work
+
 In February 2016, I joined the new Developer Platform team as its Android lead. A few months later we released [Point of Sale API](https://developer.squareup.com/docs/pos-api/what-it-does), an API that used app links to preload POS with a target amount.
 
 In March 2016 I started organizing EngTsq ("Engineering Town Square"), a monthly internal lightning talk series: one hour, 5 lightning talks across all of engineering, consistently drawing 150+ engineers. Over five years, roughly 200 engineers gave their first tech talk in front of a large audience.
 
 ![EngTsq](/images/engtsq.jpg)
 
-In August 2016 my team was put in charge of building the [Mobile Payments SDK](https://developer.squareup.com/docs/mobile-payments-sdk) (an SDK for connecting to the Square reader) after two previous attempts by other teams had failed — one trying to extract our spaghetti reader code, another trying to rewrite it from scratch. Having released the Point of Sale API, I had the idea to sidestep the extraction problem entirely: bundle the entire POS app code inside the SDK and leverage the Point of Sale API from within it. While not the cleanest approach, it let us build a working **POC in one day** and ship to alpha customers in one quarter, getting real feedback fast. We released in August 2018 after 1.5 years of private betas. I talked about the technical challenges in [AARAWR! Fantastic Bits and Where to Dex Them](https://www.youtube.com/watch?v=semnhz5EYGU).
+In August 2016 my team was put in charge of building the [Mobile Payments SDK](https://developer.squareup.com/docs/mobile-payments-sdk) (an SDK for connecting to the Square reader) after two previous attempts by other teams had failed — one trying to extract our spaghetti reader code, another trying to rewrite it from scratch. Having released the Point of Sale API, I had the idea to sidestep the extraction problem entirely: bundle the entire POS app code inside the SDK and leverage the Point of Sale API from within it.
+
+![A team had shipped a "project shoehorn" (to reintegrate a forked app into the monorepo) so I dubbed this "project shoecover"](/images/shoecover.png)
+
+While not the cleanest approach, it let us build a working **POC in one day** and ship to alpha customers in one quarter, getting real feedback fast. We released in August 2018 after 1.5 years of private betas. I talked about the technical challenges in [AARAWR! Fantastic Bits and Where to Dex Them](https://www.youtube.com/watch?v=semnhz5EYGU).
 
 ![Lunch Testing](/images/fast9.jpg)
 
@@ -92,7 +107,7 @@ In 2022 I was promoted to L8 (Principal Engineer).
 
 #### How I ended up at Square
 
-While working for Siine, I had the opportunity to interview at Google in Paris. I barely did any prep and flunked the interview: the recruiter told me the feedback was "good technical skills but lacking cognitive skills". My pride was hurt, so from then on I started paying more attention to algorithms and data structure implementation details. That helped a ton with my next step!
+While working for Siine, I had the opportunity to interview at Google in Paris. I barely did any prep and flunked the interview: the recruiter told me the feedback was _"good technical skills but lacking cognitive skills"_. My pride was hurt, so from then on I started paying more attention to algorithms and data structure implementation details. That helped a ton with my next step!
 
 ![Introduction to Algorithms](/images/algorithms.jpg)
 
@@ -105,13 +120,13 @@ Square flew me from Paris to San Francisco for the interviews, and I also used t
 
 ![Square office](/images/office.jpg)
 
-#### Work
+#### Body of Work
 
 I have contributed to almost every release of [Square Point of Sale](https://play.google.com/store/apps/details?id=com.squareup) for Android since I joined in March 2013.
 
-![Square Reader](/images/reader.png)
-
 In college, I didn't pay attention to signal processing courses, thinking I would never need that... I was wrong! Three months after joining Square, I was put in charge of integrating the code processing the signals sent by the [new Square Reader](http://www.wired.com/design/2013/12/the-new-square-reader-a-look-at-how-gadget-guts-are-designed/). The processing code had been written in Matlab and auto translated to C, and was a performance disaster. This two week integration turned into a 6 month project where I also ended up redesigning our reader data pipeline.
+
+![Square Reader](/images/reader.png)
 
 In August 2013 I led a HackWeek project: SQUA(RED), a special red edition of the Square reader to fight AIDS. Our hardware team turned that into a [real product](http://techcrunch.com/2014/02/19/square-and-red-fight-aids-with-special-edition-reader-and-donate-links-in-receipts/).
 
